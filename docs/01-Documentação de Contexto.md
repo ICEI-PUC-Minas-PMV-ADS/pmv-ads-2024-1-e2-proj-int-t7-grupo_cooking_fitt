@@ -9,11 +9,7 @@ O CookingFit vem para ajudar nessa 'mudança de chave'. Trata-se de um monitor d
 O Nutrilio é o seu novo amigo, que lhe ajudará a focar em um estilo de vida e em opções alimentares saudáveis...
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Conforme exposto, o problema que se busca resolver com este projeto é melhorar a má alimentação das pessoas. Muitas vezes essa má alimentação vem pela falta de tempo para preparar algo mais saudável, a necessidade de alimentos fabricados rapidamente (alimentos ultra processados, alimentos de fácil acesso e mais em conta) e a grande variedade de produtos pouco saudáveis (encontrado em qualquer lugar: incluindo supermercados, shopping centers, terminais rodoviários e outros).
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
