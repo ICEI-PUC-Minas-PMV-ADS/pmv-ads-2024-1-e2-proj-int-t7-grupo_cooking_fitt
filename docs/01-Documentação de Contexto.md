@@ -29,17 +29,14 @@ Os objetivos desse projeto são:
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A procura por hábitos saudáveis sejam eles através de exercícios ou alimentares, em um mundo pós pandêmico, vem crescendo cada vez mais.  A Alimentação assume um papel fundamental que impacta diretamente em nossa saúde física, mental e emocional. A busca por uma alimentação saudável pode ser desafiadora em meio a uma rotina agitada e a oferta constante de alimentos industrializados e ultraprocessados. A falta de tempo, que pode dificultar o planejamento de refeições nutritivas e a falta de informação de como montar um cardápio equilibrado e verificar as opções de alimentos possíveis, podem gerar inseguranças.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O projeto tem foco em pessoas de todas as idades sendo elas homens ou mulheres que queiram melhorar sua alimentação, de atletas profissionais que necessitam de um controle preciso sobre as suas dietas a pessoas comuns que gostariam de levar uma vida mais saudável, mas que nem sempre possuem tempo para montar uma dieta balanceada ou simplesmente não sabem como começar essa nova pratica ou estão sempre em busca de mais praticidade para o dia a dia. 
 
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
