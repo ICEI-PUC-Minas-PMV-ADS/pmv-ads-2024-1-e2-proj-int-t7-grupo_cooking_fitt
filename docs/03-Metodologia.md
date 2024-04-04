@@ -41,6 +41,25 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 Apresente a divisão de papéis entre os membros do grupo.
 
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
+A equipe está organizada da seguinte maneira:
+
+* Scrum Master: Emilia
+* Product Owner: Joao Piazza
+* Equipe de Desenvolvimento
+    * Pedro Henrique Ferreira Amorim
+    * Ariel Ortega
+    * 
+* Equipe de Design
+    *
+    
+
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando Trello, estruturado com as seguintes listas: 
+
+* Backlog: Recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
+* To Do: Esta lista representa o Sprint Backlog. 
+* Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá.
+* Done: Nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
 > Projeto](https://mindmaster.com.br/scrum-11-passos/)
@@ -60,15 +79,17 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
+- **Editores de códigos**
+- [Github](https://github.com/): Ferramenta utilizada tanto como editor de código quanto como ferramenta de organização, serve como local síncrono de armazenamento e edição do repositório do projeto.
+- [Visual Studio](https://visualstudio.microsoft.com/pt-br/): Ambiente de desenvolvimento integrado para desenvolvimento, compilação e distribuição de códigos em C# com o framework .NET.
+  
+- **Ferramentas de comunicação**
+- [Microsoft Teams]: Ferramenta utilizada para realizar as reuniões de equipe, assim como as reuniões semanais em conjunto com a coordenadora do projeto.
+- [Microsoft Office]: Ferramenta utilizada em suas diversas funcionalidades. O Microsoft Word foi usado para a confecção da documentação do projeto, o Power Point foi a ferramenta escolhida para a apresentação da proposta de projeto. O próprio sistema Office serviu como local de compartilhamento de documentos.
+- [Trello]: Ferramenta utilizada para a organização e separação de tarefas no projeto.
+  
 - Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+- [Figma](https://www.figma.com/): Ferramenta utilizada na versão final do projeto de interface.
 
 Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
