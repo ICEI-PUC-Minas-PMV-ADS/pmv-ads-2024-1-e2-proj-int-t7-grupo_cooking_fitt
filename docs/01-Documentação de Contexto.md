@@ -1,6 +1,12 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+No contexto altamente competitivo do mercado atual, as pessoas estão cada vez mais imersas em rotinas frenéticas, deixando pouco espaço para se dedicarem à alimentação. Embora haja um interesse crescente em adotar hábitos saudáveis, a disponibilidade de tempo é escassa.
+
+O CookingFit vem para ajudar nessa 'mudança de chave'. Trata-se de um monitor de consumo de alimentos revolucionário, focado em registros simples, personalização poderosa e perspectivas avançadas. Coma, beba e se movimente com o seu novo companheiro.
+
+🤔 O QUE É O CookingFit?
+
+O Nutrilio é o seu novo amigo, que lhe ajudará a focar em um estilo de vida e em opções alimentares saudáveis...
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
