@@ -1,4 +1,4 @@
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/120505395/0229284f-804b-4578-bf72-91e4f2aa8c19)![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/120505395/ecef8613-2a5e-4e4b-8d14-9cbb24f4fdc1)# Arquitetura da Solução
+# Arquitetura da Solução
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
