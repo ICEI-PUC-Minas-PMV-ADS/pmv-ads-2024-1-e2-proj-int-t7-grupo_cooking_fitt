@@ -65,7 +65,7 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 
 ### Tabela: cardapio
 | Campo             | Tipo                  | Restrições                 |
-|------------      -|-------------         -|----------------------------|
+|-------------      |--------------         |----------------------------|
 | id_cardapio       | INT                   | NOT NULL                   |
 | descriçao         | VARCHAR(255)          |                            |
 | id_usuario        | INT                   | NOT NULL                   |
@@ -76,7 +76,7 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 
 ### Tabela: itemcardapio
 | Campo             | Tipo                  | Restrições                 |
-|------------      -|-------------         -|----------------------------|
+|-------------      |--------------         |----------------------------|
 | id_receita        | VARCHAR(255)          | NOT NULL                   |
 | id_cardapio       | VARCHAR(255)          | NOT NULL                   |
 | descriçao         | VARCHAR(255)          |                            |
@@ -84,10 +84,10 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 | total_calorias    | INT                   | PRIMARY KEY                |
 
 ### Tabela: funcionário
-| Campo             | Tipo                  | Restrições                     |
-|-------------      |-------------         -|--------------------------------|
-| id_departamento   | INT                   | PRIMARY KEY                    |
-| departamento      | VARCHAR(255)          | NOT NULL, FOREIGN KEY          |
+| Campo             | Tipo                  | Restrições                 |
+|-------------      |--------------         |----------------------------|
+| id_departamento   | INT                   | PRIMARY KEY                |
+| departamento      | VARCHAR(255)          | NOT NULL, FOREIGN KEY      |
 
 
 Para mais informações, consulte o microfundamento "Modelagem de Dados".
