@@ -7,7 +7,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ## Diagrama de Classes
 
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/144743654/98ecf45b-c43d-4d28-bc47-18be70d27f58)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/144743654/cc0efe22-a3a4-4443-9712-6a9c656c1148)
+
 
 
 
