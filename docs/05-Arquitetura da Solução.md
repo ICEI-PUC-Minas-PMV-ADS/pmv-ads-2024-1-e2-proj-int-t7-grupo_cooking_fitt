@@ -1,4 +1,4 @@
-# Arquitetura da Solução
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/120505395/0229284f-804b-4578-bf72-91e4f2aa8c19)![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/120505395/ecef8613-2a5e-4e4b-8d14-9cbb24f4fdc1)# Arquitetura da Solução
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
@@ -23,7 +23,73 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ## Projeto da Base de Dados
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
- 
+
+### Tabela: Usuario
+| Campo             | Tipo                  | Restrições                 |
+|-------------      |--------------         |----------------------------|
+| nome              | VARCHAR(255)          | NOT NULL                   |
+| e-mail            | VARCHAR(255)          | NOT NULL                   |
+| CPF               | VARCHAR(255)          | NOT NULL                   |
+| dt_nasc           | DATE                  | NOT NULL                   |
+| id_usuario        | INT                   | PRIMARY KEY                |
+| genero            | VARCHAR(10)           |                            |
+| telefone          | INT                   |                            |
+| form_academica    | VARCHAR(255)          |                            |
+
+
+### Tabela: Receitas
+| Campo             | Tipo                  | Restrições                 |
+|-------------      |--------------         |----------------------------|
+| nome              | VARCHAR(255)          | NOT NULL, FOREIGN KEY      |
+| ID_receita        | INT                   | PRIMARY KEY                |
+| descriçao         | VARCHAR(255)          | NOT NULL, FOREIGN KEY      |
+| ativo             | BOOLEAN               | DEFAULTE FALSE             |
+
+
+### Tabela: Ingredientesreceitas
+| Campo             | Tipo                  | Restrições                 |
+|-------------      |--------------         |----------------------------|
+| id_receita        | INT                   | NOT NULL                   |
+| id_ingrediente    | INT                   | NOT NULL                   |
+| data_criação      | DATE                  | NOT NULL                   |
+| quantidade        | INT                   | NOT NULL                   |
+
+
+### Tabela: Ingredientes
+| Campo             | Tipo                  | Restrições                 |
+|-------------      |--------------         |----------------------------|
+| nome              | VARCHAR(255)          | PRIMARY KEY                |
+| id_ingrediente    | INT                   | NOT NULL, FOREIGN KEY      |
+| calorias          | INT                   | NOT NULL, FOREIGN KEY      |
+
+
+### Tabela: cardapio
+| Campo             | Tipo                  | Restrições                 |
+|------------      -|-------------         -|----------------------------|
+| id_cardapio       | INT                   | NOT NULL                   |
+| descriçao         | VARCHAR(255)          |                            |
+| id_usuario        | INT                   | NOT NULL                   |
+| id_receita        | INT                   | NOT NULL                   |
+| id_ingrediente    | INT                   | NOT NULL                   |
+| quantidade        | INT                   |                            |
+| calorias_cardapio | INT                   |                            |
+
+### Tabela: itemcardapio
+| Campo             | Tipo                  | Restrições                 |
+|------------      -|-------------         -|----------------------------|
+| id_receita        | VARCHAR(255)          | NOT NULL                   |
+| id_cardapio       | VARCHAR(255)          | NOT NULL                   |
+| descriçao         | VARCHAR(255)          |                            |
+| id_ingrediente    | DATE                  | NOT NULL                   |
+| total_calorias    | INT                   | PRIMARY KEY                |
+
+### Tabela: funcionário
+| Campo             | Tipo                  | Restrições                     |
+|-------------      |-------------         -|--------------------------------|
+| id_departamento   | INT                   | PRIMARY KEY                    |
+| departamento      | VARCHAR(255)          | NOT NULL, FOREIGN KEY          |
+
+
 Para mais informações, consulte o microfundamento "Modelagem de Dados".
 
 ## Tecnologias Utilizadas
