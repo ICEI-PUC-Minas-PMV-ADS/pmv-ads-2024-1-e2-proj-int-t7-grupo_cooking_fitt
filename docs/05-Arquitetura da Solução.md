@@ -1,10 +1,18 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+A arquitetura de soluções constrói soluções com base nas necessidades da empresa, é responsável por desenhar e implementar recursos e ferramentas de TI para atender as necessidades do usuário, ou seja, definir de forma estruturada quais são so componentes, propriedades e documentações necessárias para que um sistema seja desenvolvido, além de seu relacionamento com outros sistemas.
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A arquitetura para a solução em questão será basicamente a hospedagem da aplicação, e integração da mesma com APIs públicas, a fim de agilizar o processo de login e contatos.
+
+Toda codificação é armazenada no Github, o versionamento é controlado via Git Flow, para que todo o processo seja acompanhado e revertido, se preciso for.
+
+A aplicação do projeto matriz tem integração com banco de dados.
 
 ## Diagrama de Classes
+
+O diagrama de classes abaixo representará as classes, suas estruturas e relações que servem de modelo para objetos.
+
+O projeto comtempla o CRUD ou seja, as quatro operações básicas utilizadas em bases de dados relacionais (Create, Read, Update e Delete).
 
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/144388125/dcc359ae-26ca-4650-95a3-a5559e8677e6)
@@ -16,6 +24,10 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 
 ## Modelo ER (Projeto Conceitual)
+
+O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
+
+
 
 ![Modelo entidade Relacionamento (projeto conceitual)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/135378577/4311b1b9-e75e-4b2e-bce6-a14999471086)
 
@@ -90,7 +102,7 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 | departamento      | VARCHAR(255)          | NOT NULL, FOREIGN KEY      |
 
 
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+
 
 ## Tecnologias Utilizadas
 
@@ -100,11 +112,5 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+O site utiliza a plataforma do Github e Heroku como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL da GitPages e Heroku, através do endereço: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/edit/main/docs/05-Arquitetura%20da%20Solu%C3%A7%C3%A3o.md
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
