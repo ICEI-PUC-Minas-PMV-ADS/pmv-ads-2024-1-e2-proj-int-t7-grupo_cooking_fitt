@@ -106,9 +106,19 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+As tecnologias que serão ultilizadas são HTML5, CSS3 e JavaScript para o front-end, e C# e SQL server para back-end e banco de dados. As tecnologias foram escolhidas devido sua popularidade e sua versatilidade que permitem interações de usuário e de APIs externas.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+* Linguagens e frameworks utilizadas para desenvolver o projeto: HTML5, CSS3, JavaScript, C#, Bootstrap, Media Queries, .NET
+* IDEs de desenvolvimento: Visual Studio Code e Visual Studio
+* Plataforma para hospedagem do site: Heroku e GitPages
+* Plataforma para hospedagem dos arquivos: GitHub e Google Drive
+* Ferramenta de versionamento: Git e GitHub Desktop
+* Ferramenta para a criação de logo e imagens: Figma, llustrator, CorelDrav
+* Ferramenta para criação do template / wireframing: Figma e Adobe XD
+* Ferramenta para criação de diagramas e fluxos: Lucidchart e Visio
+* Banco de Dados: SQL Server
+
+
 
 ## Hospedagem
 
