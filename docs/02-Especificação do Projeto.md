@@ -65,7 +65,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Maria Alice       | visualizar quantas calorias já consumi                 | saber quantas ainda posso consumir |
 |Sandra  | Encontrar receitas saudáveis          | combater a pré-diabetes           |
 |Felipe Silva | Controlar os horários de suas refeições  | nao perder nenhuma refeição importante  |
-|Jeniffer | Ter constância e ser organizada com os alimentos |melhor organização na alimentação e emagrecer para se sentir bem.
+|Jeniffer | Ter constância e ser organizada com os alimentos |melhorar a organização na alimentação e emagrecer para se sentir bem.
 |José Carlos  | Dedicar mais tempo a preparar refeições saudáveis | buscar qualidade de vida, prevenir futuros problemas de saúde |
 |Rodrigo oliveira  | Melhorar e controlar as refeições  | perder hábitos alimentares ruins que prejudicam a saúde |
 
