@@ -23,24 +23,23 @@ Persona | 2
 Persona | 3
 ---|---
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/28922630-4a61-402e-a2d7-c3f485743a9d)| **Felipe Silva**  
-**Idade:** 54 **Ocupação:** Bancário **Hobbies:** Aprender novas receitas|**Aplicativos:** Apps bancários, Netflix, WhatsApp  
+**Idade:** 54 **Ocupação:** Bancário **Hobbies:** Jogar tênis|**Aplicativos:** Apps bancários, Netflix, WhatsApp  
 **Motivações:** Gostaria de sair desse estilo de vida sedentário para uma vida mais saudável. Busca um aplicativo que o auxilie nessa nova etapa de sua vida. |**Frustrações:** Trabalha quase o dia todo sentado. Depois de muitos anos dessa rotina, ele reparou que sua saúde não é mais a mesma, sobrepeso e alguns outros problemas de saúde.
   
-
+Persona | 4
+---|---
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743654/49e68b85-5a7e-4194-9e70-068e0545e273)
+| **Jeniffer**  
+**Idade:** 24 **Ocupação:** Fisioterapeuta **Hobbies:** Pilates|**Aplicativos:** Instagram, Netflix, WhatsApp  
+**Motivações:** Gostaria de melhorar a alimentação e emagrecer para se sentir bem. |**Frustrações:** Trabalha por conta própria, tem uma péssima alimentação e está acima do peso. Estava muito sobrecarregada com o próprio negócio pensando só na saúde das outras pessoas. Com o sobrepeso decidiu procurar uma nutricionista e ir na academia para ajudar nesse processo. A dificuldade é ter constância e ser organizada com os alimentos (se preparar antes, economiza tempo e fica mais fácil de alimentar). Péssimo habito não ter controle sobre os alimentos e come alimentos ultra processados, alimentos de fácil acesso e mais em conta.
 
-Jeniffer, tem 24 anos, é fisioterapeuta e trabalha por conta própria, tem uma péssima alimentação e está acima do peso. Estava muito sobrecarregada com o próprio negócio pensando só na saúde das outras pessoas. Com o sobrepeso decidiu procurar uma nutricionista e ir na academia para ajudar nesse processo. A dificuldade é ter constância e ser organizada com os alimentos (se preparar antes, economiza tempo e fica mais fácil de alimentar). Péssimo habito não ter controle sobre os alimentos e come alimentos ultra processados, alimentos de fácil acesso e mais em conta. Com a aplicação procura uma melhor organização na alimentação e emagrecer para se sentir bem.
-
+Persona | 5
+---|---
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/120505395/10cb048d-c214-4ce2-94e9-f91f91737834)
+| **José Carlos**  
+**Idade:** 37 **Ocupação:** Autônomo **Hobbies:** Andar de bicicleta e futebol.|**Aplicativos:** Instagram, Netflix, WhatsApp  
+**Motivações:** Tem vontade de buscar melhor qualidade de vida, pois a falta de tempo durante a semana trás com que se alimente incorretamente buscando opções fáceis como lanches e fastfoods.. |**Frustrações:**  Entende que precisa dedicar tempo em sua agenda para conseguir elaborar um cardápio e preparar as refeições, mas as demandas de trabalho estão cada vez maiores, sente-se preso a um looping.
 
-José Carlos
-
-Idade: 37 anos
-Ocupação: Autônomo
-Motivações: José tem vontade de buscar melhor qualidade de vida, pois a falta de tempo durante a semana trás com que se alimente incorretamente buscando opções fáceis como lanches e fastfoods.
-Frustrações: José entende que precisa dedicar tempo em sua agenda para conseguir elaborar um cardápio e preparar as refeições, mas as demandas de trabalho estão cada vez maiores, sente-se preso a um looping.
-
-Hobbies, história: Gosta de andar de bicicleta e futebol.
 
 ![WhatsApp-Image-2021-10-06-at-07 52 26](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/135378577/7176129c-d8a5-4b0a-8c68-17c5506565b9)
 
