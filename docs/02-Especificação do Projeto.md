@@ -12,15 +12,14 @@ Persona | 1
 ---|---
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144388125/10691c91-e3a8-4393-8f8e-e9af0ad2171e)| **Maria Alice**  
 **Idade:** 36 **Ocupação:** Policial **Hobbies:** Escalada|**Aplicativos:** Instagram, Apps bancários, Netflix, WhatsApp  
-**Motivações:** Gosta de se exercitar. Gostaria de melhorar seu condicionamento físíco e converter gordura em massa magra pois seu trabalho exige do seu condicionamento físico. Quer melhorar sua alimentação mas nunca teve tempo para se dedicar a isso.|**Frustrações:** Sofre com a rotina frenética e intensa que seu trabalho exige.
+**Motivações:** Gosta de se exercitar. Gostaria de melhorar seu condicionamento físíco e converter gordura em massa magra pois seu trabalho exige do seu condicionamento físico. Quer melhorar sua alimentação mas nunca teve tempo para se dedicar a isso.|**Frustrações:** Sofre com a rotina frenética e intensa que seu trabalho exige. Está buscando uma maneira fácil de controlar suas refeições.
 
-
-Maria Alice tem 36 anos, é policial e trabalha nas ruas. Pensa em melhorar seu condicionamento físíco em converter gordura em massa magra pois seu trabalho exige do seu condicionamento físico é solteira e sempre quis melhorar sua alimentação mas nunca teve tempo para se dedicar a isso. Está buscando uma maneira fácil de controlar suas refeições.
-
-![Sandra](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45)
-
-
-Sandra de 39 anos, mãe solteira de duas crianças que se desdobra para lidar com o trabalho e cuidar dos filhos teve uma notícia ruim, descobriu que está pré diabética e foi orientada por um profissional a mudar radicalmente sua dieta. Desesperada e sem muito tempo disponível em sua rotina procurou uma ferramenta que ajudasse com receitas e cuidados especiais para enfrentar esse obstáculo.  
+Persona | 2
+---|---
+![Sandra](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45)| **Sandra**  
+**Idade:** 39 **Ocupação:** Modelo Pus Size **Hobbies:** Aprender novas receitas|**Aplicativos:** Youtube, Netflix, WhatsApp  
+**Motivações:** Gosta de receitas saudáveis em especial na alimentação dos filhos.|**Frustrações:** se desdobra para lidar com o trabalho e cuidar dos filhos teve uma notícia ruim, descobriu que está pré diabética e foi orientada por um profissional a mudar radicalmente sua dieta.Desesperada e sem muito tempo disponível em sua rotina procura uma ferramenta que a ajude com receitas e cuidados especiais para enfrentar esse obstáculo.
+  
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/28922630-4a61-402e-a2d7-c3f485743a9d)
 
