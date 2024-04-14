@@ -19,11 +19,13 @@ Persona | 2
 ![Sandra](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45)| **Sandra**  
 **Idade:** 39 **Ocupação:** Modelo Pus Size **Hobbies:** Aprender novas receitas|**Aplicativos:** Youtube, Netflix, WhatsApp  
 **Motivações:** Gosta de receitas saudáveis em especial na alimentação dos filhos.|**Frustrações:** se desdobra para lidar com o trabalho e cuidar dos filhos teve uma notícia ruim, descobriu que está pré diabética e foi orientada por um profissional a mudar radicalmente sua dieta.Desesperada e sem muito tempo disponível em sua rotina procura uma ferramenta que a ajude com receitas e cuidados especiais para enfrentar esse obstáculo.
+
+Persona | 3
+---|---
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/28922630-4a61-402e-a2d7-c3f485743a9d)| **Felipe Silva**  
+**Idade:** 54 **Ocupação:** Bancário **Hobbies:** Aprender novas receitas|**Aplicativos:** Apps bancários, Netflix, WhatsApp  
+**Motivações:** Gostaria de sair desse estilo de vida sedentário para uma vida mais saudável. Busca um aplicativo que o auxilie nessa nova etapa de sua vida. |**Frustrações:** Trabalha quase o dia todo sentado. Depois de muitos anos dessa rotina, ele reparou que sua saúde não é mais a mesma, sobrepeso e alguns outros problemas de saúde.
   
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/28922630-4a61-402e-a2d7-c3f485743a9d)
-
-Felipe Silva tem 54 anos, bancário e trabalha quase o dia todo sentado. Depois de muitos anos dessa rotina, ele reparou que sua saúde não é mais a mesma, sobrepeso e alguns outros problemas de saúde o obrigaram a sair desse estilo de vida sedentário para uma vida mais saudável. Busca um aplicativo que o auxilie nessa nova etapa de sua vida.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743654/49e68b85-5a7e-4194-9e70-068e0545e273)
 
