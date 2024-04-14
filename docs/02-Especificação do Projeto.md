@@ -2,9 +2,8 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+A definição do problema a ser tratados neste projeto foi elaborado a partir de experiências pessoais, relacionadas ao assunto, compartilhada por alguns membros do grupo que utilizam aplicativos similares ou possuem pessoas próximas que tem dificuldade em realizar uma alimentação saudável. A partir desses relatos, foi possível deduzir alguns problemas dos usuários. O detalhamento do processo está organizado em personas e histórias de usuários.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
@@ -16,7 +15,7 @@ Persona | 1
 
 Persona | 2
 ---|---
-![Sandra](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45)| **Sandra**  
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45" width = "250" height = "200" />| **Sandra**  
 **Idade:** 39 **Ocupação:** Modelo Pus Size **Hobbies:** Aprender novas receitas|**Aplicativos:** Youtube, Netflix, WhatsApp  
 **Motivações:** Gosta de receitas saudáveis em especial na alimentação dos filhos.|**Frustrações:** se desdobra para lidar com o trabalho e cuidar dos filhos teve uma notícia ruim, descobriu que está pré diabética e foi orientada por um profissional a mudar radicalmente sua dieta.Desesperada e sem muito tempo disponível em sua rotina procura uma ferramenta que a ajude com receitas e cuidados especiais para enfrentar esse obstáculo.
 
