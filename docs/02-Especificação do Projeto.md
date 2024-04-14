@@ -15,20 +15,19 @@ Persona | 1
 
 Persona | 2
 ---|---
-<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45" width = "250" height = "200" />| **Sandra**  
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45" width = "250" height = "250" />| **Sandra**  
 **Idade:** 39 **Ocupação:** Modelo Pus Size **Hobbies:** Aprender novas receitas|**Aplicativos:** Youtube, Netflix, WhatsApp  
 **Motivações:** Gosta de receitas saudáveis em especial na alimentação dos filhos.|**Frustrações:** se desdobra para lidar com o trabalho e cuidar dos filhos teve uma notícia ruim, descobriu que está pré diabética e foi orientada por um profissional a mudar radicalmente sua dieta.Desesperada e sem muito tempo disponível em sua rotina procura uma ferramenta que a ajude com receitas e cuidados especiais para enfrentar esse obstáculo.
 
 Persona | 3
 ---|---
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/28922630-4a61-402e-a2d7-c3f485743a9d)| **Felipe Silva**  
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/28922630-4a61-402e-a2d7-c3f485743a9d" width = "250" height = "250" />| **Felipe Silva**  
 **Idade:** 54 **Ocupação:** Bancário **Hobbies:** Jogar tênis|**Aplicativos:** Apps bancários, Netflix, WhatsApp  
 **Motivações:** Gostaria de sair desse estilo de vida sedentário para uma vida mais saudável. Busca um aplicativo que o auxilie nessa nova etapa de sua vida. |**Frustrações:** Trabalha quase o dia todo sentado. Depois de muitos anos dessa rotina, ele reparou que sua saúde não é mais a mesma, sobrepeso e alguns outros problemas de saúde.
   
 Persona | 4
 ---|---
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743654/49e68b85-5a7e-4194-9e70-068e0545e273)
-| **Jeniffer**  
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743654/49e68b85-5a7e-4194-9e70-068e0545e273" width = "270" height = "250" />| **Jeniffer**  
 **Idade:** 24 **Ocupação:** Fisioterapeuta **Hobbies:** Pilates|**Aplicativos:** Instagram, Netflix, WhatsApp  
 **Motivações:** Gostaria de melhorar a alimentação e emagrecer para se sentir bem. |**Frustrações:** Trabalha por conta própria, tem uma péssima alimentação e está acima do peso. Estava muito sobrecarregada com o próprio negócio pensando só na saúde das outras pessoas. Com o sobrepeso decidiu procurar uma nutricionista e ir na academia para ajudar nesse processo. A dificuldade é ter constância e ser organizada com os alimentos (se preparar antes, economiza tempo e fica mais fácil de alimentar). Péssimo habito não ter controle sobre os alimentos e come alimentos ultra processados, alimentos de fácil acesso e mais em conta.
 
