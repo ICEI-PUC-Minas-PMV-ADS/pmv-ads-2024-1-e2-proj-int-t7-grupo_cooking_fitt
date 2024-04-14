@@ -8,6 +8,7 @@ A metodologia contempla as definições de ferramentas utilizadas pela equipe ta
 A ferramenta principal será Github, gestão e manutenção do código. O gerenciamentos de backlog do produto, e das sprints individualizadas será por meio do trello.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/144388125/ae1eb064-bed4-4e2d-b80c-42df17093608)
+Figura 1: Trello Cooking Fit
 
  O Projeto de interface e wireframes foi desenvolvido através na plataforma do Figma, criado de forma que qualquer alteração ou melhoria seja feita de forma centralizada.
 
@@ -41,12 +42,6 @@ etiquetas:
 
 Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
 
 ## Gerenciamento de Projeto
 
@@ -57,15 +52,24 @@ Apresente a divisão de papéis entre os membros do grupo.
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
 A equipe está organizada da seguinte maneira:
 
-* Scrum Master: Emilia
-* Product Owner: Joao Piazza
+* Scrum Master: Emilia Raphael dos Santos
+* Product Owner: João Victor Diniz Piazza
 * Equipe de Desenvolvimento
     * Pedro Henrique Ferreira Amorim
-    * Ariel Ortega
-    * 
+    * Ariel Ortega Acerbi
+    * Thiago Rodrigues Silva de Oliveira
+    * Vitor de Paula Andrade
+    * Emilia Raphael dos Santos
+    * João Victor Diniz Piazza
 * Equipe de Design
-    *
-    
+    * Emilia Raphael dos Santos
+    * Pedro Henrique Ferreira Amorim
+    * Ariel Ortega Acerbi
+    * Thiago Rodrigues Silva de Oliveira
+    * Vitor de Paula Andrade
+    * João Victor Diniz Piazza
+
+### Processo
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando Trello, estruturado com as seguintes listas: 
 
@@ -73,39 +77,24 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 * To Do: Esta lista representa o Sprint Backlog. 
 * Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá.
 * Done: Nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
-### Processo
-
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+As ferramentas aplicadas no projeto são:
 
-- **Editores de códigos**
-- [Github](https://github.com/): Ferramenta utilizada tanto como editor de código quanto como ferramenta de organização, serve como local síncrono de armazenamento e edição do repositório do projeto.
-- [Visual Studio](https://visualstudio.microsoft.com/pt-br/): Ambiente de desenvolvimento integrado para desenvolvimento, compilação e distribuição de códigos em C# com o framework .NET.
-  
-- **Ferramentas de comunicação**
-- [Microsoft Teams]: Ferramenta utilizada para realizar as reuniões de equipe, assim como as reuniões semanais em conjunto com a coordenadora do projeto.
-- [Microsoft Office]: Ferramenta utilizada em suas diversas funcionalidades. O Microsoft Word foi usado para a confecção da documentação do projeto, o Power Point foi a ferramenta escolhida para a apresentação da proposta de projeto. O próprio sistema Office serviu como local de compartilhamento de documentos.
-- [Trello]: Ferramenta utilizada para a organização e separação de tarefas no projeto.
-  
-- Ferramentas de desenho de tela (_wireframing_)
-- [Figma](https://www.figma.com/): Ferramenta utilizada na versão final do projeto de interface.
+a) Editor de código: 
+- _Visual Studio Code.
+- Possuem integração com o _Git_, sendo possível realizar commits do _GitHub_ para o Visual Studio Code_.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
+b) Ferramentas de Comunicação: 
+- _WhatsApp, Microsoft Teams_.
+- São ferramentas completas, fáceis e úteis para a gestão da equipe, viabilizando as chamadas de vídeo, de áudio e/ou por chat, seja pelo computador ou pelo celular_.
+
+c) Ferramentas para Criação de Diagramas: 
+- _Lucidchart_
+- Possui acesso gratuito e de fácil utilização, sendo possível elaborar diagramas conforme a necessidade do projeto, assim como editar colaborativamente.
+
+d) Ferramentas de Desenho de Tela (_Wireframing_): 
+- _Figma_
+- Possui acesso gratuito e de fácil utilização, sendo possível criar wireframes conforme a necessidade do projeto, assim como editar colaborativamente.
  
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
