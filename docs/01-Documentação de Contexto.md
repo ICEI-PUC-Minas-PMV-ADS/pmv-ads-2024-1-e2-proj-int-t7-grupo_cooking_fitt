@@ -4,9 +4,9 @@ No contexto altamente competitivo do mercado atual, as pessoas estão cada vez m
 
 O CookingFit vem para ajudar nessa 'mudança de chave'. Trata-se de um monitor de consumo de alimentos revolucionário, focado em registros simples, personalização poderosa e perspectivas avançadas. Coma, beba e se movimente com o seu novo companheiro.
 
-🤔 O QUE É O CookingFit?
+🤔 O QUE É O TôFit?
 
-O Nutrilio é o seu novo amigo, que lhe ajudará a focar em um estilo de vida e em opções alimentares saudáveis...
+O TôFit é o seu novo amigo, que lhe ajudará a focar em um estilo de vida e em opções alimentares saudáveis...
 
 ## Problema
 Conforme exposto, o problema que se busca resolver com este projeto é melhorar a má alimentação das pessoas. Muitas vezes essa má alimentação vem pela falta de tempo para preparar algo mais saudável, a necessidade de alimentos fabricados rapidamente (alimentos ultra processados, alimentos de fácil acesso e mais em conta) e a grande variedade de produtos pouco saudáveis (encontrado em qualquer lugar: incluindo supermercados, shopping centers, terminais rodoviários e outros).
