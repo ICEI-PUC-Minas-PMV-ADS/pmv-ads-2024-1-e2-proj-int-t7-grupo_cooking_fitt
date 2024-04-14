@@ -33,15 +33,13 @@ Persona | 4
 
 Persona | 5
 ---|---
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/120505395/10cb048d-c214-4ce2-94e9-f91f91737834)
-| **José Carlos**  
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/120505395/10cb048d-c214-4ce2-94e9-f91f91737834" width = "270" height = "200" />| **José Carlos**  
 **Idade:** 37 **Ocupação:** Autônomo **Hobbies:** Andar de bicicleta e futebol.|**Aplicativos:** Instagram, Netflix, WhatsApp  
 **Motivações:** Tem vontade de buscar melhor qualidade de vida, pois a falta de tempo durante a semana trás com que se alimente incorretamente buscando opções fáceis como lanches e fastfoods.. |**Frustrações:**  Entende que precisa dedicar tempo em sua agenda para conseguir elaborar um cardápio e preparar as refeições, mas as demandas de trabalho estão cada vez maiores, sente-se preso a um looping.
 
 Persona | 6
 ---|---
-![WhatsApp-Image-2021-10-06-at-07 52 26](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/135378577/7176129c-d8a5-4b0a-8c68-17c5506565b9)
-| **Rodrigo oliveira**  
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/135378577/7176129c-d8a5-4b0a-8c68-17c5506565b9" width = "200" height = "250" />| **Rodrigo oliveira**  
 **Idade:** 45 **Ocupação:** Servente de pedreiro **Hobbies:** Ver televisão.|**Aplicativos:** Star+, Netflix, WhatsApp  
 **Motivações:** Tem vontade de controlar sua alimentação diária assim como sua condição física de trabalho.|**Frustrações:**  Possui problema de pressão alta e início de diabete. O médico recomendou um controle alimentar além da medicação.
 
