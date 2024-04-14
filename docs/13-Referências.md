@@ -1,5 +1,5 @@
 # Referências
-Disponível em: https://www.correiodopovo.com.br/vivabem/saude/dificuldade-de-acesso-a-alimentos-saud%C3%A1veis-contribui-para-obesidade-1.705233     11/10/2021 | 11:54
+Correio do Povo. Dificuldade de acesso a alimentos saudáveis contribui para obesidade. Disponível em: https://www.correiodopovo.com.br/vivabem/saude/dificuldade-de-acesso-a-alimentos-saud%C3%A1veis-contribui-para-obesidade-1.705233 . Acesso em 27 mar 2024.
 
 Disponível em: https://eigierdiagnosticos.com.br/blog/quais-sao-dificuldades-adotar-dieta-saudavel/  
 
