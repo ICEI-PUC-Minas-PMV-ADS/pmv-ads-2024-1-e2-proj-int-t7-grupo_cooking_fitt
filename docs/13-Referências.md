@@ -5,10 +5,10 @@ Eigier Diagnóticos. _Quais são as dificuldades de adotar uma dieta saudável? 
 
 Minha vida. _6 maiores dificuldades para comer saudável (e como resolvê-las)_. Disponível em: https://www.minhavida.com.br/materias/materia-17862  Acesso em 02 abr 2024.
 
-Disponível em: ://www.minhavida.com.br/materias/materia-14985 lista de alimentos saudáveis.https://mundoeducacao.uol.com.br/saude-bem-estar/alimentacao-saudavel.htm
+Minha vida. _43 alimentos que você tem na despensa e que ajudam na dieta_. Disponível em: ://www.minhavida.com.br/materias/materia-14985 lista de alimentos saudáveis.https://mundoeducacao.uol.com.br/saude-bem-estar/alimentacao-saudavel.htm. Acesso em 02 abr 2024.
 
-Disponível em: https://www.negociossc.com.br/blog/os-maiores-desafios-para-a-alimentacao-saudavel-no-brasil/  28/11/2023
+Negócios SC. _Os maiores desafios para a alimentação saudável no Brasil_. Disponível em: https://www.negociossc.com.br/blog/os-maiores-desafios-para-a-alimentacao-saudavel-no-brasil/  Acesso em 02 abr 2024.
 
-Disponível em: https://www.em.com.br/app/noticia/ciencia/2019/08/03/interna_ciencia,1074509/os-obstaculos-para-uma-vida-mais-saudavel.shtml postado em 03/08/2019 04:07
+Estado de Minas. _Os obstáculos para uma vida mais saudável_. Disponível em: https://www.em.com.br/app/noticia/ciencia/2019/08/03/interna_ciencia,1074509/os-obstaculos-para-uma-vida-mais-saudavel.shtml. Acesso em 05 abr 2024.
 
-Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-brasil/publicacoes-para-promocao-a-saude/guia_alimentar_populacao_brasileira_2ed.pdf/view Atualizado em 29/07/2021 18h59
+Ministério da Saúde. _Guia Alimentar para a População Brasileira_. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-brasil/publicacoes-para-promocao-a-saude/guia_alimentar_populacao_brasileira_2ed.pdf/view. Acesso em 09 abr 2024.
