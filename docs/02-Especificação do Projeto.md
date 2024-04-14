@@ -19,7 +19,7 @@ Persona | 2
 ---|---
 <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45" width = "250" height = "250" />| **Sandra**  
 **Idade:** | **Ocupação:** | **Hobbies:** | **Aplicativos:**
- 39 | Modelo Pus Size | Aprender novas receitas| Youtube, Netflix, WhatsApp  
+ 39 | Modelo Plus Size | Aprender novas receitas| Youtube, Netflix, WhatsApp  
  **Motivações:** | **Frustrações:**
 Gosta de receitas saudáveis em especial na alimentação dos filhos.| Se desdobra para lidar com o trabalho e cuidar dos filhos teve uma notícia ruim, descobriu que está pré diabética e foi orientada por um profissional a mudar radicalmente sua dieta.Desesperada e sem muito tempo disponível em sua rotina procura uma ferramenta que a ajude com receitas e cuidados especiais para enfrentar esse obstáculo.
 
