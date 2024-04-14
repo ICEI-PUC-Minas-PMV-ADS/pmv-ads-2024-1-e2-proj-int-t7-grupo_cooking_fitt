@@ -5,8 +5,12 @@
 
 A metodologia contempla as definições de ferramentas utilizadas pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
-A ferramenta principal será Github, gestão e manutenção do código. O gerenciamentos de backlog do produto, e das sprints individualizadas será por meio do trello. O Projeto de interface e wireframes foi desenvolvido através na plataforma do Figma, criado de forma que qualquer alteração ou melhoria seja feita de forma centralizada.
+A ferramenta principal será Github, gestão e manutenção do código. O gerenciamentos de backlog do produto, e das sprints individualizadas será por meio do trello.
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/144388125/ae1eb064-bed4-4e2d-b80c-42df17093608)
+
+ O Projeto de interface e wireframes foi desenvolvido através na plataforma do Figma, criado de forma que qualquer alteração ou melhoria seja feita de forma centralizada.
+ 
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
