@@ -1,7 +1,14 @@
 # Referências
+https://www.correiodopovo.com.br/vivabem/saude/dificuldade-de-acesso-a-alimentos-saud%C3%A1veis-contribui-para-obesidade-1.705233     11/10/2021 | 11:54
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+https://eigierdiagnosticos.com.br/blog/quais-sao-dificuldades-adotar-dieta-saudavel/  
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+https://www.minhavida.com.br/materias/materia-17862  Publicado em 11 de outubro de 2018.
+
+https://www.minhavida.com.br/materias/materia-14985 lista de alimentos saudáveis.https://mundoeducacao.uol.com.br/saude-bem-estar/alimentacao-saudavel.htm
+
+https://www.negociossc.com.br/blog/os-maiores-desafios-para-a-alimentacao-saudavel-no-brasil/  28/11/2023
+
+https://www.em.com.br/app/noticia/ciencia/2019/08/03/interna_ciencia,1074509/os-obstaculos-para-uma-vida-mais-saudavel.shtml postado em 03/08/2019 04:07
+
+https://www.gov.br/saude/pt-br/assuntos/saude-brasil/publicacoes-para-promocao-a-saude/guia_alimentar_populacao_brasileira_2ed.pdf/view Atualizado em 29/07/2021 18h59
