@@ -109,12 +109,12 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 As tecnologias que serão ultilizadas são HTML5, CSS3 e JavaScript para o front-end, e C# e SQL server para back-end e banco de dados. As tecnologias foram escolhidas devido sua popularidade e sua versatilidade que permitem interações de usuário e de APIs externas.
 
 * Linguagens e frameworks utilizadas para desenvolver o projeto: HTML5, CSS3, JavaScript, C#, Bootstrap, Media Queries, .NET
-* IDEs de desenvolvimento: Visual Studio Code e Visual Studio
+* IDEs de desenvolvimento: Visual Studio Code
 * Plataforma para hospedagem do site: Heroku e GitPages
 * Plataforma para hospedagem dos arquivos: GitHub e Google Drive
 * Ferramenta de versionamento: Git e GitHub Desktop
-* Ferramenta para a criação de logo e imagens: Figma, llustrator, CorelDrav
-* Ferramenta para criação do template / wireframing: Figma e Adobe XD
+* Ferramenta para a criação de logo e imagens: Figma, Photoshop
+* Ferramenta para criação do template / wireframing: Figma 
 * Ferramenta para criação de diagramas e fluxos: Lucidchart e Visio
 * Banco de Dados: SQL Server
 
