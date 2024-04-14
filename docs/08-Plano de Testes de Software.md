@@ -8,7 +8,7 @@ Os requisitos para realização dos testes de software são:
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
  
-| **Caso de Teste** 	| **CT-01 – Gerenciar loguin** 	|
+| **Caso de Teste** 	| **CT-01 – Gerenciar login** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Permitir que os usuários criem contas utilizando o endereço de e-mail, CPF, endereço residencial, considerando métodos definidos RBAC e utilizando funções CRUD. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
