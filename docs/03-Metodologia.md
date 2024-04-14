@@ -10,6 +10,13 @@ A ferramenta principal será Github, gestão e manutenção do código. O gerenc
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/144388125/ae1eb064-bed4-4e2d-b80c-42df17093608)
 
  O Projeto de interface e wireframes foi desenvolvido através na plataforma do Figma, criado de forma que qualquer alteração ou melhoria seja feita de forma centralizada.
+
+ |AMBIENTE| PLATAFORMA | LINK DE ACESSO |
+|--------------------|------------------------------------|----------------------------------------|
+|Repositório de código fonte |GitHub |   <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/edit/main/docs/03-Metodologia.md#:~:text=src,75">    |
+|Documentos do projeto | GitHub | <a href="2-Especificação do Projeto.md">   |
+|Projeto de Interface e Wireframes | Figma | [https://www.figma.com/file/cdf24jSBZuTtU9shXfT7Bc/Cooking-fit?type=design&node-id=0-1&mode=design&t=FdKRslQn5BPh7g60-0](https://www.figma.com/file/cdf24jSBZuTtU9shXfT7Bc/Cooking-fit?type=design&node-id=0-1&mode=design&t=ZG8DjXKmlto8sGc7-0)  |
+|Gerenciamento do Projeto |Trello  | https://trello.com/b/Sei2Z5qd/cooking-fit  |
  
 ## Controle de Versão
 
