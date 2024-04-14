@@ -17,33 +17,43 @@ Persona | 1
 
 Persona | 2
 ---|---
-<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45" width = "250" height = "250" />          | **Sandra**  
-**Idade:** 39 **Ocupação:** Modelo Pus Size **Hobbies:** Aprender novas receitas|**Aplicativos:** Youtube, Netflix, WhatsApp  
-**Motivações:** Gosta de receitas saudáveis em especial na alimentação dos filhos.|**Frustrações:** se desdobra para lidar com o trabalho e cuidar dos filhos teve uma notícia ruim, descobriu que está pré diabética e foi orientada por um profissional a mudar radicalmente sua dieta.Desesperada e sem muito tempo disponível em sua rotina procura uma ferramenta que a ajude com receitas e cuidados especiais para enfrentar esse obstáculo.
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/85ef5f4e-b546-4a6c-bd65-e973a9176b45" width = "250" height = "250" />| **Sandra**  
+**Idade:** | **Ocupação:** | **Hobbies:** | **Aplicativos:**
+ 39 | Modelo Pus Size | Aprender novas receitas| Youtube, Netflix, WhatsApp  
+ **Motivações:** | **Frustrações:**
+Gosta de receitas saudáveis em especial na alimentação dos filhos.| Se desdobra para lidar com o trabalho e cuidar dos filhos teve uma notícia ruim, descobriu que está pré diabética e foi orientada por um profissional a mudar radicalmente sua dieta.Desesperada e sem muito tempo disponível em sua rotina procura uma ferramenta que a ajude com receitas e cuidados especiais para enfrentar esse obstáculo.
 
 Persona | 3
 ---|---
 <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743493/28922630-4a61-402e-a2d7-c3f485743a9d" width = "250" height = "250" />| **Felipe Silva**  
-**Idade:** 54 **Ocupação:** Bancário **Hobbies:** Jogar tênis|**Aplicativos:** Apps bancários, Netflix, WhatsApp  
-**Motivações:** Gostaria de sair desse estilo de vida sedentário para uma vida mais saudável. Busca um aplicativo que o auxilie nessa nova etapa de sua vida. |**Frustrações:** Trabalha quase o dia todo sentado. Depois de muitos anos dessa rotina, ele reparou que sua saúde não é mais a mesma, sobrepeso e alguns outros problemas de saúde.
+**Idade:** | **Ocupação:** | **Hobbies:** | **Aplicativos:**
+ 54 | Bancário | Jogar tênis| Apps bancários, Netflix, WhatsApp  
+ **Motivações:** | **Frustrações:**
+ Gostaria de sair desse estilo de vida sedentário para uma vida mais saudável. Busca um aplicativo que o auxilie nessa nova etapa de sua vida. | Trabalha quase o dia todo sentado. Depois de muitos anos dessa rotina, ele reparou que sua saúde não é mais a mesma, sobrepeso e alguns outros problemas de saúde.
   
 Persona | 4
 ---|---
 <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144743654/49e68b85-5a7e-4194-9e70-068e0545e273" width = "270" height = "250" />| **Jeniffer**  
-**Idade:** 24 **Ocupação:** Fisioterapeuta **Hobbies:** Pilates|**Aplicativos:** Instagram, Netflix, WhatsApp  
-**Motivações:** Gostaria de melhorar a alimentação e emagrecer para se sentir bem. |**Frustrações:** Trabalha por conta própria, tem uma péssima alimentação e está acima do peso. Estava muito sobrecarregada com o próprio negócio pensando só na saúde das outras pessoas. Com o sobrepeso decidiu procurar uma nutricionista e ir na academia para ajudar nesse processo. A dificuldade é ter constância e ser organizada com os alimentos (se preparar antes, economiza tempo e fica mais fácil de alimentar). Péssimo habito não ter controle sobre os alimentos e come alimentos ultra processados, alimentos de fácil acesso e mais em conta.
+**Idade:** | **Ocupação:** | **Hobbies:** | **Aplicativos:**
+24 | Fisioterapeuta | Pilates| Instagram, Netflix, WhatsApp  
+**Motivações:** | **Frustrações:**
+Gostaria de melhorar a alimentação e emagrecer para se sentir bem. | Trabalha por conta própria, tem uma péssima alimentação e está acima do peso. Estava muito sobrecarregada com o próprio negócio pensando só na saúde das outras pessoas. Com o sobrepeso decidiu procurar uma nutricionista e ir na academia para ajudar nesse processo. A dificuldade é ter constância e ser organizada com os alimentos (se preparar antes, economiza tempo e fica mais fácil de alimentar). Péssimo habito não ter controle sobre os alimentos e come alimentos ultra processados, alimentos de fácil acesso e mais em conta.
 
 Persona | 5
 ---|---
-<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/120505395/10cb048d-c214-4ce2-94e9-f91f91737834" width = "270" height = "200" />| **José Carlos**  
-**Idade:** 37 **Ocupação:** Autônomo **Hobbies:** Andar de bicicleta e futebol.|**Aplicativos:** Instagram, Netflix, WhatsApp  
-**Motivações:** Tem vontade de buscar melhor qualidade de vida, pois a falta de tempo durante a semana trás com que se alimente incorretamente buscando opções fáceis como lanches e fastfoods.. |**Frustrações:**  Entende que precisa dedicar tempo em sua agenda para conseguir elaborar um cardápio e preparar as refeições, mas as demandas de trabalho estão cada vez maiores, sente-se preso a um looping.
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/120505395/10cb048d-c214-4ce2-94e9-f91f91737834" width = "270" height = "200" />| **José Carlos** 
+**Idade:** | **Ocupação:** | **Hobbies:** | **Aplicativos:**
+37 | Autônomo | Andar de bicicleta e futebol.| Instagram, Netflix, WhatsApp 
+**Motivações:** | **Frustrações:**
+Tem vontade de buscar melhor qualidade de vida, pois a falta de tempo durante a semana trás com que se alimente incorretamente buscando opções fáceis como lanches e fastfoods. | Entende que precisa dedicar tempo em sua agenda para conseguir elaborar um cardápio e preparar as refeições, mas as demandas de trabalho estão cada vez maiores, sente-se preso a um looping.
 
 Persona | 6
 ---|---
 <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/135378577/7176129c-d8a5-4b0a-8c68-17c5506565b9" width = "200" height = "250" />| **Rodrigo oliveira**  
-**Idade:** 45 **Ocupação:** Servente de pedreiro **Hobbies:** Ver televisão.|**Aplicativos:** Star+, Netflix, WhatsApp  
-**Motivações:** Tem vontade de controlar sua alimentação diária assim como sua condição física de trabalho.|**Frustrações:**  Possui problema de pressão alta e início de diabete. O médico recomendou um controle alimentar além da medicação.
+**Idade:** | **Ocupação:** | **Hobbies:** | **Aplicativos:**
+45 | Servente de pedreiro | Ver televisão.| Star+, Netflix, WhatsApp  
+**Motivações:** | **Frustrações:**
+Tem vontade de controlar sua alimentação diária assim como sua condição física de trabalho.| Possui problema de pressão alta e início de diabete. O médico recomendou um controle alimentar além da medicação.
 
 ## Histórias de Usuários
 
