@@ -8,6 +8,12 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
+Persona | 1
+---|---
+<img src="img/personas/persona1.PNG" width="150" height="150" />| **Maria Alice**  
+**Idade:** 36 **Ocupação:** Policial **Hobbies:** Escalada|**Aplicativos:** Instagram, Apps bancários, Netflix, WhatsApp  
+**Motivações:** Gosta de se exercitar. Gostaria de melhorar seu condicionamento físíco e converter gordura em massa magra pois seu trabalho exige do seu condicionamento físico. Quer melhorar sua alimentação mas nunca teve tempo para se dedicar a isso.|**Frustrações:** Sofre com a rotina frenética e intensa que seu trabalho exige.
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t7-cooking_fit/assets/144388125/10691c91-e3a8-4393-8f8e-e9af0ad2171e)
 
 
