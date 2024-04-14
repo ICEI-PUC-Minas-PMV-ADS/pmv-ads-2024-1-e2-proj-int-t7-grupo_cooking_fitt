@@ -67,7 +67,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Felipe Silva | Controlar os horários de suas refeições  | para nao perder nenhuma refeição importante  |
 |Jeniffer | Ter constância e ser organizada com os alimentos |para melhor organização na alimentação e emagrecer para se sentir bem.
 |José Carlos  | Dedicar mais tempo a preparar refeições saudáveis | Buscar qualidade de vida, prevenir futuros problemas de saúde |
-|Rodrigo oliveira  | Melhorar e controlar as refeições  | Perde hábitos de má alimentação que prejudica sua saúde |
+|Rodrigo oliveira  | Melhorar e controlar as refeições  | Perder hábitos alimentares ruins que prejudicam a saúde |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
