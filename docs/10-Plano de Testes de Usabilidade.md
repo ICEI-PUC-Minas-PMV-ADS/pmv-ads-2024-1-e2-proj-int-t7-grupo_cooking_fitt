@@ -1,15 +1,61 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+ # Método Utilizado
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+O Teste será realizado  _In Person_, na presença de um observador integrante da equipe desse projeto e serão executados os métodos de Observação, Medição, Avaliação e Consolidação dos Dados.
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+Para cada tarefa executada pelo voluntário será possível medir:
+
+-	Concretização da tarefa;
+-	O total de erros cometidos;
+-	Quantos erros de cada tipo ocorreram;
+-	Quanto tempo foi necessário para concluir a tarefa;
+-	Qual o nível de dificuldade relatado pelo voluntário, sendo:
+
+  | **Escala** | **Classificação**    |
+|------------|----------------------|
+| 1          | Extremamente Difícil |
+| 2          | Muito Difícil        |
+| 3          | Moderado             |
+| 4          | Fácil                |
+| 5          | Muito Fácil          |
+
+-	Qual o nível de satisfação relatado pelo voluntário, sendo:
+
+| **Escala** | **Classificação**  |
+|------------|--------------------|
+| 1          | Muito Insatisfeito |
+| 2          | Insatisfeito       |
+| 3          | Neutro             |
+| 4          | Satisfeito         |
+| 5          | Muito Satisfeito   |
+
+  # Roteiro das Tarefas
+
+| **Tarefa 1** | **Critério de Êxito** | **O que será avaliado** |
+|--------------|--------------------|-------------------------|
+|Cadastro de novo usuário. | Concluir o cadastro, considerando a mensagem "Cadastro realizado com sucesso". | Concretização da tarefa. Quantidade e tipo de erros cometidos. |
+
+
+| **Tarefa 2** | **Critério de Êxito** | **O que será avaliado** |
+|--------------|-----------------------|-------------------------|
+|Logar no sistema. | Conseguir logar no sistema e ser encaminhado para a homepage,  conseguir vizualizar quatro opções: Gerenciar refeições, Consultar receitas, Exibir consumo calórico e Consultar dietas | Concretização da tarefa. Quantidade e tipo de erros cometidos. |
+
+
+| **Tarefa 3** | **Critério de Êxito** | **O que será avaliado** |
+|--------------|-----------------------|-------------------------|
+|Consultar por receitas. | Vizualizar uma lista de receitas sugeridas juntamente com uma barra de pesquisa. | Concretização da tarefa. Quantidade e tipo de erros cometidos. |
+
+
+| **Tarefa 4** | **Critério de Êxito** | **O que será avaliado** |
+|--------------|-----------------------|-------------------------|
+| Gerenciar Refeições.  | Conseguir vizualizar a página de cadastro de refeições com as seguintes opções: Carboidratos, Carnes e ovos, Frutas, Laticínios, Legumes e Verduras, Leguminosos e Óleos e Gorduras.  | Concretização da tarefa. Cadastro realizado com sucesso e quantidade e tipo de erros cometidos.   |
+
+
+| **Tarefa 5** | **Critério de Êxito** | **O que será avaliado**  |
+|--------------|-----------------------|--------------------------|
+| Exibir consumo calórico. | Encontrar o consumo calórico sugerido pela altura e peso do usuário. | Concretização da tarefa. Quantidade e tipo de erros cometidos. |
+
+
