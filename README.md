@@ -57,4 +57,4 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Apresentação da Solução
 
-<li><a href="../docs/12-Apresentação do Projeto.md"> Vídeo de Apresentação do projeto</a></li>
+<a href="../docs/12-Apresentação do Projeto.md"> Vídeo de Apresentação do projeto</a>
