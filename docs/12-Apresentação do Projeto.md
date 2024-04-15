@@ -9,7 +9,7 @@ Cooking Fit
 
 O grupo escolheu como identidade o assistente virtual da plataforma, TôFit. Ele foi elaborado para representar de forma lúdica uma humanização de um _bowl_ de salada que auxilia a navegação na plataforma e elaboração do cardápio.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/144388125/1ff56768-0e68-4f76-97e1-dd39de70f571)
+![salada 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/assets/144388125/196b73b3-c983-4675-b18e-7114d4f0ebef)
 
 Figura 1: TôFit
 
