@@ -1,0 +1,84 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.main {
+    background-color:aqua;
+}
+
+
+.menu-img {
+    background-color: #818C2A;
+    height: 80px
+}
+
+    .menu-img .img {
+        width: 10px;
+    }
+
+.body {
+    padding-top: 30px;
+}
+
+.div.buttonpouco {
+    position: center;
+}
+
+.buttonpouco {
+    position: relative;
+    padding-bottom: 1px;
+    padding-top: 30px;
+    padding-left: 200px
+}
+
+.buttonnormal {
+    position: relative;
+    padding-bottom: 1px;
+    padding-top: 30px;
+    padding-left: 200px
+}
+
+.buttonmuito {
+    position: relative;
+    padding-bottom: 1px;
+    padding-top: 30px;
+    padding-left: 200px
+}
+
+#pouco {
+    width: 260px;
+    height: 36px;
+    border-radius: 7.906px;
+    background-color: #D3D92B;
+    color: #395256;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#ativo {
+    width: 260px;
+    height: 36px;
+    border-radius: 7.906px;
+    background-color: #D3D92B;
+    color: #395256;
+    font-weight: bold;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#muito {
+    width: 260px;
+    height: 36px;
+    border-radius: 7.906px;
+    background-color: #D3D92B;
+    color: #395256;
+    font-weight: bold;
+    font-weight: bold;
+    font-size: 18px;
+}
