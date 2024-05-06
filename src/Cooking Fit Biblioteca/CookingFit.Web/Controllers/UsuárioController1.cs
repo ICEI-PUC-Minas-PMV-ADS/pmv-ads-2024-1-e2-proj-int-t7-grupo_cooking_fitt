@@ -22,5 +22,19 @@ namespace CookingFit.Web.Controllers
             return View();
 
         }
+
+        [HttpPost]
+        public IActionResult Create(Usuário model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+
+            }
+
+            oUsuárioServices.oRepositoryUsuário.Incluir(model);
+            return RedirectToAction("Index");
+
+        }
     }
 }
