@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CookingFitDATA.Models.Usuário>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Usuário</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Novo Usuário</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EMail)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EMail)
+            </td>
+
+            <td class="row col-md-4">
+                <a asp-action="Edit" class="btn btn-success m-1" asp-route-id="@item.IdUsuario">Alterar Cadastro</a> 
+                <a asp-action="Details" class="btn btn-primary m-1" asp-route-id="@item.IdUsuario">Detalhes da Conta</a>
+                <a asp-action="Delete" class="btn btn-danger m-1" asp-route-id="@item.IdUsuario">Excluir a conta</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

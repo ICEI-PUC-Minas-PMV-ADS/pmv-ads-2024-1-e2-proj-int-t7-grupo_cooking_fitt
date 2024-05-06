@@ -1,0 +1,62 @@
+﻿@model IEnumerable<CookingFitDATA.Models.Ingrediente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Ingredientes</h1>
+
+<p>
+    <a class="btn btn-primary m-1" asp-action="Create">Adicionar ingrediente</a>
+</p>
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calorias)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Peso)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calorias)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Unidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Peso)
+            </td>
+
+            <td>
+                <a asp-action="Edit" class="btn btn-success m-1" asp-route-id="@item.IdIngrediente">Selecionar</a>
+                <a asp-action="Delete" class="btn btn-danger m-1" asp-route-id="@item.IdIngrediente">Excluir ingrediente</a>
+  
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@section Scripts {
+
+    <script>
+        let table = new DataTable('#myTable');
+    </script>
+}
+

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CookingFit.Web",
+    "\\CookingFit.Web\\Controllers",
+    "\\CookingFit.Web\\Views",
+    "\\CookingFit.Web\\Views\\Home",
+    "\\CookingFit.Web\\Views\\UsuárioController1",
+    "\\CookingFitDATA",
+    "\\CookingFitDATA\\Interfaces",
+    "\\CookingFitDATA\\Repositories"
+  ],
+  "SelectedNode": "\\CookingFitDATA\\CookingFitDATA.sln",
+  "PreviewInSolutionExplorer": false
+}
