@@ -10899,11 +10899,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emili\\Desktop\\CookingFit-backend-branch\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+      "projectUniqueName": "C:\\Users\\emili\\Desktop\\Trabalho Coletivo CookingFit 9\\src\\CookingFit-backend\\CookingFit-backend.csproj",
       "projectName": "CookingFit-backend",
-      "projectPath": "C:\\Users\\emili\\Desktop\\CookingFit-backend-branch\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+      "projectPath": "C:\\Users\\emili\\Desktop\\Trabalho Coletivo CookingFit 9\\src\\CookingFit-backend\\CookingFit-backend.csproj",
       "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emili\\Desktop\\CookingFit-backend-branch\\src\\CookingFit-backend\\obj\\",
+      "outputPath": "C:\\Users\\emili\\Desktop\\Trabalho Coletivo CookingFit 9\\src\\CookingFit-backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
