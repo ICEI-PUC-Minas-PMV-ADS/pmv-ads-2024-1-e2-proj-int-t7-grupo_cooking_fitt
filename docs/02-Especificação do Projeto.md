@@ -1,6 +1,5 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
 A definição do problema a ser tratados neste projeto foi elaborado a partir de experiências pessoais, relacionadas ao assunto, compartilhada por alguns membros do grupo que utilizam aplicativos similares ou possuem pessoas próximas que tem dificuldade em realizar uma alimentação saudável. A partir desses relatos, foi possível deduzir alguns problemas dos usuários. O detalhamento do processo está organizado em personas e histórias de usuários.
 
