@@ -11,5 +11,7 @@ namespace CookingFit_backend.Models
 
         public DbSet<Cardapio> Cardapio { get; set; }
 
+        public DbSet<Informacao> InfoUser { get; set; }
+
     }
 }
