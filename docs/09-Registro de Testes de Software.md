@@ -79,7 +79,7 @@ Apresentamos nos tópicos abaixo os vídeos referentes aos registros de teste de
 ()
 
 ### 9.2.3 Vídeo 03 - Caso de Teste 03
-[CRUD Ingrediente](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EaYIK0400JJBrvZG3djFUQMB-_1FUnX2nokCQ4PgaQTVJw&e=kgSe9J)
+[CRUD Ingrediente](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EcchnVrjzRNOj2ojogqJXxwBt1EdzDh39DyQRt4ajOHD_Q&e=Jwb5s0)
 
 
 ### 9.2.4 Vídeo 04 - Caso de Teste 04
