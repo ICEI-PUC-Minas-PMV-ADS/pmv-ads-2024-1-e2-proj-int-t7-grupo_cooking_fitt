@@ -72,40 +72,40 @@ Apresentamos nos tópicos abaixo os vídeos referentes aos registros de teste de
 
 ### 9.2.1 Vídeo 01 - Caso de Teste 01
 []
-<>
+()
 
 ### 9.2.2 Vídeo 02 - Caso de Teste 02
 []
-<>
+()
 
 ### 9.2.3 Vídeo 03 - Caso de Teste 03
-[CRUD Ingrediente]
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/blob/main/Videos/Ingrediente%20CRUD.mp4
+[CRUD Ingrediente](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/blob/main/video/Ingrediente%20CRUD%205.mp4)
+
 
 ### 9.2.4 Vídeo 04 - Caso de Teste 04
 []
-<>
+()
 
 ### 9.2.5 Vídeo 05 - Caso de Teste 05
 []
-<>
+()
 
 ### 9.2.6 Vídeo 06 - Caso de Teste 06
 []
-<>
+()
 
 ### 9.2.7 Vídeo 07 - Caso de Teste 07
 []
-<>
+()
 
 ### 9.2.8 Vídeo 08 - Caso de Teste 08
 []
-<>
+()
 
 ### 9.2.9 Vídeo 09 - Caso de Teste 09
 []
-<>
+()
 
  ### 9.2.10 Vídeo 10 - Caso de Teste 10
 []
-<>
+()
