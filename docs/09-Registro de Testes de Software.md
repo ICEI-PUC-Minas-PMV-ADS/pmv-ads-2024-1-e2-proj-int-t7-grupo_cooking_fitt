@@ -17,7 +17,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 | **Caso de Teste** 	| **CT-03 – Exibir consumo calórico** 	|
 |:---:	|:---:	|
-|	RF-03	| Permitir que os usuários criem contas utilizando o endereço de e-mail, CPF, endereço residencial, considerando métodos definidos RBAC e utilizando funções CRUD. |
+|	RF-03	| Permitir que o usuário cadastre, visualize, edite e delete ingredientes com o respectivo número de calorias. |
 |Registro de evidência | www.teste.com.br/drive/ct-01 |
 
 | **Caso de Teste** 	| **CT-04 – Consultar receitas** 	|
