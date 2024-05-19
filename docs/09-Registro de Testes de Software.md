@@ -47,7 +47,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Caso de Teste 	| CT-07  – Gerenciar perfil	|
 |:---:	|:---:	|
 |Requisito Associado | RF-07 - Apresentar para cada usuário uma imagem de perfil correspondente ao usuário. (thumbnail). |
-| Objetivo do Teste 	| Verificar se o usuário consegue personalizar a foto de perfil. |
+| Objetivo do Teste 	| Verificar se o usuário consegue personalizar as informações de perfil. |
 |Resultado obtido | - Objetivo alcançado. Vídeo  |
 
 | Caso de Teste 	| CT-08  – Avaliar e Comentar receitas.	|
