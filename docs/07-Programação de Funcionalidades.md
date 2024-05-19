@@ -69,7 +69,13 @@ Quadro 8 - Programação das Funcionalidades
 
 | Artefatos da Funcionalidade                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                                              |
+|.../src/CookingFit-backend/Controllers/InformacoesController.cs           
+.../src/CookingFit-backend/Models/Informacao.cs 
+.../src/CookingFit-backend/Views/Informacao/Create.cshtml 
+.../src/CookingFit-backend/Views/Informacao/Delete.cshtml 
+.../src/CookingFit-backend/Views/Informacao/Details.cshtml 
+.../src/CookingFit-backend/Views/Informacao/Edit.cshtml 
+.../src/CookingFit-backend/Views/Informacao/Index.cshtml                                                                                                                                                                              |
 
 
 |ID     | Descrição do Requisito                                                                                                                                               |
