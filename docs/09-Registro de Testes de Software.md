@@ -98,8 +98,7 @@ Apresentamos nos tópicos abaixo os vídeos referentes aos registros de teste de
 [Informação do Usuário](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=Ea2K1zBigfdKrmzMTfKJUdABuWB6veBEVwIAwA3ZQzisiQ&e=cGjgxu)
 
 ### 9.2.8 Vídeo 08 - Caso de Teste 08
-[]
-()
+[Vídeo Editar Receitas](https://sgapucminasbr-my.sharepoint.com/personal/845198_sga_pucminas_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F845198%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FArquivos%20de%20Chat%20do%20Microsoft%20Teams%2FV%C3%ADdeo%20editar%20e%20apagar%20receitas%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E261949a0%2D0e93%2D4ccf%2D8991%2D5f82cfbe7992)
 
 ### 9.2.9 Vídeo 09 - Caso de Teste 09
 []
