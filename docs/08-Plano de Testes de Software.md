@@ -52,7 +52,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 | Caso de Teste 	| CT-08  – Avaliar e Comentar receitas.	|
 |:---:	|:---:	|
-|Requisito Associado | RF-08 - RF-008 Editar as receitas salvas no navegador atualizando no banco de dados. |
+|Requisito Associado |  RF-08 Editar as receitas salvas no navegador atualizando no banco de dados. |
 | Objetivo do Teste 	| Proporcionar que o usuário consiga  editar uma receita escolhida. |
 |Resultado obtido | - Objetivo alcançado. Vídeo 08 |
 
