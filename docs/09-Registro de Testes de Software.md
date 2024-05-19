@@ -95,8 +95,7 @@ Apresentamos nos tópicos abaixo os vídeos referentes aos registros de teste de
 ()
 
 ### 9.2.7 Vídeo 07 - Caso de Teste 07
-[]
-()
+[Informação do Usuário](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=Ea2K1zBigfdKrmzMTfKJUdABuWB6veBEVwIAwA3ZQzisiQ&e=cGjgxu)
 
 ### 9.2.8 Vídeo 08 - Caso de Teste 08
 []
