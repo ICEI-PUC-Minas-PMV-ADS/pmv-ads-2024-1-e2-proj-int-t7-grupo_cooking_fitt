@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zHpxflkS3Pbp9lcilkT4E+vL9i7Nt2Av2hAZrcQ5QzpT+wyZqQiBxmI1fhWe3x05njTVRZ0Un5V4aomVln1Vdg==",
+  "dgSpecHash": "9srUXMx63wDk0xkSgnIpfQ3JSVh6r0hhx6QXdRXDeKzfVhq0zlKmQdWBnjoJ7ijpmuTtRVqJmgmSubI/3DTjyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emili\\Desktop\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+  "projectFilePath": "C:\\Users\\emili\\Source\\Repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emili\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
