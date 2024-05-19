@@ -91,8 +91,8 @@ Apresentamos nos tópicos abaixo os vídeos referentes aos registros de teste de
 ()
 
 ### 9.2.6 Vídeo 06 - Caso de Teste 06
-[]
-()
+[Salvar Receitas](https://sgapucminasbr-my.sharepoint.com/personal/1497790_sga_pucminas_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F1497790%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FArquivos%20de%20Chat%20do%20Microsoft%20Teams%2FSalvar%20receitas%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5405913c%2D368b%2D4ba2%2D852a%2De8efb8c39146)
+
 
 ### 9.2.7 Vídeo 07 - Caso de Teste 07
 [Informação do Usuário](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=Ea2K1zBigfdKrmzMTfKJUdABuWB6veBEVwIAwA3ZQzisiQ&e=cGjgxu)
