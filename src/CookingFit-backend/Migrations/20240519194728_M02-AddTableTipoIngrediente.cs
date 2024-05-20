@@ -4,11 +4,10 @@
 
 namespace CookingFit_backend.Migrations
 {
-    public partial class TipoAlimento : Migration
+    public partial class M02AddTableTipoIngrediente : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
             migrationBuilder.CreateTable(
                 name: "TipoIngrediente",
                 columns: table => new
@@ -23,5 +22,10 @@ namespace CookingFit_backend.Migrations
                 });
         }
 
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "TipoIngrediente");
+        }
     }
 }

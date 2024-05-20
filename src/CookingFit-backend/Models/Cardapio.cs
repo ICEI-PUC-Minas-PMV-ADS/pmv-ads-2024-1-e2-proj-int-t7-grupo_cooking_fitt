@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CookingFit_backend.Models
 {
-    [Table("Cardápio")]
+    [Table("Cardapio")]
     public class Cardapio
     {
         [Key]
