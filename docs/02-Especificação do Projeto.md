@@ -83,9 +83,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| Cadastrar e exibir o quantitativo calórico | ALTA | 
 |RF-004| Disponibilizar aos usuários uma barra de pesquisa eficiente que permite aos usuários buscar receitas específicas por nome ou ingredientes. | ALTA |
 |RF-005| Consultar dietas, permitir ao usuário visualizar informações interativas sobre tipos de dietas e receitas alimentares, como ex: dieta cetogenica, jejum intermitente. | MÉDIA |
-|RF-006| Salvar as receitas pesquisadas e cardapios planejados, armazenando essas informações no armazenamento local do navegador.  | MÉDIA |
+|RF-006| Salvar as receitas armazenando essas informações no armazenamento local do navegador.  | MÉDIA |
 |RF-007| Apresentar para cada usuário uma imagem de perfil correspondente ao usuário.  (thumbnail).   | MÉDIA |
-|RF-008| Comentar e avaliar receitas.   | MÉDIA |
+|RF-008| Editar as receitas salvas no navegador atualizando no banco de dados.   | MÉDIA |
 |RF-009| Surgerir cardapio para o usuário, oferecendo uma alimentação controlada e saudável. | BAIXA |
 |RF-010| Personalizar planos alimentares com base nas preferências dietéticas, restrições alimentares e metas de saúde individuais dos usuários.   | BAIXA |
 

@@ -40,6 +40,7 @@ Quadro 8 - Programação das Funcionalidades
 |ID     | Descrição do Requisito                                                                                                                                               | 
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |RF-004| Disponibilizar aos usuários uma barra de pesquisa eficiente que permite aos usuários buscar receitas específicas por nome ou ingredientes.                            |
+
 | Artefatos da Funcionalidade                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                                                                                              |
@@ -56,7 +57,7 @@ Quadro 8 - Programação das Funcionalidades
 
 |ID     | Descrição do Requisito                                                                                                                                               |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|RF-006| Salvar as receitas pesquisadas e cardapios planejados, armazenando essas informações no armazenamento local do navegador.                                             |
+|RF-006| RF-006 Salvar as receitas armazenando essas informações no armazenamento local do navegador.                               |
 
 | Artefatos da Funcionalidade                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -65,7 +66,7 @@ Quadro 8 - Programação das Funcionalidades
 
 |ID     | Descrição do Requisito                                                                                                                                               | 
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|RF-007| Apresentar para cada usuário uma imagem de perfil correspondente ao usuário.  (thumbnail).                                                                            |
+|RF-007| RF-007 Adicionar informações de todos os usúarios cadastrados e armazenar no navegador.                                                                 |
 
 | Artefatos da Funcionalidade                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,7 +81,7 @@ Quadro 8 - Programação das Funcionalidades
 
 |ID     | Descrição do Requisito                                                                                                                                               |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|RF-008| Comentar e avaliar receitas.                                                                                                                                          |
+|RF-008| RF-008 RF-008 Editar as receitas salvas no navegador atualizando no banco de dados.                                                                                                                            |
 
 | Artefatos da Funcionalidade                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

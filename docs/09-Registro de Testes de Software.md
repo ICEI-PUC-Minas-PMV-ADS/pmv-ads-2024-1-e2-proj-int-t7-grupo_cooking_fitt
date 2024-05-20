@@ -91,15 +91,14 @@ Apresentamos nos tópicos abaixo os vídeos referentes aos registros de teste de
 ()
 
 ### 9.2.6 Vídeo 06 - Caso de Teste 06
-[]
-()
+[Salvar Receitas](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=ESvFuiL6sutNmvMkf1AB0WYBgGJqevJP3a6EfuOkGUeQ8w&e=cnMfUV)
+
 
 ### 9.2.7 Vídeo 07 - Caso de Teste 07
 [Informação do Usuário](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=Ea2K1zBigfdKrmzMTfKJUdABuWB6veBEVwIAwA3ZQzisiQ&e=cGjgxu)
 
 ### 9.2.8 Vídeo 08 - Caso de Teste 08
-[]
-()
+[Vídeo Editar Receitas](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EZlph11-_l1DkNpNByk4YrwBucqLqNxQvkafhJtdtiaKwg&e=f3AZov)
 
 ### 9.2.9 Vídeo 09 - Caso de Teste 09
 []

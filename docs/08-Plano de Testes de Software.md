@@ -40,21 +40,21 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 | Caso de Teste 	| CT-06  – Salvar receitas	|
 |:---:	|:---:	|
-|Requisito Associado | RF-06 - Salvar as receitas pesquisadas e cardapios planejados, armazenando essas informações no armazenamento local do navegador. |
+|Requisito Associado | RF-06 - Salvar as receitas armazenando essas informações no armazenamento local do navegador. |
 | Objetivo do Teste 	| Verificar se o usuário consegue salvar receitas. |
-|Resultado obtido | - Objetivo alcançado. Vídeo  |
+|Resultado obtido | - Objetivo alcançado. Vídeo 06  |
 
 | Caso de Teste 	| CT-07  – Gerenciar perfil	|
 |:---:	|:---:	|
-|Requisito Associado | RF-07 - Apresentar para cada usuário uma imagem de perfil correspondente ao usuário. (thumbnail). |
-| Objetivo do Teste 	| Verificar se o usuário consegue personalizar a foto de perfil. |
-|Resultado obtido | - Objetivo alcançado. Vídeo  |
+|Requisito Associado | RF-07 - RF-007 Adicionar informações de todos os usúarios cadastrados e armazenar no navegador. |
+| Objetivo do Teste 	| Verificar se o banco de dados consegue armazenar informações do usúario. |
+|Resultado obtido | - Objetivo alcançado. Vídeo 07  |
 
 | Caso de Teste 	| CT-08  – Avaliar e Comentar receitas.	|
 |:---:	|:---:	|
-|Requisito Associado | RF-08 - Comentar e avaliar receitas. |
-| Objetivo do Teste 	| Proporcionar que o usuário consiga  avaliar e comentar uma receita escolhida. |
-|Resultado obtido | - Objetivo alcançado. Vídeo  |
+|Requisito Associado |  RF-08 Editar as receitas salvas no navegador atualizando no banco de dados. |
+| Objetivo do Teste 	| Proporcionar que o usuário consiga  editar uma receita escolhida. |
+|Resultado obtido | - Objetivo alcançado. Vídeo 08 |
 
 | Caso de Teste 	| CT-09  – Sugerir Cardápio.	|
 |:---:	|:---:	|
