@@ -116,7 +116,7 @@ As tecnologias que serão ultilizadas são HTML5, CSS3 e JavaScript para o front
 * Ferramenta para a criação de logo e imagens: Figma, Photoshop
 * Ferramenta para criação do template / wireframing: Figma 
 * Ferramenta para criação de diagramas e fluxos: Lucidchart e Visio
-* Banco de Dados: SQL Server e Azure
+* Banco de Dados: SQL Server
 
 
 

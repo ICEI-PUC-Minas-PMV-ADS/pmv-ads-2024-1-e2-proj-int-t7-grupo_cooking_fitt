@@ -9,7 +9,7 @@ namespace CookingFit_backend.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório informar o Tipo!")]
+        [Required(ErrorMessage = "Obrigatório informar o Tipo! Ex.: Carboidratos, laticínios, etc.")]
         public string Tipo { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using CookingFit_backend.Models;
 
 namespace CookingFit_backend.Models
 {
@@ -9,11 +10,13 @@ namespace CookingFit_backend.Models
 
         public DbSet<Ingrediente> Ingrediente { get; set; }
 
-        public DbSet<TipoIngrediente> TipoIngrediente { get; set; }
-
         public DbSet<Cardapio> Cardapio { get; set; }
 
         public DbSet<Informacao> InfoUser { get; set; }
+
+        public DbSet<Comentario> Comentarios { get; set; }
+
+        public DbSet<Receitas> Receitas { get; set; }
 
     }
 }

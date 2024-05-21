@@ -1,0 +1,107 @@
+﻿@model CookingFit_backend.Models.Receitas
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes da Receita</h1>
+
+<div>
+    <h4>@Model.Nome</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Descrição
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Descriçao
+        </dd>
+        <dt class="col-sm-2">
+            Ativo
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Ativo
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <input type="hidden" id="IdReceita" name="IdReceita" value="@Model.IdReceita" />
+    <label for="comentario"><strong>Comentario:</strong></label>
+    <br>
+    <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+    <br>
+    <label for="nota"><strong>Nota:</strong></label>
+    <br>
+    <input type="number" id="nota" name="nota" />
+    <br>
+    <button class="btn btn-success" type="submit" id="enviarComentario">Enviar</button>
+    <br><br>
+    <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model.IdReceita">Editar</a> |
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+</div>
+
+ <h2>Comentários</h2>
+@if (Model.Comentarios != null && Model.Comentarios.Any())
+{
+    <ul>
+        @foreach (var comentario in Model.Comentarios)
+        {
+            <li>
+                <strong>Nota:</strong> @comentario.Nota<br />
+                <strong>Comentário:</strong> @comentario.Texto
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Não há comentários.</p>
+}
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('enviarComentario').addEventListener('click', function (event) {
+                event.preventDefault();
+                enviarComentario();
+            });
+        });
+
+        function enviarComentario() {
+            const comentario = document.getElementById('comentario').value;
+            const nota = document.getElementById('nota').value;
+            const idReceita = document.getElementById('IdReceita').value;
+
+            const url = '/api/Comentarios';
+
+            const dados = {
+                comentario: comentario,
+                nota: nota,
+                IdReceita: idReceita
+            };
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dados)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro ao enviar o comentário');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Comentário enviado com sucesso:', data);
+                    // Atualizar a lista de comentários na página, se necessário
+                    location.reload(); // recarregar a página para ver os novos comentários
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                });
+        }
+    </script>
+ }

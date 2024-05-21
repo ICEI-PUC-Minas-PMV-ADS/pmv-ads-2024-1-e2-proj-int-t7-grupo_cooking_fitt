@@ -43,7 +43,7 @@ namespace CookingFit_backend.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cardapio");
+                    b.ToTable("Cardápio");
                 });
 
             modelBuilder.Entity("CookingFit_backend.Models.Informacao", b =>
@@ -109,23 +109,6 @@ namespace CookingFit_backend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Ingrediente");
-                });
-
-            modelBuilder.Entity("CookingFit_backend.Models.TipoIngrediente", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Tipo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TipoIngrediente");
                 });
 #pragma warning restore 612, 618
         }

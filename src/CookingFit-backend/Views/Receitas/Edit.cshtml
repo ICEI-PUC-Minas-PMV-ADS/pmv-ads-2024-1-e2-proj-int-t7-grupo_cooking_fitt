@@ -1,0 +1,43 @@
+﻿@model CookingFit_backend.Models.Receitas
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Receitas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Nome" />
+            <div class="form-group">
+                <label asp-for="IdReceita" class="control-label" readonly></label>
+                <input asp-for="IdReceita" class="form-control" readonly />
+                <span asp-validation-for="IdReceita" class="text-danger" readonly></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descriçao" class="control-label"></label>
+                <input asp-for="Descriçao" class="form-control" />
+                <span asp-validation-for="Descriçao" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
