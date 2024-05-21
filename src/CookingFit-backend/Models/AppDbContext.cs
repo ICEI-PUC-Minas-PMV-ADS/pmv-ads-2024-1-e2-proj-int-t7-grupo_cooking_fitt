@@ -15,5 +15,6 @@ namespace CookingFit_backend.Models
 
         public DbSet<Informacao> InfoUser { get; set; }
 
+        public DbSet<Receita> Receitas{ get; set; }
     }
 }
