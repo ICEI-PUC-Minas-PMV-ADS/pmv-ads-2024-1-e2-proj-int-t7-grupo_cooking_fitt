@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\Nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|c:\\users\\tworey\\onedrive\\desktop\\nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\cookingfit-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|solutionrelative:cookingfit-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\Nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\appsettings.json",
+              "RelativeDocumentMoniker": "CookingFit-backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\Nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\appsettings.json",
+              "RelativeToolTip": "CookingFit-backend\\appsettings.json",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-19T22:16:09.265Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
