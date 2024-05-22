@@ -1,9 +1,11 @@
 ﻿using CookingFit_backend.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace CookingFit_backend.Controllers
 {
+    [Authorize]
     public class ReceitasController : Controller
     {
         private readonly AppDbContext _context;
