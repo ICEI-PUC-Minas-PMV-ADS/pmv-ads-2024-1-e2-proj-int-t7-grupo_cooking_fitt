@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L9DuQmcHO03jYqpeJkWBL8wL97v9wDT6U1K74LgGTNvlE+PX+RmoFqxedGJqis9cbH59p0xmzCUYnVJ2mNAYvg==",
+  "dgSpecHash": "fKe71vIhX19GbIcraPuTGa50QfGuv6+WbL+z4Wn2ByS308bh49XYnTN5qrdfdcYKpf3QTlxkZ17xpsverRN2eg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\Nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+  "projectFilePath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\GitTeste\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TwoRey\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\TwoRey\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -228,5 +228,12 @@
     "C:\\Users\\TwoRey\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
     "C:\\Users\\TwoRey\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\TwoRey\\OneDrive\\Desktop\\GitTeste\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

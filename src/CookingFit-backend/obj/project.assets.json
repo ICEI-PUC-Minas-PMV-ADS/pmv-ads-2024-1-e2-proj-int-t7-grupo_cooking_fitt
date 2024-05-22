@@ -10898,11 +10898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\Nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+      "projectUniqueName": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\GitTeste\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
       "projectName": "CookingFit-backend",
-      "projectPath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\Nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+      "projectPath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\GitTeste\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
       "packagesPath": "C:\\Users\\TwoRey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\Nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\obj\\",
+      "outputPath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\GitTeste\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TwoRey\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11003,5 +11003,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\TwoRey\\OneDrive\\Desktop\\GitTeste\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

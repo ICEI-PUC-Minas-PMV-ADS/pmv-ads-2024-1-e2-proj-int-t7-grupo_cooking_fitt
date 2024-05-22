@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CookingFit-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cf0468f140da7121673fc2ca547f1e96c53057c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87330350c7c0968ef89bb606fa37a134733d7f2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CookingFit-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CookingFit-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
