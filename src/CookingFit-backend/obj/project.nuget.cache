@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XRIM3JDhneB7LwSck1mR1qDASJzfm6OGzad0poBDcBcmc/ngQqDnNV7ZMQ5wgQdgaO/JNmGU6N6lbGEH9rVrZQ==",
+  "dgSpecHash": "Qm1IK1kBmvVFADYyrq/+mdiSOABSInJWczr9nqMe7StN7PmTl3zwQZN5WTJE9xlU/rBcCJRssyvP6jj0EzbS/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\Nova pasta\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+  "projectFilePath": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TwoRey\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\TwoRey\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

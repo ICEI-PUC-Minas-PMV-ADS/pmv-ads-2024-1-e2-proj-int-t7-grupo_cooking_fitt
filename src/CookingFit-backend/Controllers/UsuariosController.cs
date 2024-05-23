@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace CookingFit_backend.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    
     public class UsuariosController : Controller
     {
         private readonly AppDbContext _context;
