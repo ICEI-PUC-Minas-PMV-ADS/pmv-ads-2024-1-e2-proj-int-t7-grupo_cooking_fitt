@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CookingFit_backend.Models
@@ -10,6 +11,9 @@ namespace CookingFit_backend.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o Tipo!")]
-        public string Tipo { get; set; }
+        public string? Tipo { get; set; }
+
+        // Propriedade de navegação inversa
+        public ICollection<Ingrediente>? Ingredientes { get; set; }
     }
 }

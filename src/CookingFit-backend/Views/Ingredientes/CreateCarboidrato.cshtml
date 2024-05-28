@@ -1,0 +1,63 @@
+﻿@model CookingFit_backend.Models.Ingrediente
+
+@{
+    ViewData["Title"] = "Crriar Carboidrato";
+}
+
+<h1>Adicione um carboidrato</h1>
+
+<h4>Ingrediente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateCarboidrato" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calorias" class="control-label"></label>
+                <input type="hidden" asp-for="Calorias" />
+                <input class="form-control" value="150" readonly />
+                <span class="form-text text-muted">Cadastre o equivalente a 150Kcal</span>
+                <span asp-validation-for="Calorias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Unidade" class="control-label"></label>
+                <input asp-for="Unidade" class="form-control" />
+                <span asp-validation-for="Unidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label"></label>
+                <input asp-for="Peso" class="form-control" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <input asp-for="Tipo" asp-controller="TipoIngredientes" class="form-control" asp-items="ViewBag.Tipos" />
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" asp-controller="Ingredientes" asp-action="CreateCarboidrato" asp-route-tipo="List" asp-for="Tipo" value="Adicionar" class="btn btn-success" />
+            </div>
+            <div>
+                <a asp-action="List" asp-route-tipo="Carboidratos" class="btn btn-primary">Visualizar Carboidratos</a>
+                <br />
+                <br />
+                <p>
+                    <a asp-action="Index" class="btn btn-info">Voltar</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

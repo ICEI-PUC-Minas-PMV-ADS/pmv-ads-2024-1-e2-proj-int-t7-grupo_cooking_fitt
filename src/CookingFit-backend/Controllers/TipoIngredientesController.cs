@@ -26,7 +26,7 @@ namespace CookingFit_backend.Controllers
             ViewBag.Tipos = new List<SelectListItem>
             {
                 new SelectListItem { Value = "Carboidratos", Text = "Carboidratos" },
-                new SelectListItem { Value = "Carneseovos", Text = "Carnes e Ovos" },
+                new SelectListItem { Value = "Carnes e ovos", Text = "Carnes e ovos" },
                 new SelectListItem { Value = "Frutas", Text = "Frutas" },
                 new SelectListItem { Value = "Laticínios", Text = "Laticínios" },
                 new SelectListItem { Value = "Legumes e Verduras", Text = "Legumes e Verduras" },
@@ -52,17 +52,46 @@ namespace CookingFit_backend.Controllers
             ViewBag.Tipos = new List<SelectListItem>
             {
                 new SelectListItem { Value = "Carboidratos", Text = "Carboidratos" },
-                new SelectListItem { Value = "Carneseovos", Text = "Carnes e Ovos" },
+                new SelectListItem { Value = "Carnes e ovos", Text = "Carnes e ovos" },
                 new SelectListItem { Value = "Frutas", Text = "Frutas" },
                 new SelectListItem { Value = "Laticínios", Text = "Laticínios" },
-                new SelectListItem { Value = "Legumeseverduras", Text = "Legumes e Verduras" },
+                new SelectListItem { Value = "Legumes e verduras", Text = "Legumes e Verduras" },
                 new SelectListItem { Value = "Leguminosas", Text = "Leguminosas" },
-                new SelectListItem { Value = "Óleosegorduras", Text = "Óleos e Gorduras" },
+                new SelectListItem { Value = "Óleos e gorduras", Text = "Óleos e Gorduras" },
                 // Adicione mais tipos conforme necessário
             };
             return View(tipoingrediente);
         }
 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var dados = await _context.TipoIngrediente.FindAsync(id);
+
+            if (dados == null)
+                return NotFound();
+
+            return View(dados);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var dados = await _context.TipoIngrediente.FindAsync(id);
+
+            if (dados == null)
+                return NotFound();
+
+            _context.TipoIngrediente.Remove(dados);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
 
     }
 }

@@ -6,29 +6,73 @@
 
 <h2>Selecione o grupo</h2>
 
-<p>
-    <a asp-action="Create" class="btn btn-success">Selecionar</a>
-</p>
 <table class="table">
     <thead>
         <tr>
+            <th>Tipo</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tipo)
-            </td>
-            <td>
-                <a asp-action="Create" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tipo)
+                </td>
+                <td>
+                    <p>
+                        <!-- Botão para adicionar novo ingrediente -->
+                        @if (item.Tipo == "Carboidratos")
+                        {
+                            <a asp-controller="Ingredientes" asp-action="CreateCarboidrato" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente de Carboidrato</a>
+                        }
+                        else if (item.Tipo == "Carnes e ovos")
+                        {
+                            <a asp-controller="Ingredientes" asp-action="CreateCarneseOvos" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente de Carne e Ovos</a>
+                        }
+                        else if (item.Tipo == "Frutas")
+                        {
+                            <a asp-controller="Ingredientes" asp-action="CreateFrutas" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente de Frutas</a>
+                        }
+                        else if (item.Tipo == "Laticínios")
+                        {
+                            <a asp-controller="Ingredientes" asp-action="CreateLaticinio" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente de Laticínio</a>
+                        }
+                        else if (item.Tipo == "Legumes e Verduras")
+                        {
+                            <a asp-controller="Ingredientes" asp-action="CreateLegumeseVerduras" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente de Legumes e Verduras</a>
+                        }
+                        else if (item.Tipo == "Leguminosas")
+                        {
+                            <a asp-controller="Ingredientes" asp-action="CreateLeguminosas" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente de Leguminosas</a>
+                        }
+                        else if (item.Tipo == "Óleos e Gorduras")
+                        {
+                            <a asp-controller="Ingredientes" asp-action="CreateOleoseGorduras" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente de Óleos e Gorduras</a>
+                        }
+
+                        <!-- Botão para visualizar ingrediente -->
+                        <a asp-controller="Ingredientes" asp-action="List" asp-route-tipo="@item.Tipo" class="btn btn-primary">Visualizar @item.Tipo</a>
+                    </p>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
 
+<p>
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+</p>
 
+
+<p>
+    @*
+    <a asp-action="Create" class="btn btn-success">Adicionar</a> |
+    <a class="btn btn-danger" asp-action="Delete">Apagar</a>
+    *@
+</p>
+
+<p>
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+</p>

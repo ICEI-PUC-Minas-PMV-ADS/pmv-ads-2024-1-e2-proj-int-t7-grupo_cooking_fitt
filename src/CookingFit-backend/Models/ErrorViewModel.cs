@@ -1,4 +1,5 @@
 namespace CookingFit_backend.Models
+#nullable enable
 {
     public class ErrorViewModel
     {

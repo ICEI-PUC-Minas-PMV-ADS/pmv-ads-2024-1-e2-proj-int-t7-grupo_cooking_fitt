@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emili\\Source\\Repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj": {}
+    "C:\\Users\\emili\\source\\repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emili\\Source\\Repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj": {
+    "C:\\Users\\emili\\source\\repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emili\\Source\\Repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+        "projectUniqueName": "C:\\Users\\emili\\source\\repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj",
         "projectName": "CookingFit-backend",
-        "projectPath": "C:\\Users\\emili\\Source\\Repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+        "projectPath": "C:\\Users\\emili\\source\\repos\\Trabalhoweb\\src\\CookingFit-backend\\CookingFit-backend.csproj",
         "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emili\\Source\\Repos\\Trabalhoweb\\src\\CookingFit-backend\\obj\\",
+        "outputPath": "C:\\Users\\emili\\source\\repos\\Trabalhoweb\\src\\CookingFit-backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[6.0.29, )"
@@ -54,6 +58,10 @@
               "version": "[6.0.29, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.29, )"
             },

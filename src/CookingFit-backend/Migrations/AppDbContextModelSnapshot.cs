@@ -102,11 +102,20 @@ namespace CookingFit_backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TipoIngredienteId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Unidade")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TipoIngredienteId");
 
                     b.ToTable("Ingrediente");
                 });
@@ -126,6 +135,22 @@ namespace CookingFit_backend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TipoIngrediente");
+                });
+
+            modelBuilder.Entity("CookingFit_backend.Models.Ingrediente", b =>
+                {
+                    b.HasOne("CookingFit_backend.Models.TipoIngrediente", "TipoIngrediente")
+                        .WithMany("Ingredientes")
+                        .HasForeignKey("TipoIngredienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TipoIngrediente");
+                });
+
+            modelBuilder.Entity("CookingFit_backend.Models.TipoIngrediente", b =>
+                {
+                    b.Navigation("Ingredientes");
                 });
 #pragma warning restore 612, 618
         }

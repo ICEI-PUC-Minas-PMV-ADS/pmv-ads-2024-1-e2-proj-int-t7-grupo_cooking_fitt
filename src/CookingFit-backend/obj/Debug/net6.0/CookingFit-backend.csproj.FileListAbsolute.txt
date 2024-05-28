@@ -2157,9 +2157,9 @@ C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\scopedcss\bundle\CookingFit-backend.styles.css
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\scopedcss\projectbundle\CookingFit-backend.bundle.scp.css
-C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.csproj.CopyComplete
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.dll
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\refint\CookingFit-backend.dll
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.pdb
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.genruntimeconfig.cache
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\ref\CookingFit-backend.dll
+C:\Users\emili\source\repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.csproj.CopyComplete
