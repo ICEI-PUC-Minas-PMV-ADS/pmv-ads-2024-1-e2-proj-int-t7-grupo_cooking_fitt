@@ -17,8 +17,10 @@ namespace CookingFit_backend.Models
                 .HasOne(i => i.TipoIngrediente)
                 .WithMany(t => t.Ingredientes)
                 .HasForeignKey(i => i.TipoIngredienteId);
-
-            base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<Receita> Receitas{ get; set; }
+
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }

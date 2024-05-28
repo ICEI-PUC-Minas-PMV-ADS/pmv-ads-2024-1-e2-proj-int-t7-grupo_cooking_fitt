@@ -3,10 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Xml.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace CookingFit_backend.Controllers
 {
+    [Authorize]
     public class TipoIngredientesController : Controller
     {
         private readonly AppDbContext _context;

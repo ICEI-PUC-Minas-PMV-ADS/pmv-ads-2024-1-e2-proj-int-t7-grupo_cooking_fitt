@@ -2,6 +2,8 @@
 using CookingFit_backend.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CookingFit_backend.Controllers
 {
@@ -18,24 +20,6 @@ namespace CookingFit_backend.Controllers
         {
             var dados = await _context.Ingrediente.Include(i => i.TipoIngrediente).ToListAsync();
             return View(dados);
-        }
-
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Create(Ingrediente ingrediente)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(ingrediente);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
-
-            return View();
         }
 
         public async Task<IActionResult> Edit(int? id)
@@ -119,8 +103,8 @@ namespace CookingFit_backend.Controllers
 
         public IActionResult CreateCarboidrato()
         {
-            var ingrediente = new Ingrediente { Calorias = 150, TipoIngrediente = new TipoIngrediente { Tipo = "Carboidratos" } };
-            return View("Views_Ingredientes_ListGeneric");
+            var ingrediente = new Ingrediente { Calorias = 150, Tipo = "Carboidratos" };
+            return View(ingrediente);
         }
 
         [HttpPost]
@@ -129,67 +113,21 @@ namespace CookingFit_backend.Controllers
         {
             ingrediente.Calorias = 150;
 
-            var tipoIngrediente = await _context.TipoIngrediente.FirstOrDefaultAsync(t => t.Tipo == "Carboidratos");
-            if (tipoIngrediente == null)
-            {
-                tipoIngrediente = new TipoIngrediente { Tipo = "Carboidratos" };
-                _context.TipoIngrediente.Add(tipoIngrediente);
-                await _context.SaveChangesAsync();
-            }
-            ingrediente.TipoIngrediente = tipoIngrediente;
-
             if (ModelState.IsValid)
             {
                 _context.Add(ingrediente);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(AspNetCore.Views_Ingredientes_ListGeneric));
+                return RedirectToAction(nameof(Index));
             }
 
+            // Log the errors
             foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
             {
                 System.Diagnostics.Debug.WriteLine("Error: " + error.ErrorMessage);
             }
 
-            return RedirectToAction("ListGeneric");
+            return View(ingrediente);
         }
-
-
-        public IActionResult CreateFrutas()
-        {
-            var ingrediente = new Ingrediente { Calorias = 70, TipoIngrediente = new TipoIngrediente { Tipo = "Frutas" } };
-            return View("Views_Ingredientes_ListGeneric");
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateFrutas(Ingrediente ingrediente)
-        {
-            ingrediente.Calorias = 70;
-
-            var tipoIngrediente = await _context.TipoIngrediente.FirstOrDefaultAsync(t => t.Tipo == "Frutas");
-            if (tipoIngrediente == null)
-            {
-                tipoIngrediente = new TipoIngrediente { Tipo = "Frutas" };
-                _context.TipoIngrediente.Add(tipoIngrediente);
-                await _context.SaveChangesAsync();
-            }
-            ingrediente.TipoIngrediente = tipoIngrediente;
-
-            if (ModelState.IsValid)
-            {
-                _context.Add(ingrediente);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(AspNetCore.Views_Ingredientes_ListGeneric));
-            }
-
-            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-            {
-                System.Diagnostics.Debug.WriteLine("Error: " + error.ErrorMessage);
-            }
-
-            return RedirectToAction("ListGeneric");
-        }
-
 
         public async Task<IActionResult> List(string tipo)
         {
