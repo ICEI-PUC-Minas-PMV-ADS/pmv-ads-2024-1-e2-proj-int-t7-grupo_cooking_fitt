@@ -2163,3 +2163,16 @@ C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.genruntimeconfig.cache
 C:\Users\emili\Source\Repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\ref\CookingFit-backend.dll
 C:\Users\emili\source\repos\Trabalhoweb\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.csproj.CopyComplete
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.csproj.AssemblyReference.cache
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.AssemblyInfoInputs.cache
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.AssemblyInfo.cs
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.csproj.CoreCompileInputs.cache
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.RazorAssemblyInfo.cache
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.RazorAssemblyInfo.cs
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.sourcelink.json
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.dll
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\refint\CookingFit-backend.dll
+C:\Users\TwoRey\OneDrive\Documentos\projeto Facu\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\src\CookingFit-backend\obj\Debug\net6.0\CookingFit-backend.pdb
