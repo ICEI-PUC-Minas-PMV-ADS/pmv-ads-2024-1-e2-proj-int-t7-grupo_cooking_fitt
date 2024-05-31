@@ -4,11 +4,8 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Lista de Ingredientes</h1>
+<h2>Listagem geral</h2>
 
-<p>
-    <a asp-action="Create" class="btn btn-success">Adicionar novo ingrediente</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -28,26 +25,47 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Calorias)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Unidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Peso)
-            </td>
-            <td>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Calorias)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Unidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Peso)
+                </td>
+                <td>
                     <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
                     <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
-            </td>
-        </tr>
-}
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<p>
+    <a class="btn btn-success" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="8">Visualizar Carboidratos</a>
+
+
+    <a class="btn btn-success" asp-action="ListCarneseOvos" asp-route-tipo="9">Visualizar Carnes e Ovos</a> |
+
+    <a class="btn btn-success" asp-action="ListFrutas" asp-route-tipo="10">Visualizar Frutas</a> |
+
+    <a class="btn btn-success" asp-action="ListLaticinio" asp-route-tipo="11">Visualizar Laticínios</a> |
+
+    <a class="btn btn-success" asp-action="ListLegumeseVerduras" asp-route-tipo="13">Visualizar Legumes e Verduras</a> |
+
+    <a class="btn btn-success" asp-action="ListLeguminosas" asp-route-tipo="14">Visualizar Leguminosas</a> |
+
+    <a class="btn btn-success" asp-action="ListOleoseGorduras" asp-route-tipo="15">Visualizar Óleos e Gorduras</a>
+    <br />
+
+    <a class="btn btn-info" asp-controller="TipoIngredientes" asp-action="Index" class="btn btn-info">Voltar</a>
+</p>
+

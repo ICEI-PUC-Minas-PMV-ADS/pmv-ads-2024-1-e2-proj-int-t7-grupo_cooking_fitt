@@ -24,11 +24,13 @@
         </form>
     </div>
 </div>
-<br/>
+<br />
 <div>
     <a asp-action="Index" class="btn btn-info">Voltar</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

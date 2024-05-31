@@ -18,5 +18,12 @@ namespace CookingFit_backend.Models
         public DbSet<Receita> Receitas{ get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Ingrediente>()
+                .HasOne(i => i.TipoIngrediente)
+                .WithMany(t => t.Ingrediente)
+                .HasForeignKey(i => i.TipoIngredienteId);
+        }
     }
 }
