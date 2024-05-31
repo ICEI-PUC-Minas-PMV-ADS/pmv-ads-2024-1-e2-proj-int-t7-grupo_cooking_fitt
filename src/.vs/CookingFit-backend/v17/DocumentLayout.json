@@ -7,24 +7,12 @@
       "RelativeMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|solutionrelative:cookingfit-backend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|c:\\users\\tworey\\onedrive\\desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\cookingfit-backend\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|solutionrelative:cookingfit-backend\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|c:\\users\\tworey\\onedrive\\desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\cookingfit-backend\\controllers\\tipoingredientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|solutionrelative:cookingfit-backend\\controllers\\tipoingredientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|c:\\users\\tworey\\onedrive\\desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\cookingfit-backend\\controllers\\receitascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|solutionrelative:cookingfit-backend\\controllers\\receitascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|c:\\users\\tworey\\onedrive\\desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\cookingfit-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|solutionrelative:cookingfit-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|c:\\users\\tworey\\onedrive\\desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\cookingfit-backend\\controllers\\ingredientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|solutionrelative:cookingfit-backend\\controllers\\ingredientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|c:\\users\\tworey\\onedrive\\desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\cookingfit-backend\\controllers\\informacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|solutionrelative:cookingfit-backend\\controllers\\informacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1ECBCD6B-0EB4-450C-BB00-FE7D396C25B6}|CookingFit-backend\\CookingFit-backend.csproj|c:\\users\\tworey\\onedrive\\desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\cookingfit-backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,7 +36,7 @@
         },
         {
           "DockedWidth": 1064,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,88 +48,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\appsettings.json",
+              "RelativeDocumentMoniker": "CookingFit-backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\appsettings.json",
+              "RelativeToolTip": "CookingFit-backend\\appsettings.json",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAQwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-24T00:59:47.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CookingFit-backend\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CookingFit-backend\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T18:32:48.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IngredientesController.cs",
+              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\IngredientesController.cs",
+              "RelativeDocumentMoniker": "CookingFit-backend\\Controllers\\IngredientesController.cs",
+              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\IngredientesController.cs",
+              "RelativeToolTip": "CookingFit-backend\\Controllers\\IngredientesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T18:33:37.48Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CookingFit-backend\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CookingFit-backend\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABYAAAAAAAAAAAAUwCQAAAB+AAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAUwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-23T18:51:38.723Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IngredientesController.cs",
-              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\IngredientesController.cs",
-              "RelativeDocumentMoniker": "CookingFit-backend\\Controllers\\IngredientesController.cs",
-              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\IngredientesController.cs",
-              "RelativeToolTip": "CookingFit-backend\\Controllers\\IngredientesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:33:37.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReceitasController.cs",
-              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\ReceitasController.cs",
-              "RelativeDocumentMoniker": "CookingFit-backend\\Controllers\\ReceitasController.cs",
-              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\ReceitasController.cs",
-              "RelativeToolTip": "CookingFit-backend\\Controllers\\ReceitasController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:33:40.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TipoIngredientesController.cs",
-              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\TipoIngredientesController.cs",
-              "RelativeDocumentMoniker": "CookingFit-backend\\Controllers\\TipoIngredientesController.cs",
-              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\TipoIngredientesController.cs",
-              "RelativeToolTip": "CookingFit-backend\\Controllers\\TipoIngredientesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:33:44.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "CookingFit-backend\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "CookingFit-backend\\Controllers\\UsuariosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:27:11.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InformacoesController.cs",
-              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\InformacoesController.cs",
-              "RelativeDocumentMoniker": "CookingFit-backend\\Controllers\\InformacoesController.cs",
-              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\InformacoesController.cs",
-              "RelativeToolTip": "CookingFit-backend\\Controllers\\InformacoesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:33:33.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "CookingFit-backend\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\TwoRey\\OneDrive\\Desktop\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "CookingFit-backend\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:32:48.838Z"
             }
           ]
         },
