@@ -24,6 +24,7 @@ namespace CookingFit_backend.Models
         public int Calorias { get; set; }
 
         // Definindo a chave estrangeira
+        [ForeignKey("TipoIngrediente")]
         public int TipoIngredienteId { get; set; }
 
         // Propriedade de navegação para a relação

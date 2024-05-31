@@ -14,6 +14,6 @@ namespace CookingFit_backend.Models
         public string? Tipo { get; set; }
 
         // Propriedade de navegação inversa
-        public ICollection<Ingrediente>? Ingredientes { get; set; }
+        public ICollection<Ingrediente>? Ingrediente { get; set; }
     }
 }

@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CookingFit_backend.Controllers
 
-{
-    [Authorize]
+{/*
+    [Authorize]*/
     public class InformacoesController : Controller
     {
         private readonly AppDbContext _context;
@@ -70,15 +70,15 @@ namespace CookingFit_backend.Controllers
             return View();
 
         }
-            public async Task<IActionResult> Details(int? id)
-            {
-                if (id == null)
-                    return NotFound();
-                var dados = await _context.InfoUser.FindAsync(id);
-                if (dados == null)
-                    return NotFound();
-                return View(dados);
-            }
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+            var dados = await _context.InfoUser.FindAsync(id);
+            if (dados == null)
+                return NotFound();
+            return View(dados);
+        }
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -104,5 +104,5 @@ namespace CookingFit_backend.Controllers
         }
     }
 
-    }
+}
 

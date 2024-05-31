@@ -36,26 +36,31 @@ body {
 .btn-success {
     background-color: rgb(42,101,52);
     border-color: rgb(42,101,52);
+    margin-top: 12px;
 }
 
 .btn-warning {
     background-color: #F2EA79;
     border-color: #F2EA79;
+    margin-top: 12px;
 }
 
 .btn-primary {
     background-color: #A67665;
     border-color: #A67665;
+    margin-top:12px;
 }
 
 .btn-danger {
     background-color: #A60311;
     border-color: #A60311;
+    margin-top: 12px;
 }
 
 .btn-info {
     background-color: #8090A6;
     border-color: #8090A6;
+    margin-top: 12px;
 }
 
 custom-header {

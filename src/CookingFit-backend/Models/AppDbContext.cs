@@ -15,7 +15,7 @@ namespace CookingFit_backend.Models
         {
             modelBuilder.Entity<Ingrediente>()
                 .HasOne(i => i.TipoIngrediente)
-                .WithMany(t => t.Ingredientes)
+                .WithMany(t => t.Ingrediente)
                 .HasForeignKey(i => i.TipoIngredienteId);
         }
 

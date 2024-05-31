@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CookingFit_backend.Controllers
 {
-    [Authorize]
+/*    [Authorize]*/
     public class ReceitasController : Controller
     {
         private readonly AppDbContext _context;

@@ -1,9 +1,9 @@
-﻿using AspNetCore;
-using CookingFit_backend.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using CookingFit_backend.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CookingFit_backend.Controllers
 {
@@ -101,35 +101,111 @@ namespace CookingFit_backend.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult CreateCarboidrato()
+        public IActionResult Create()
         {
-            var ingrediente = new Ingrediente { Calorias = 150, Tipo = "Carboidratos" };
-            return View(ingrediente);
+            // Definir a lista suspensa com os tipos de ingredientes e seus IDs correspondentes
+            var tiposDeIngredientes = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "8", Text = "Carboidratos" },
+                new SelectListItem { Value = "9", Text = "Carnes e ovos" },
+                new SelectListItem { Value = "10", Text = "Frutas" },
+                new SelectListItem { Value = "11", Text = "Laticínios" },
+                new SelectListItem { Value = "13", Text = "Legumes e Verduras" },
+                new SelectListItem { Value = "14", Text = "Leguminosas" },
+                new SelectListItem { Value = "15", Text = "Óleos e Gorduras" }
+            };
+
+            // Definir ViewBag.TipoIngredienteId com a lista suspensa
+            ViewBag.TipoIngredienteId = tiposDeIngredientes;
+
+            return View();
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateCarboidrato(Ingrediente ingrediente)
+        public async Task<IActionResult> Create(Ingrediente ingrediente)
         {
-            ingrediente.Calorias = 150;
-
             if (ModelState.IsValid)
             {
+                var tipoIngrediente = await _context.TipoIngrediente.FirstOrDefaultAsync(t => t.Id == ingrediente.TipoIngredienteId);
+
+                if (tipoIngrediente == null)
+                {
+                    ModelState.AddModelError("TipoIngredienteId", "Tipo de ingrediente inválido.");
+                    ViewBag.TipoIngredienteId = new SelectList(_context.TipoIngrediente, "Id", "Tipo", ingrediente.TipoIngredienteId);
+                    return View(ingrediente);
+                }
+
+                // Configurar as calorias com base no tipo de ingrediente
+                switch (tipoIngrediente.Id)
+                {
+                    case 8: // Carboidratos
+                        ingrediente.Calorias = 150;
+                        break;
+                    case 9: // Carnes e ovos
+                        ingrediente.Calorias = 190;
+                        break;
+                    case 10: // Frutas
+                        ingrediente.Calorias = 70;
+                        break;
+                    case 11: // Laticínios
+                        ingrediente.Calorias = 120;
+                        break;
+                    case 13: // Legumes e Verduras
+                        ingrediente.Calorias = 15;
+                        break;
+                    case 14: // Leguminosas
+                        ingrediente.Calorias = 55;
+                        break;
+                    case 15: // Óleos e Gorduras
+                        ingrediente.Calorias = 73;
+                        break;
+                    default:
+                        ingrediente.Calorias = 0; // Pode ser um tratamento de erro ou um valor padrão
+                        break;
+                }
+
                 _context.Add(ingrediente);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
 
-            // Log the errors
-            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-            {
-                System.Diagnostics.Debug.WriteLine("Error: " + error.ErrorMessage);
-            }
-
+            // Se houver um erro de validação, recarregar o dropdown de Tipo de Ingrediente
+            ViewBag.TipoIngredienteId = new SelectList(_context.TipoIngrediente, "Id", "Tipo", ingrediente.TipoIngredienteId);
             return View(ingrediente);
         }
 
-        public async Task<IActionResult> List(string tipo)
+
+
+        public async Task<IActionResult> ListaCarboidrato(int? tipoIngredienteId)
+        {
+            var tiposDeIngredientes = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "8", Text = "Carboidratos" },
+                new SelectListItem { Value = "9", Text = "Carnes e ovos" },
+                new SelectListItem { Value = "10", Text = "Frutas" },
+                new SelectListItem { Value = "11", Text = "Laticínios" },
+                new SelectListItem { Value = "13", Text = "Legumes e Verduras" },
+                new SelectListItem { Value = "14", Text = "Leguminosas" },
+                new SelectListItem { Value = "15", Text = "Óleos e Gorduras" }
+            };
+
+            ViewBag.TipoIngredienteId = new SelectList(tiposDeIngredientes, "Value", "Text");
+
+            var ingredientes = _context.Ingrediente.Include(i => i.TipoIngrediente).AsQueryable();
+
+            if (tipoIngredienteId.HasValue)
+            {
+                ingredientes = ingredientes.Where(i => i.TipoIngredienteId == tipoIngredienteId.Value);
+            }
+
+            return View(await ingredientes.ToListAsync());
+        }
+
+
+
+
+
+        public async Task<IActionResult> ListAA(string tipo)
         {
             if (string.IsNullOrEmpty(tipo))
             {
@@ -144,6 +220,8 @@ namespace CookingFit_backend.Controllers
             ViewData["Tipo"] = tipo;
             return View("ListGeneric", ingredientes);
         }
+
+
 
         private bool IngredienteExists(int id)
         {

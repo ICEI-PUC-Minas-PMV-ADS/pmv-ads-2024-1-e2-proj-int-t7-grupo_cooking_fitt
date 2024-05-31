@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace CookingFit_backend.Controllers
 {
-    
+
     public class UsuariosController : Controller
     {
         private readonly AppDbContext _context;
@@ -25,7 +25,7 @@ namespace CookingFit_backend.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Usuarios.ToListAsync());
+            return View(await _context.Usuarios.ToListAsync());
         }
 
         [AllowAnonymous]
@@ -47,7 +47,7 @@ namespace CookingFit_backend.Controllers
         {
             var dados = await _context.Usuarios
                 .FindAsync(usuario.Id);
-            if(dados == null)
+            if (dados == null)
             {
                 ViewBag.Message = "Usuário é/ou a senha esta invalido(s)!";
             }
@@ -215,14 +215,14 @@ namespace CookingFit_backend.Controllers
             {
                 _context.Usuarios.Remove(usuario);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UsuarioExists(int id)
         {
-          return _context.Usuarios.Any(e => e.Id == id);
+            return _context.Usuarios.Any(e => e.Id == id);
         }
     }
 }

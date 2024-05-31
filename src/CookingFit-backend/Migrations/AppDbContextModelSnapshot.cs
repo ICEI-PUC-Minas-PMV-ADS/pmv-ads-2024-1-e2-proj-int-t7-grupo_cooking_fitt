@@ -120,6 +120,27 @@ namespace CookingFit_backend.Migrations
                     b.ToTable("Ingrediente");
                 });
 
+            modelBuilder.Entity("CookingFit_backend.Models.Receita", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<string>("Ingrediente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Receita");
+                });
+
             modelBuilder.Entity("CookingFit_backend.Models.TipoIngrediente", b =>
                 {
                     b.Property<int>("Id")
@@ -135,6 +156,30 @@ namespace CookingFit_backend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TipoIngrediente");
+                });
+
+            modelBuilder.Entity("CookingFit_backend.Models.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Perfil")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuario");
                 });
 
             modelBuilder.Entity("CookingFit_backend.Models.Ingrediente", b =>

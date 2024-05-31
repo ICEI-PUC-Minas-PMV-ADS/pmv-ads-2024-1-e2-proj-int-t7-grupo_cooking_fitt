@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[1.19.4, )"
             },
+            "Microsoft.VisualStudio.LiveShare": {
+              "target": "Package",
+              "version": "[1.1.57, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"

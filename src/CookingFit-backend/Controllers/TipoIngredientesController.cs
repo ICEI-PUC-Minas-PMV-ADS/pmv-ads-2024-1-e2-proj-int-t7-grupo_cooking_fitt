@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace CookingFit_backend.Controllers
 {
-    [Authorize]
+    /*[Authorize]*/
     public class TipoIngredientesController : Controller
     {
         private readonly AppDbContext _context;
