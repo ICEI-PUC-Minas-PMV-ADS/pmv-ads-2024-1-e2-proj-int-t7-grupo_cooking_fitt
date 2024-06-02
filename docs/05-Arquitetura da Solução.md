@@ -67,18 +67,28 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 | quantidade        | INT                   | NOT NULL                   |
 
 
-### Tabela: Ingredientes
+### Tabela: Ingrediente
 | Campo             | Tipo                  | Restrições                 |
 |-------------      |--------------         |----------------------------|
-| nome              | VARCHAR(255)          | PRIMARY KEY                |
-| id_ingrediente    | INT                   | NOT NULL, FOREIGN KEY      |
-| calorias          | INT                   | NOT NULL, FOREIGN KEY      |
+| nome              | VARCHAR(255)          | NOT NULL                   |
+| Id_ingrediente    | INT                   | NOT NULL, PRIMARY KEY      |
+| calorias          | INT                   | NOT NULL                   |
+| unidade           | VARCHAR(255)          | NOT NULL                   |
+| peso              | VARCHAR(255)          | NOT NULL                   |
+| tipo              | VARCHAR(255)          | NOT NULL                   |
+| tipo_ingrediente  | VARCHAR(255)          | NOT NULL, FOREIGN KEY      |
+
+### Tabela: TipoIngrediente
+| Campo             | Tipo                  | Restrições                 |
+|-------------      |--------------         |----------------------------|
+| Id_tipoingrediente| INT                   | NOT NULL, PRIMARY KEY      |
+| tipo              | VARCHAR(255)          | NOT NULL                   |
 
 
 ### Tabela: cardapio
 | Campo             | Tipo                  | Restrições                 |
 |-------------      |--------------         |----------------------------|
-| id_cardapio       | INT                   | NOT NULL                   |
+| Id_cardapio       | INT                   | NOT NULL, PRIMARY KEY      |
 | descriçao         | VARCHAR(255)          |                            |
 | id_usuario        | INT                   | NOT NULL                   |
 | id_receita        | INT                   | NOT NULL                   |
@@ -86,14 +96,6 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 | quantidade        | INT                   |                            |
 | calorias_cardapio | INT                   |                            |
 
-### Tabela: itemcardapio
-| Campo             | Tipo                  | Restrições                 |
-|-------------      |--------------         |----------------------------|
-| id_receita        | VARCHAR(255)          | NOT NULL                   |
-| id_cardapio       | VARCHAR(255)          | NOT NULL                   |
-| descriçao         | VARCHAR(255)          |                            |
-| id_ingrediente    | DATE                  | NOT NULL                   |
-| total_calorias    | INT                   | PRIMARY KEY                |
 
 ### Tabela: funcionário
 | Campo             | Tipo                  | Restrições                 |
