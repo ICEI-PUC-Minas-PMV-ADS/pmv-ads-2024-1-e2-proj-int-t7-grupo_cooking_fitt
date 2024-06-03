@@ -1,0 +1,67 @@
+﻿@model IEnumerable<CookingFit_backend.Models.Ingrediente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h4>Listagem por grupo alimentar</h4>
+<p>
+    <a class="btn btn-secondary" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="1">Visualizar Carboidratos</a>
+
+    <a class="btn btn-secondary" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="2">Visualizar Carnes e Ovos</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="3">Visualizar Frutas</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="4">Visualizar Laticínios</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="5">Visualizar Legumes e Verduras</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="6">Visualizar Leguminosas</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="7">Visualizar Óleos e Gorduras</a>
+    <br />
+</p>
+
+<h2>Listagem geral</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calorias)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Peso)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Calorias)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Peso)
+                </td>
+                <td>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a class="btn btn-info" asp-controller="TipoIngredientes" asp-action="Index" class="btn btn-info">Voltar</a>
+</p>
+
+

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CookingFit_backend.Models.Ingrediente>
+
+@{
+    ViewData["Title"] = "Lista de Ingredientes";
+}
+
+<h1>Ingredientes cadastrados</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.First().Nome)</th>
+            <th>@Html.DisplayNameFor(model => model.First().TipoIngrediente.Tipo)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                <td>@Html.DisplayFor(modelItem => item.TipoIngrediente.Tipo)</td>
+                <td>
+                    <a class="btn btn-success" asp-action="Select" asp-route-id="@item.Id">Selecionar item para o cardápio</a> | 
+                    <br/>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+</p>
