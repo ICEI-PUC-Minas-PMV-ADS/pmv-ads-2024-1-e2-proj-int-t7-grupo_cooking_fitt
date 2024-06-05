@@ -41,47 +41,46 @@ namespace CookingFit_backend.Controllers
             return View();
 
         }
+
+
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> Login(Usuario usuario)
         {
             var dados = await _context.Usuarios
-                .FindAsync(usuario.Id);
-            if(dados == null)
+                .SingleOrDefaultAsync(u => u.Name == usuario.Name); // Alterado para pesquisar por Name
+
+            if (dados == null || !BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha))
             {
-                ViewBag.Message = "Usuário é/ou a senha esta invalido(s)!";
+                ViewBag.Message = "Usuário e/ou senha inválido(s)!";
+                return View();
             }
-            bool senhaOk = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
 
-            if (senhaOk)
+            var claims = new List<Claim>
             {
-                var claims = new List<Claim>
-                {
-                        new Claim(ClaimTypes.Name, dados.Name),
-                        new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
-                        new Claim(ClaimTypes.Role, dados.Perfil.ToString())
-                };
+                new Claim(ClaimTypes.Name, dados.Name),
+                new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
+                new Claim(ClaimTypes.Role, dados.Perfil.ToString())
+            };
 
-                var usuarioIdentity = new ClaimsIdentity(claims, "login");
-                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+            var usuarioIdentity = new ClaimsIdentity(claims, "login");
+            ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
 
-                var props = new AuthenticationProperties
-                {
-                    AllowRefresh = true,
-                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
-                    IsPersistent = true,
-                };
-
-                await HttpContext.SignInAsync(principal, props);
-
-                return Redirect("/");
-            }
-            else
+            var props = new AuthenticationProperties
             {
-                ViewBag.Message = "Usuário é/ou a senha esta invalido(s)!";
-            }
-            return View();
+                AllowRefresh = true,
+                ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                IsPersistent = true,
+            };
+
+            await HttpContext.SignInAsync(principal, props);
+
+            return RedirectToAction("Index", "Home"); // Certifique-se que há uma ação Index no controlador Home
         }
+
+
+
+
         [AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
@@ -114,15 +113,13 @@ namespace CookingFit_backend.Controllers
             return View();
         }
 
-        // POST: Usuarios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Senha,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Name,Email,Senha,Perfil")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
+                // Hash the password before saving
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
@@ -130,6 +127,7 @@ namespace CookingFit_backend.Controllers
             }
             return View(usuario);
         }
+
 
         // GET: Usuarios/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -224,5 +222,38 @@ namespace CookingFit_backend.Controllers
         {
           return _context.Usuarios.Any(e => e.Id == id);
         }
+
+        [AllowAnonymous]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var usuario = new Usuario
+                {
+                    Name = model.Email, // Aqui você deve usar o campo de e-mail
+                    Email = model.Email,
+                    Senha = BCrypt.Net.BCrypt.HashPassword(model.Senha),
+                    Perfil = model.Perfil
+                };
+
+                _context.Add(usuario);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View(model);
+        }
+
+
+
+
     }
 }

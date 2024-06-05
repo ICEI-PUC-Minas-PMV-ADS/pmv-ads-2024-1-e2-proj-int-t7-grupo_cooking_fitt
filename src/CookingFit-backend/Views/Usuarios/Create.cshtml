@@ -4,18 +4,48 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    .create-background {
+        background-image: url('/Imagem/cadastro.jpeg');
+        background-size: 50%; /* Diminui o zoom da imagem */
+        background-repeat: no-repeat; /* Impede a repetição da imagem */
+        background-attachment:local; /* Mantém a imagem fixa ao rolar a página */
+        width: 200%;
+        background-position: left; /* Centraliza a imagem de fundo */
+        height: 80vh; /* Define a altura como 80% da viewport */
+        display: flex; /* Use Flexbox para centralizar o conteúdo */
+        justify-content:flex-start; /* Alinha o conteúdo à direita */
+        align-items: center; /* Centraliza verticalmente */
+        margin: 0; /* Remove a margem padrão */
+        padding: 20px; /* Adiciona padding */
+    }
 
-<h4>Usuario</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+    .create-container {
+        background-color: rgba(255, 255, 255, 0.85); /* Fundo branco semitransparente */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%; /* Garante que o container ocupe 100% da largura até o máximo definido */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div class="create-background">
+    <div class="create-container">
+        <h1>Cadastre-se</h1>
+        <h4>Usuario</h4>
+        <hr />
+        <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Senha" class="control-label"></label>
@@ -24,20 +54,23 @@
             </div>
             <div class="form-group">
                 <label asp-for="Perfil" class="control-label"></label>
-                <select asp-for="Perfil" class="form-control" asp-items="Html.GetEnumSelectList<Perfil>()"></select>
+                <select asp-for="Perfil" class="form-control" asp-items="Html.GetEnumSelectList<Perfil>()">
+                    <option value="">Selecione um perfil</option> <!-- Opção vazia -->
+                </select>
                 <span asp-validation-for="Perfil" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit"asp-controller="Home" asp-action="Index" asp-route-tipo="Home" value="Adicionar" class="btn btn-success" />
             </div>
         </form>
+        <div>
+            <a asp-action="Index" class="btn btn-info">Voltar</a>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aD6KyHMREoUwAA7iY3FrHcVsxH+pG5RJQJzqWtroovD6/rFaCmrry/QTdx5JtCa0FZABHhVXILseJ1P0yxOTUQ==",
+  "dgSpecHash": "WLeWAR+Vo39LOkaSPErTOiYzKP6r8BVH/HYCk1xH317cJq5QRT7wFEH20H6kqwWe1XEp/oIhlbfBV/gq8I7FCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emili\\Documents\\Graduação PUC Minas\\2° Semestre\\tt3\\tt\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
+  "projectFilePath": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\CookingFit-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emili\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

@@ -30,17 +30,8 @@ namespace CookingFit_backend.Models
 
         [NotMapped]
         [Display(Name = "Calorias contidas no cardápio.")]
-        public int CaloriasCardapio
-        {
-            get
-            {
-                if (IngredientesAssociados != null && IngredientesAssociados.Any())
-                {
-                    return IngredientesAssociados.Sum(i => i.Calorias);
-                }
-                return 0;
-            }
-        }
+        public int CaloriasCardapio { get; set; }
+
 
         [NotMapped]
         public List<SelectListItem> Ingredientes { get; set; }

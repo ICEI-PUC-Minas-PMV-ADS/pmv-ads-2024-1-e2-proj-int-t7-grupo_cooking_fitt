@@ -61,30 +61,42 @@ namespace CookingFit_backend.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Obtenha o ID do usuário atualmente autenticado
+                // Somar as calorias dos ingredientes selecionados
+                var caloriasTotais = 0;
+                foreach (var ingredienteId in cardapio.IngredientesIds)
+                {
+                    var ingrediente = await _context.Ingrediente.FindAsync(ingredienteId);
+                    if (ingrediente != null)
+                    {
+                        caloriasTotais += ingrediente.Calorias;
+                    }
+                }
+                cardapio.CaloriasCardapio = caloriasTotais;
+
+                // Obter o ID do usuário atualmente autenticado
                 var usuarioIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-                // Verifique se o ID do usuário é nulo ou vazio
+                // Verificar se o ID do usuário é nulo ou vazio
                 if (string.IsNullOrEmpty(usuarioIdString))
                 {
                     usuarioIdString = User.Identity.Name;
                 }
 
-                // Verifique novamente se o ID do usuário é nulo ou vazio
+                // Verificar novamente se o ID do usuário é nulo ou vazio
                 if (string.IsNullOrEmpty(usuarioIdString))
                 {
                     ModelState.AddModelError(string.Empty, "Usuário não autenticado.");
                     return View(cardapio);
                 }
 
-                // Converta o ID do usuário para o tipo correto (int)
+                // Converter o ID do usuário para o tipo correto (int)
                 if (!int.TryParse(usuarioIdString, out int usuarioId))
                 {
                     ModelState.AddModelError(string.Empty, "ID de usuário inválido.");
                     return View(cardapio);
                 }
 
-                // Verifique se o usuário existe
+                // Verificar se o usuário existe
                 var usuario = await _context.Usuarios.FindAsync(usuarioId);
                 if (usuario == null)
                 {
@@ -92,17 +104,17 @@ namespace CookingFit_backend.Controllers
                     return View(cardapio);
                 }
 
-                // Atribua o UsuarioId ao novo cardápio
+                // Atribuir o UsuarioId ao novo cardápio
                 cardapio.UsuarioId = usuario.Id;
 
-                // Adicione o novo cardápio ao contexto e salve as mudanças
+                // Adicionar o novo cardápio ao contexto e salvar as mudanças
                 _context.Add(cardapio);
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction(nameof(Index));
             }
 
-            // Se houver erros de validação, retorne a view com o modelo inválido
+            // Se houver erros de validação, retornar a view com o modelo inválido
             // e os dropdowns preenchidos corretamente
             cardapio.Cardapios = new List<SelectListItem>
             {
@@ -128,6 +140,7 @@ namespace CookingFit_backend.Controllers
 
             return View(cardapio);
         }
+
 
 
         public async Task<IActionResult> Delete(int? id)

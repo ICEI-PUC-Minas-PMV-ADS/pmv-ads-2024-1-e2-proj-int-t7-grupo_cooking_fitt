@@ -1,6 +1,7 @@
 ﻿using CookingFit_backend.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -19,25 +20,28 @@ namespace CookingFit_backend.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
-                // Verifica se o usuário existe e a senha está correta
-                var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == model.Email && u.Senha == model.Password);
-                if (user != null)
+                // Verifica se o usuário existe
+                var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == model.Email);
+                if (user != null && BCrypt.Net.BCrypt.Verify(model.Password, user.Senha))
                 {
                     // Cria os claims do usuário
                     var claims = new List<Claim>
                     {
                         new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                        new Claim(ClaimTypes.Name, user.Name)
+                        new Claim(ClaimTypes.Name, user.Name),
+                        new Claim(ClaimTypes.Role, user.Perfil.ToString()) // Adiciona o perfil do usuário aos claims
                     };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
