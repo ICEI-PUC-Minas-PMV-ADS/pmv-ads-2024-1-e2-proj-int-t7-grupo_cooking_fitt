@@ -3,32 +3,64 @@
 @{
     ViewData["Title"] = "Login";
 }
+<style>
+    .login-background {
+        background-image: url('/Imagem/alimentos.jpeg');
+        background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+        background-repeat: no-repeat; /* Impede a repetição da imagem */
+        background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+        height: 80vh; /* Define a altura como 80% da viewport */
+        display: flex; /* Use Flexbox para centralizar o conteúdo */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        margin: 0; /* Remove a margem padrão */
+        padding: 0; /* Remove o padding padrão */
+    }
 
-<h1>Login</h1>
+    .login-container {
+        background-color: rgba(255, 255, 255, 0.85); /* Fundo branco semitransparente */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 900px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
 
-<h4>Usuario</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Login" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+    .form-control {
+        width: 400%; /* Faz com que o campo ocupe 100% da largura do contêiner */
+    }
+
+    .col-md-8 {
+        max-width: 900px; /* Ajusta a largura máxima da coluna */
+    }
+</style>
+
+<div class="login-background">
+    <div class="login-container">
+
+        <h4>Registre-se</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Login" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Senha" class="control-label"></label>
+                        <input asp-for="Senha" class="form-control" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Acessar" class="btn btn-success" />
+                    </div>
+                </form>
+                <h3>@ViewBag.Message</h3>
             </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Acessar" class="btn btn-success" />
-            </div>
-
-        </form>
-        <h3>@ViewBag.Message</h3>
+        </div>
     </div>
 </div>
 
