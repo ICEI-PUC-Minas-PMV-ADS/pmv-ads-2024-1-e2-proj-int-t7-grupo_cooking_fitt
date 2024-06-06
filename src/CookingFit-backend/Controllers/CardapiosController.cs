@@ -26,10 +26,8 @@ namespace CookingFit_backend.Controllers
 
         public IActionResult Create()
         {
-            // Crie uma instância de Cardapio
             var cardapio = new Cardapio();
 
-            // Definir os tipos de cardápio disponíveis
             cardapio.Cardapios = new List<SelectListItem>
             {
                 new SelectListItem { Value = "Café da manhã", Text = "Café da manhã" },
@@ -39,10 +37,10 @@ namespace CookingFit_backend.Controllers
                 new SelectListItem { Value = "Jantar", Text = "Jantar" }
             };
 
-            // Recuperar os ingredientes do banco de dados
+            // Carregar os ingredientes do banco de dados
             var ingredientes = _context.Ingrediente.Select(i => new SelectListItem
             {
-                Value = i.Id.ToString(),
+                Value = $"{i.Id}:{i.Calorias}", // Formatando o valor para incluir ID e Calorias
                 Text = i.Nome
             }).ToList();
 
@@ -55,13 +53,11 @@ namespace CookingFit_backend.Controllers
             return View(cardapio);
         }
 
-
         [HttpPost]
         public async Task<IActionResult> Create(Cardapio cardapio)
         {
             if (ModelState.IsValid)
             {
-                // Somar as calorias dos ingredientes selecionados
                 var caloriasTotais = 0;
                 foreach (var ingredienteId in cardapio.IngredientesIds)
                 {
@@ -73,30 +69,24 @@ namespace CookingFit_backend.Controllers
                 }
                 cardapio.CaloriasCardapio = caloriasTotais;
 
-                // Obter o ID do usuário atualmente autenticado
                 var usuarioIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-                // Verificar se o ID do usuário é nulo ou vazio
                 if (string.IsNullOrEmpty(usuarioIdString))
                 {
                     usuarioIdString = User.Identity.Name;
                 }
 
-                // Verificar novamente se o ID do usuário é nulo ou vazio
                 if (string.IsNullOrEmpty(usuarioIdString))
                 {
                     ModelState.AddModelError(string.Empty, "Usuário não autenticado.");
                     return View(cardapio);
                 }
 
-                // Converter o ID do usuário para o tipo correto (int)
                 if (!int.TryParse(usuarioIdString, out int usuarioId))
                 {
                     ModelState.AddModelError(string.Empty, "ID de usuário inválido.");
                     return View(cardapio);
                 }
 
-                // Verificar se o usuário existe
                 var usuario = await _context.Usuarios.FindAsync(usuarioId);
                 if (usuario == null)
                 {
@@ -104,18 +94,14 @@ namespace CookingFit_backend.Controllers
                     return View(cardapio);
                 }
 
-                // Atribuir o UsuarioId ao novo cardápio
                 cardapio.UsuarioId = usuario.Id;
 
-                // Adicionar o novo cardápio ao contexto e salvar as mudanças
                 _context.Add(cardapio);
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction(nameof(Index));
             }
 
-            // Se houver erros de validação, retornar a view com o modelo inválido
-            // e os dropdowns preenchidos corretamente
             cardapio.Cardapios = new List<SelectListItem>
             {
                 new SelectListItem { Value = "Café da manhã", Text = "Café da manhã" },
@@ -125,10 +111,10 @@ namespace CookingFit_backend.Controllers
                 new SelectListItem { Value = "Jantar", Text = "Jantar" }
             };
 
-            // Recuperar os ingredientes do banco de dados
+            // Carregar os ingredientes do banco de dados
             var ingredientes = _context.Ingrediente.Select(i => new SelectListItem
             {
-                Value = i.Id.ToString(),
+                Value = $"{i.Id}:{i.Calorias}", // Formatando o valor para incluir ID e Calorias
                 Text = i.Nome
             }).ToList();
 
@@ -140,8 +126,6 @@ namespace CookingFit_backend.Controllers
 
             return View(cardapio);
         }
-
-
 
         public async Task<IActionResult> Delete(int? id)
         {

@@ -41,5 +41,6 @@ namespace CookingFit_backend.Models
 
         [NotMapped]
         public List<int> IngredientesIds { get; set; }
+
     }
 }

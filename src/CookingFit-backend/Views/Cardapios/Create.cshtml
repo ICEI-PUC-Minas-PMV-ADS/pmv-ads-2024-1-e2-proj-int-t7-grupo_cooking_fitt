@@ -5,7 +5,7 @@
 
 <h1>Adicionar plano alimentar</h1>
 
-<form asp-action="Create" id="createForm">
+<form asp-action="Create" method="post" id="createForm">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
         <label asp-for="Descricao" class="control-label"></label>
@@ -16,8 +16,9 @@
     </div>
 
     <div class="form-group">
-        <label class="control-label">Selecione até 10 ingredientes</label>
-        <select asp-for="IngredientesIds" class="form-control" asp-items="@Model.Ingredientes" multiple id="ingredientesSelecionados">
+        <label class="control-label">Selecione um ingredientes</label>
+        <select asp-for="IngredientesIds" class="form-control" asp-items="@Model.Ingredientes" id="ingredientesSelecionados">
+            <option>Selecione um ingrediente</option>
         </select>
         <span asp-validation-for="IngredientesAssociados" class="text-danger"></span>
     </div>
@@ -29,7 +30,8 @@
     </div>
 
     <div class="form-group">
-        <input type="submit" value="Adicionar" class="btn btn-success" />
+        <input type="submit"  value="Adicionar" class="btn btn-success" />
+
     </div>
 </form>
 
@@ -41,7 +43,9 @@
             var caloriasTotais = 0;
             for (var i = 0; i < ingredientesSelecionados.options.length; i++) {
                 if (ingredientesSelecionados.options[i].selected) {
-                    caloriasTotais += parseInt(ingredientesSelecionados.options[i].getAttribute("data-calorias"));
+                    var valor = ingredientesSelecionados.options[i].value;
+                    var calorias = parseInt(valor.split(':')[1]); // Obtendo as calorias do valor
+                    caloriasTotais += calorias;
                 }
             }
             document.getElementById("caloriasCardapio").value = caloriasTotais;
