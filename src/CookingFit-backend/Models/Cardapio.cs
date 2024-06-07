@@ -9,6 +9,8 @@ namespace CookingFit_backend.Models
     [Table("Cardapio")]
     public class Cardapio
     {
+        private int usuarioId;
+
         [Key]
         public int Id { get; set; }
 

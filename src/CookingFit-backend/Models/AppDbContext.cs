@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using CookingFit_backend.Models;
 
 namespace CookingFit_backend.Models
 {
@@ -18,6 +19,7 @@ namespace CookingFit_backend.Models
         public DbSet<Receita> Receitas{ get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<TipoCardapio> TipoCardapios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,6 +29,8 @@ namespace CookingFit_backend.Models
                 .HasForeignKey(i => i.TipoIngredienteId);
             modelBuilder.Entity<Cardapio>().HasKey(c => c.Id);
         }
+
+        public DbSet<CookingFit_backend.Models.TipoCardapio> TipoCardapio { get; set; }
 
     }
 }

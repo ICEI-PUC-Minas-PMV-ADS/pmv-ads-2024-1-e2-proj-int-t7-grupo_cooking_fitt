@@ -1,0 +1,99 @@
+﻿@model IEnumerable<CookingFit_backend.Models.TipoCardapio>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    .cardapio {
+        background-image: url('/Imagem/Cardapio.jpeg');
+        background-size: 40%; /* Ajusta a imagem para cobrir toda a tela */
+        background-repeat: no-repeat; /* Impede a repetição da imagem */
+        background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+        background-attachment:revert;
+        background-position:right;
+        height: 80vh; /* Define a altura como 100% da viewport */
+        display: flex; /* Use Flexbox para centralizar o conteúdo */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        margin: 0; /* Remove a margem padrão */
+        margin-top: -12px;
+        margin-bottom: -12px;
+        padding: 0; /* Remove o padding padrão */
+    }
+
+</style>
+
+
+<h4>Selecione um tipo de refeição para a elaboração do cardápio:</h4>
+
+<div class="cardapio">
+    <table class="table">
+        <tbody>
+
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                            @Html.DisplayFor(modelItem => item.Tipo)
+                    </td>
+                    <td>
+
+                        <p>
+                            <!-- Botão para adicionar nova refeição -->
+                                @if (item.Tipo == "Café da manhã")
+                                {
+                                <a asp-controller="Cardapios" asp-action="Select" asp-route-tipo="@item.Tipo" class="btn btn-light">Selecionar ingredientes</a>
+                                }
+                                else if (item.Tipo == "Lanche da manhã")
+                                {
+                                <a asp-controller="Cardapios" asp-action="Select" asp-route-tipo="@item.Tipo" class="btn btn-light">Selecionar ingredientes</a>
+                                }
+                                else if (item.Tipo == "Almoço")
+                                {
+                                <a asp-controller="Cardapios" asp-action="Select" asp-route-tipo="@item.Tipo" class="btn btn-light">Selecionar ingredientes</a>
+                                }
+                                else if (item.Tipo == "Lanche da tarde")
+                                {
+                                <a asp-controller="Cardapios" asp-action="Select" asp-route-tipo="@item.Tipo" class="btn btn-light">Selecionar ingredientes</a>
+                                }
+                                else if (item.Tipo == "Jantar")
+                                {
+                                <a asp-controller="Cardapios" asp-action="Select" asp-route-tipo="@item.Tipo" class="btn btn-light">Selecionar ingredientes</a>
+                                }
+
+                            <!-- Botão para visualizar refeições -->
+                                @if (item.Tipo == "Café da manhã")
+                                {
+                                <a class="btn btn-primary" asp-controller="Cardapios" asp-action="List" asp-route-tipoCardapioId="1">Visualizar</a>
+                                }
+                                else if (item.Tipo == "Lanche da manhã")
+                                {
+                                <a class="btn btn-primary" asp-controller="Cardapios" asp-action="List" asp-route-tipoCardapioId="2">Visualizar </a>
+                                }
+                                else if (item.Tipo == "Almoço")
+                                {
+                                <a class="btn btn-primary" asp-controller="Cardapios" asp-action="List" asp-route-tipoCardapioId="3">Visualizar </a>
+                                }
+                                else if (item.Tipo == "Lanche da tarde")
+                                {
+                                <a class="btn btn-primary" asp-controller="Cardapios" asp-action="List" asp-route-tipoCardapioId="4">Visualizar </a>
+                                }
+                                else if (item.Tipo == "Jantar")
+                                {
+                                <a class="btn btn-primary" asp-controller="Cardapios" asp-action="List" asp-route-tipoCardapioId="5">Visualizar </a>
+                                }
+
+@*                             <a asp-controller="TipoIngredientes" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+ *@                        </p>
+                    </td>
+                </tr>
+                }        
+        </tbody>
+    </table>
+</div>
+
+<p>
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+@*     <a asp-action="Create" class="btn btn-success">Adicionar refeição</a> *@
+</p>
+

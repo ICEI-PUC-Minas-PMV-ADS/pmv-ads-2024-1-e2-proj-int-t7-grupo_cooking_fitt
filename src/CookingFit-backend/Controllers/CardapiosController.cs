@@ -24,125 +24,53 @@ namespace CookingFit_backend.Controllers
             return View(dados);
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Select()
         {
-            var cardapio = new Cardapio();
-
-            cardapio.Cardapios = new List<SelectListItem>
+            var ingredientes = await _context.Ingrediente.Select(i => new Ingrediente
             {
-                new SelectListItem { Value = "Café da manhã", Text = "Café da manhã" },
-                new SelectListItem { Value = "Lanche da manhã", Text = "Lanche da manhã" },
-                new SelectListItem { Value = "Almoço", Text = "Almoço" },
-                new SelectListItem { Value = "Lanche da tarde", Text = "Lanche da tarde" },
-                new SelectListItem { Value = "Jantar", Text = "Jantar" }
-            };
+                Id = i.Id,
+                Nome = i.Nome,
+                Calorias = i.Calorias
+            }).ToListAsync();
 
-            // Carregar os ingredientes do banco de dados
-            var ingredientes = _context.Ingrediente.Select(i => new SelectListItem
-            {
-                Value = $"{i.Id}:{i.Calorias}", // Formatando o valor para incluir ID e Calorias
-                Text = i.Nome
-            }).ToList();
-
-            // Adicionar uma opção padrão para o dropdown de ingredientes
-            ingredientes.Insert(0, new SelectListItem { Value = "", Text = "-- Selecione um ingrediente --" });
-
-            // Definir a lista suspensa de ingredientes
-            cardapio.Ingredientes = ingredientes;
-
-            return View(cardapio);
+            return View(ingredientes);
         }
 
+        // POST: CardapiosController/Select
         [HttpPost]
-        public async Task<IActionResult> Create(Cardapio cardapio)
+        public async Task<IActionResult> Select(List<int> selectedIngredienteIds)
         {
             if (ModelState.IsValid)
             {
-                var caloriasTotais = 0;
-                foreach (var ingredienteId in cardapio.IngredientesIds)
+                // Recupera os ingredientes selecionados
+                var ingredientesSelecionados = await _context.Ingrediente
+                    .Where(i => selectedIngredienteIds.Contains(i.Id))
+                    .ToListAsync();
+
+                // Calcula o total de calorias
+                var totalCalorias = ingredientesSelecionados.Sum(i => i.Calorias);
+
+                // Cria um novo objeto Cardapio e define os valores
+                var cardapio = new Cardapio
                 {
-                    var ingrediente = await _context.Ingrediente.FindAsync(ingredienteId);
-                    if (ingrediente != null)
-                    {
-                        caloriasTotais += ingrediente.Calorias;
-                    }
-                }
-                cardapio.CaloriasCardapio = caloriasTotais;
+                    Descricao = "Cardápio", // Aqui você pode definir a descrição conforme necessário
+                    Quantidade = selectedIngredienteIds.Count, // Defina a quantidade com base nos ingredientes selecionados
+                    CaloriasCardapio = totalCalorias // Define o total de calorias
+                };
 
-                var usuarioIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                if (string.IsNullOrEmpty(usuarioIdString))
-                {
-                    usuarioIdString = User.Identity.Name;
-                }
-
-                if (string.IsNullOrEmpty(usuarioIdString))
-                {
-                    ModelState.AddModelError(string.Empty, "Usuário não autenticado.");
-                    return View(cardapio);
-                }
-
-                if (!int.TryParse(usuarioIdString, out int usuarioId))
-                {
-                    ModelState.AddModelError(string.Empty, "ID de usuário inválido.");
-                    return View(cardapio);
-                }
-
-                var usuario = await _context.Usuarios.FindAsync(usuarioId);
-                if (usuario == null)
-                {
-                    ModelState.AddModelError(string.Empty, "Usuário não encontrado.");
-                    return View(cardapio);
-                }
-
-                cardapio.UsuarioId = usuario.Id;
-
+                // Adiciona o cardápio ao contexto e salva as mudanças
                 _context.Add(cardapio);
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction(nameof(Index));
             }
 
-            cardapio.Cardapios = new List<SelectListItem>
-            {
-                new SelectListItem { Value = "Café da manhã", Text = "Café da manhã" },
-                new SelectListItem { Value = "Lanche da manhã", Text = "Lanche da manhã" },
-                new SelectListItem { Value = "Almoço", Text = "Almoço" },
-                new SelectListItem { Value = "Lanche da tarde", Text = "Lanche da tarde" },
-                new SelectListItem { Value = "Jantar", Text = "Jantar" }
-            };
-
-            // Carregar os ingredientes do banco de dados
-            var ingredientes = _context.Ingrediente.Select(i => new SelectListItem
-            {
-                Value = $"{i.Id}:{i.Calorias}", // Formatando o valor para incluir ID e Calorias
-                Text = i.Nome
-            }).ToList();
-
-            // Adicionar uma opção padrão para o dropdown de ingredientes
-            ingredientes.Insert(0, new SelectListItem { Value = "", Text = "-- Selecione um ingrediente --" });
-
-            // Definir a lista suspensa de ingredientes
-            cardapio.Ingredientes = ingredientes;
-
-            return View(cardapio);
+            // Se houver algum erro, recarrega a página com a lista de ingredientes
+            var ingredientes = await _context.Ingrediente.ToListAsync();
+            return View(ingredientes);
         }
 
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
-            var cardapio = await _context.Cardapios.FirstOrDefaultAsync(m => m.Id == id);
-
-            if (cardapio == null)
-            {
-                return NotFound();
-            }
-
-            return View(cardapio);
-        }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

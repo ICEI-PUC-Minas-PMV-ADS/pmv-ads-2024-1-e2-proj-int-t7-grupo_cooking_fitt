@@ -84,7 +84,7 @@
                             <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="15">Visualizar </a>
                         }
 
-                        @* <a a asp-controller="TipoIngredientes" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a> *@
+                        <a asp-controller="TipoIngredientes" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
                     </p>
                 </td>
             </tr>
@@ -94,5 +94,5 @@
 
 <p>
     <a asp-action="Index" class="btn btn-info">Voltar</a>
-  @*   <a asp-action="Create" class="btn btn-success">Adicionar grupo alimentar</a>  *@
+@*     <a asp-action="Create" class="btn btn-success">Adicionar grupo alimentar</a> *@
 </p>

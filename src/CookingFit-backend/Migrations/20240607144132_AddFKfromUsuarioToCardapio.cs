@@ -4,7 +4,7 @@
 
 namespace CookingFit_backend.Migrations
 {
-    public partial class AddFKTableCardapioUsuarioId : Migration
+    public partial class AddFKfromUsuarioToCardapio : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

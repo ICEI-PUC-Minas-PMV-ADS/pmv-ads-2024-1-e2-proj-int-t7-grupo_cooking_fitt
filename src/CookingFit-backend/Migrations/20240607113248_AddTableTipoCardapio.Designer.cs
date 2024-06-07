@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CookingFit_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240605144716_AddFKTableCardapioUsuarioId")]
-    partial class AddFKTableCardapioUsuarioId
+    [Migration("20240607113248_AddTableTipoCardapio")]
+    partial class AddTableTipoCardapio
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

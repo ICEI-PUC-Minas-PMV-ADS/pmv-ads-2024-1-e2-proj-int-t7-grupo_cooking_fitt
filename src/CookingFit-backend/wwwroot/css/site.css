@@ -43,6 +43,13 @@ body {
     margin-top: 12px;
 }
 
+.btn-light {
+    background-color: #D97D48;
+    border-color: #D97D48;
+    margin-top: 12px;
+    color: #fbfbfb;
+}
+
 .btn-secondary {
     background-color: #8FD3A3;
     border-color: #8FD3A3;
