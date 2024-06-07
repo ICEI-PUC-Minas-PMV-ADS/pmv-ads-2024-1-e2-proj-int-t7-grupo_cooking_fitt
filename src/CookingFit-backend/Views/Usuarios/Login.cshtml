@@ -21,22 +21,23 @@
         background-color: rgba(255, 255, 255, 0.85); /* Fundo branco semitransparente */
         padding: 20px;
         border-radius: 10px;
-        max-width: 900px;
+        max-width: 400px; /* Ajuste a largura máxima conforme necessário */
+        width: 80%; /* Garante que o container ocupe 100% da largura até o máximo definido */
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
 
     .form-control {
-        width: 400%; /* Faz com que o campo ocupe 100% da largura do contêiner */
+        width: 350%; /* Faz com que o campo ocupe 100% da largura do contêiner */
     }
 
     .col-md-8 {
         max-width: 900px; /* Ajusta a largura máxima da coluna */
     }
+
 </style>
 
 <div class="login-background">
     <div class="login-container">
-
         <h4>Registre-se</h4>
         <hr />
         <div class="row">
@@ -53,7 +54,6 @@
                         <input asp-for="Senha" class="form-control" />
                         <span asp-validation-for="Senha" class="text-danger"></span>
                     </div>
-
                     <div class="form-group">
                         <input type="submit" value="Acessar" class="btn btn-success" />
                     </div>

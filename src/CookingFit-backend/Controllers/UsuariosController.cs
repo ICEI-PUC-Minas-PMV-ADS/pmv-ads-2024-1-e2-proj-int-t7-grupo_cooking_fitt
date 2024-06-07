@@ -9,6 +9,7 @@ using CookingFit_backend.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace CookingFit_backend.Controllers
 {
@@ -45,20 +46,19 @@ namespace CookingFit_backend.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(Usuario usuario)
+        public async Task<IActionResult> Login([Bind("Email,Senha")] Usuario usuario)
         {
-            var dados = await _context.Usuarios
-                .SingleOrDefaultAsync(u => u.Name == usuario.Name); // Alterado para pesquisar por Name
+            var dados = await _context.Usuarios.SingleOrDefaultAsync(u => u.Email == usuario.Email);
 
             if (dados == null || !BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha))
             {
                 ViewBag.Message = "Usuário e/ou senha inválido(s)!";
-                return View();
+                return View(usuario);
             }
 
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, dados.Name),
+                new Claim(ClaimTypes.Email, dados.Email),
                 new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
                 new Claim(ClaimTypes.Role, dados.Perfil.ToString())
             };
@@ -73,10 +73,11 @@ namespace CookingFit_backend.Controllers
                 IsPersistent = true,
             };
 
-            await HttpContext.SignInAsync(principal, props);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, props);
 
-            return RedirectToAction("Index", "Home"); // Certifique-se que há uma ação Index no controlador Home
+            return RedirectToAction("Index", "Home");
         }
+
 
 
 
@@ -107,7 +108,6 @@ namespace CookingFit_backend.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Create
         public IActionResult Create()
         {
             return View();
@@ -119,14 +119,14 @@ namespace CookingFit_backend.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Hash the password before saving
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Login", "Usuarios");
             }
             return View(usuario);
         }
+
 
 
         // GET: Usuarios/Edit/5

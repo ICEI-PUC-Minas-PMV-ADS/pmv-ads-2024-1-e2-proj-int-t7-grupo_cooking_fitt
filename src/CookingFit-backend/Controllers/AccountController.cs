@@ -19,48 +19,47 @@ namespace CookingFit_backend.Controllers
             _context = context;
         }
 
-        [HttpGet]
         [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
+
         }
+
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(LoginViewModel model)
+        public async Task<IActionResult> Login(Usuario usuario)
         {
-            if (ModelState.IsValid)
+            var dados = await _context.Usuarios
+                .SingleOrDefaultAsync(u => u.Name == usuario.Name); // Alterado para pesquisar por Name
+
+            if (dados == null || !BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha))
             {
-                // Verifica se o usuário existe
-                var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == model.Email);
-                if (user != null && BCrypt.Net.BCrypt.Verify(model.Password, user.Senha))
-                {
-                    // Cria os claims do usuário
-                    var claims = new List<Claim>
-                    {
-                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                        new Claim(ClaimTypes.Name, user.Name),
-                        new Claim(ClaimTypes.Role, user.Perfil.ToString()) // Adiciona o perfil do usuário aos claims
-                    };
-
-                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
-                    var authProperties = new AuthenticationProperties
-                    {
-                        IsPersistent = model.RememberMe
-                    };
-
-                    // Faz o login do usuário
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
-
-                    return RedirectToAction("Index", "Home");
-                }
-
-                ModelState.AddModelError(string.Empty, "Tentativa de login inválida.");
+                ViewBag.Message = "Usuário e/ou senha inválido(s)!";
+                return View();
             }
 
-            return View(model);
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, dados.Name),
+                new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
+                new Claim(ClaimTypes.Role, dados.Perfil.ToString())
+            };
+
+            var usuarioIdentity = new ClaimsIdentity(claims, "login");
+            ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+
+            var props = new AuthenticationProperties
+            {
+                AllowRefresh = true,
+                ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                IsPersistent = true,
+            };
+
+            await HttpContext.SignInAsync(principal, props);
+
+            return RedirectToAction("Index", "Home"); // Certifique-se que há uma ação Index no controlador Home
         }
 
         [HttpPost]
