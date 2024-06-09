@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CookingFit_backend.Models.Ingrediente>
+
+@{
+    ViewData["Title"] = "ListaParaCardapio";
+}
+
+<h1>ListaParaCardapio</h1>
+
+<form asp-action="Select" method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Nome</th>
+                <th>Calorias</th>
+                <th>Unidade</th>
+                <th>Peso</th>
+                <th>TipoIngredienteId</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <input type="checkbox" name="selectedIngredienteIds" value="@item.Id" />
+                    </td>
+                    <td>@item.Nome</td>
+                    <td>@item.Calorias</td>
+                    <td>@item.Unidade</td>
+                    <td>@item.Peso</td>
+                    <td>@item.TipoIngredienteId</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary">Create Cardapio</button>
+</form>

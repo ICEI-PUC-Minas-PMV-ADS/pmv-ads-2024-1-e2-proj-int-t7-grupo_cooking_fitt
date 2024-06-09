@@ -6,9 +6,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using CookingFit_backend.Models.ViewModels;
 
 namespace CookingFit_backend.Controllers
 {
+    [Authorize]
     public class CardapiosController : Controller
     {
         private readonly AppDbContext _context;
@@ -20,55 +23,75 @@ namespace CookingFit_backend.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var dados = await _context.Cardapios.ToListAsync();
-            return View(dados);
+            var cardapios = await _context.Cardapios.ToListAsync();
+            return View(cardapios);
         }
 
         public async Task<IActionResult> Select()
         {
-            var ingredientes = await _context.Ingrediente.Select(i => new Ingrediente
-            {
-                Id = i.Id,
-                Nome = i.Nome,
-                Calorias = i.Calorias
-            }).ToListAsync();
+            var ingredientes = await _context.Ingrediente
+                .ToListAsync();
 
             return View(ingredientes);
         }
 
-        // POST: CardapiosController/Select
         [HttpPost]
         public async Task<IActionResult> Select(List<int> selectedIngredienteIds)
         {
             if (ModelState.IsValid)
             {
-                // Recupera os ingredientes selecionados
-                var ingredientesSelecionados = await _context.Ingrediente
-                    .Where(i => selectedIngredienteIds.Contains(i.Id))
-                    .ToListAsync();
-
-                // Calcula o total de calorias
-                var totalCalorias = ingredientesSelecionados.Sum(i => i.Calorias);
-
-                // Cria um novo objeto Cardapio e define os valores
-                var cardapio = new Cardapio
+                if (selectedIngredienteIds != null && selectedIngredienteIds.Count > 0)
                 {
-                    Descricao = "Cardápio", // Aqui você pode definir a descrição conforme necessário
-                    Quantidade = selectedIngredienteIds.Count, // Defina a quantidade com base nos ingredientes selecionados
-                    CaloriasCardapio = totalCalorias // Define o total de calorias
-                };
+                    // Lógica para calcular total de calorias e criar o novo cardápio
 
-                // Adiciona o cardápio ao contexto e salva as mudanças
-                _context.Add(cardapio);
-                await _context.SaveChangesAsync();
-
-                return RedirectToAction(nameof(Index));
+                    // Redireciona para a ação "Index" após adicionar o cardápio
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Selecione pelo menos um ingrediente.");
+                }
             }
 
-            // Se houver algum erro, recarrega a página com a lista de ingredientes
+            // Se houver erros de validação ou nenhum ingrediente selecionado, recarrega a página com a lista de ingredientes
             var ingredientes = await _context.Ingrediente.ToListAsync();
             return View(ingredientes);
         }
+
+
+        // POST: Cardapios/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Descricao")] Cardapio cardapio, List<int> selectedIngredienteIds)
+        {
+            if (ModelState.IsValid)
+            {
+                if (selectedIngredienteIds != null && selectedIngredienteIds.Count > 0)
+                {
+                    var ingredientesSelecionados = await _context.Ingrediente
+                        .Where(i => selectedIngredienteIds.Contains(i.Id))
+                        .ToListAsync();
+
+                    cardapio.QuantidadeCardapio = selectedIngredienteIds.Count;
+                    cardapio.CaloriasCardapio = ingredientesSelecionados.Sum(i => i.Calorias);
+
+                    _context.Cardapios.Add(cardapio);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Você deve selecionar pelo menos um ingrediente.");
+                }
+            }
+
+            ViewBag.TipoIngredienteId = new SelectList(await _context.TipoIngrediente.ToListAsync(), "Id", "Tipo");
+            ViewBag.Ingredientes = await _context.Ingrediente.ToListAsync();
+            return View(cardapio);
+        }
+
+
+
 
 
 
@@ -88,5 +111,24 @@ namespace CookingFit_backend.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        // GET: Cardapios/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var cardapio = await _context.Cardapios
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cardapio == null)
+            {
+                return NotFound();
+            }
+
+            return View(cardapio);
+        }
+
     }
 }

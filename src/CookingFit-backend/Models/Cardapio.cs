@@ -9,7 +9,6 @@ namespace CookingFit_backend.Models
     [Table("Cardapio")]
     public class Cardapio
     {
-        private int usuarioId;
 
         [Key]
         public int Id { get; set; }
@@ -19,10 +18,8 @@ namespace CookingFit_backend.Models
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório, informar a quantidade!")]
-        public int Quantidade { get; set; }
+        public int QuantidadeCardapio { get; set; }
 
-        // Propriedade de navegação para os ingredientes associados
-        public List<Ingrediente> IngredientesAssociados { get; set; }
 
         // Definida chave estrangeira para a tabela Usuário
         [ForeignKey("Usuario")]
@@ -35,14 +32,6 @@ namespace CookingFit_backend.Models
         public int CaloriasCardapio { get; set; }
 
 
-        [NotMapped]
-        public List<SelectListItem> Ingredientes { get; set; }
-
-        [NotMapped]
-        public List<SelectListItem> Cardapios { get; set; }
-
-        [NotMapped]
-        public List<int> IngredientesIds { get; set; }
 
     }
 }

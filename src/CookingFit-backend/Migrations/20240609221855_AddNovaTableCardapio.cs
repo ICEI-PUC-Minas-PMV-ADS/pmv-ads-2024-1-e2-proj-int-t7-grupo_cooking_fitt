@@ -4,7 +4,7 @@
 
 namespace CookingFit_backend.Migrations
 {
-    public partial class AddTableCardapio : Migration
+    public partial class AddNovaTableCardapio : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,7 @@ namespace CookingFit_backend.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CaloriasCardapio = table.Column<int>(type: "int", nullable: false),
-                    Quantidade = table.Column<string>(type: "int", nullable: false)
+                    QuantidadeCardapio = table.Column<string>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

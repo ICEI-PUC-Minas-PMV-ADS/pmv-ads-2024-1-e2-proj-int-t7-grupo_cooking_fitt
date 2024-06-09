@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ye/yV51cGJqgR1r3fobZEGWkn737DOn8oKgCG9TAf64=",
+  "Hash": "heEQwC3CklaTvg8uOKVu1pBeWlZ+MOdLVnLmtaNXcZY=",
   "Source": "CookingFit-backend",
   "BasePath": "_content/CookingFit-backend",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagem\\Cardapio.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\wwwroot\\Imagem\\ingrediente.jpeg",
+      "SourceId": "CookingFit-backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\wwwroot\\",
+      "BasePath": "_content/CookingFit-backend",
+      "RelativePath": "Imagem/ingrediente.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagem\\ingrediente.jpeg"
     },
     {
       "Identity": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\wwwroot\\Imagem\\salada 1.png",

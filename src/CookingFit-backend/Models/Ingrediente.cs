@@ -28,8 +28,10 @@ namespace CookingFit_backend.Models
         // Propriedade de navegação para a relação
         public TipoIngrediente TipoIngrediente { get; set; }
 
-        // Propriedade de navegação para a relação
-        public ICollection<Cardapio>? Cardapio { get; set; }
+
+        [NotMapped]
+        // Propriedade de navegação inversa
+        public ICollection<ItemCardapio>? ItemCardapio { get; set; }
 
     }
 }

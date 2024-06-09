@@ -22,8 +22,6 @@
                 <td>@Html.DisplayFor(modelItem => item.Nome)</td>
                 <td>@Html.DisplayFor(modelItem => item.TipoIngrediente.Tipo)</td>
                 <td>
-                    <a class="btn btn-success" asp-action="Select" asp-route-id="@item.Id">Selecionar item para o cardápio</a> | 
-                    <br/>
                     <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
                     <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>

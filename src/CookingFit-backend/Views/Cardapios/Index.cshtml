@@ -1,53 +1,35 @@
-﻿@model IEnumerable<CookingFit_backend.Models.Cardapio>
+﻿@model List<CookingFit_backend.Models.Cardapio>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Cardapios";
 }
 
-<h1>Criar um cardápio</h1>
+<h1>Cardapios</h1>
 
-<p>
-    <a asp-action="Create" asp-route-tipo="Index" class="btn btn-success">Adicionar</a>
-
-</p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CaloriasCardapio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Usuario)
-            </th>
-            <th></th>
+            <th>Descricao</th>
+            <th>Quantidade</th>
+            <th>Calorias</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CaloriasCardapio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Usuario.Name)
-            </td>
-            <td>
-                    <a asp-controller="Cardapios" class="btn btn-warning" asp-action="Edit">Editar</a> |
-                    <a asp-controller="Cardapios" class="btn btn-primary" asp-action="Details">Visualizar</a> |
-                    <a asp-controller="Cardapios" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id" data-toggle="tooltip" title="Apagar">Apagar</a>
-
-
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Descricao</td>
+                <td>@item.QuantidadeCardapio</td>
+                <td>@item.CaloriasCardapio</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
-<p>
-    <a asp-controller="Home" asp-action="Index" class="btn btn-info">Voltar</a>
-</p>
+
+<div>
+    <a asp-action="Create">Create New</a>
+</div>

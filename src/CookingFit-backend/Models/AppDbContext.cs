@@ -19,7 +19,7 @@ namespace CookingFit_backend.Models
         public DbSet<Receita> Receitas{ get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<TipoCardapio> TipoCardapios { get; set; }
+        public DbSet<TipoCardapio> TipoCardapio { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,7 +30,7 @@ namespace CookingFit_backend.Models
             modelBuilder.Entity<Cardapio>().HasKey(c => c.Id);
         }
 
-        public DbSet<CookingFit_backend.Models.TipoCardapio> TipoCardapio { get; set; }
+        public DbSet<ItemCardapio> ItemCardapio { get; set; }
 
     }
 }

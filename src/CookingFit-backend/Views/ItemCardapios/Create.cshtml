@@ -1,0 +1,104 @@
+﻿@model CookingFit_backend.Models.ItemCardapio
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Selecione os itens para elaborar o cardápio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="TipoIngredienteIdItem" class="control-label">Tipo de Ingrediente</label>
+                <select id="TipoIngredienteId" asp-for="TipoIngredienteIdItem" class="form-control" asp-items="ViewBag.TipoIngredienteId">
+                    <option value="">-- Selecione um Tipo de Ingrediente --</option>
+                </select>
+                <span asp-validation-for="TipoIngredienteIdItem" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CaloriasItem" class="control-label">Calorias</label>
+                <input asp-for="CaloriasItem" class="form-control" id="Calorias" readonly="readonly" />
+                <span asp-validation-for="CaloriasItem" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantidade" class="control-label"></label>
+                <input asp-for="Quantidade" class="form-control" />
+                <span asp-validation-for="Quantidade" class="text-danger"></span>
+            </div>
+
+            <div>
+                <input type="submit" asp-action="Create" asp-route-tipo="Index" value="Adicionar" class="btn btn-success" />
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.getElementById('TipoIngredienteId').addEventListener('change', function () {
+            var selectedValue = this.value;
+            var caloriasField = document.getElementById('Calorias');
+
+
+            // Atualizar calorias com base no tipo de ingrediente selecionado
+            switch (parseInt(selectedValue)) {
+                default:
+                    caloriasField.value = 0;
+                    break;
+                case 1: // Carboidratos
+                    caloriasField.value = 150;
+                    break;
+                case 2: // Carnes e ovos
+                    caloriasField.value = 190;
+                    break;
+                case 3: // Frutas
+                    caloriasField.value = 70;
+                    break;
+                case 4: // Laticínios
+                    caloriasField.value = 120;
+                    break;
+                case 5: // Legumes e Verduras
+                    caloriasField.value = 15;
+                    break;
+                case 6: // Leguminosas
+                    caloriasField.value = 55;
+                    break;
+                case 7: // Óleos e Gorduras
+                    caloriasField.value = 73;
+                    break;
+            }
+
+            // Atualizar lista de ingredientes com base no tipo de ingrediente selecionado
+            ingredienteDropdown.innerHTML = '<option value="">-- Selecione um Ingrediente --</option>';
+
+            if (selectedValue) {
+                fetch(`/Ingredientes/GetIngredientesByTipo?tipoIngredienteId=${selectedValue}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        data.forEach(item => {
+                            var option = document.createElement('option');
+                            option.value = item.value;
+                            option.text = item.text;
+                            ingredienteDropdown.appendChild(option);
+                        });
+                    })
+                    .catch(error => console.error('Erro ao carregar ingredientes:', error));
+            }
+        });
+    </script>
+}

@@ -13,7 +13,12 @@ namespace CookingFit_backend.Models
         [Required(ErrorMessage = "Obrigatório informar o Tipo!")]
         public string? Tipo { get; set; }
 
+        [NotMapped]
         // Propriedade de navegação inversa
         public ICollection<Ingrediente>? Ingrediente { get; set; }
+
+        [NotMapped]
+        // Propriedade de navegação inversa
+        public ICollection<ItemCardapio>? ItemCardapio { get; set; }
     }
 }

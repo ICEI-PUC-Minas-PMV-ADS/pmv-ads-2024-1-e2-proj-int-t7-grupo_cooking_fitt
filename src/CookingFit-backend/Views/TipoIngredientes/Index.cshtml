@@ -3,94 +3,116 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    .ingrediente {
+        background-image: url('/Imagem/ingrediente.jpeg');
+        background-size: 40%; /* Ajusta a imagem para cobrir toda a tela */
+        background-repeat: no-repeat; /* Impede a repetição da imagem */
+        background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+        background-attachment: revert;
+        background-position: right;
+        height: 80vh; /* Define a altura como 100% da viewport */
+        display: flex; /* Use Flexbox para centralizar o conteúdo */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        margin: 0; /* Remove a margem padrão */
+        margin-top: -12px;
+        margin-bottom: -12px;
+        padding: 0; /* Remove o padding padrão */
+    }
+
+</style>
 
 <h2>Selecione o grupo</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Tipo</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-
-        @foreach (var item in Model)
-        {
+<br />
+<div class="ingrediente">
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Tipo)
-                </td>
-                <td>
-
-                    <p>
-                        <!-- Botão para adicionar novo ingrediente -->
-                        @if (item.Tipo == "Carboidratos")
-                        {
-                            <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
-                        }
-                        else if (item.Tipo == "Carnes e ovos")
-                        {
-                            <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
-                        }
-                        else if (item.Tipo == "Frutas")
-                        {
-                            <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
-                        }
-                        else if (item.Tipo == "Laticínios")
-                        {
-                            <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
-                        }
-                        else if (item.Tipo == "Legumes e Verduras")
-                        {
-                            <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
-                        }
-                        else if (item.Tipo == "Leguminosas")
-                        {
-                            <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
-                        }
-                        else if (item.Tipo == "Óleos e Gorduras")
-                        {
-                            <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
-                        }
-
-                        <!-- Botão para visualizar ingrediente -->
-                        @if (item.Tipo == "Carboidratos")
-                        {
-                            <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="8">Visualizar</a>
-                        }
-                        else if (item.Tipo == "Carnes e ovos")
-                        {
-                            <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="9">Visualizar </a>
-                        }
-                        else if (item.Tipo == "Frutas")
-                        {
-                            <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="10">Visualizar </a>
-                        }
-                        else if (item.Tipo == "Laticínios")
-                        {
-                            <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="11">Visualizar </a>
-                        }
-                        else if (item.Tipo == "Legumes e Verduras")
-                        {
-                            <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="13">Visualizar </a>
-                        }
-                        else if (item.Tipo == "Leguminosas")
-                        {
-                            <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="14">Visualizar </a>
-                        }
-                        else if (item.Tipo == "Óleos e Gorduras")
-                        {
-                            <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="15">Visualizar </a>
-                        }
-
-                        <a asp-controller="TipoIngredientes" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
-                    </p>
-                </td>
+                <th></th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tipo)
+                    </td>
+                    <td>
+
+                        <p>
+                            <!-- Botão para adicionar novo ingrediente -->
+                            @if (item.Tipo == "Carboidratos")
+                            {
+                                <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
+                            }
+                            else if (item.Tipo == "Carnes e ovos")
+                            {
+                                <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
+                            }
+                            else if (item.Tipo == "Frutas")
+                            {
+                                <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
+                            }
+                            else if (item.Tipo == "Laticínios")
+                            {
+                                <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
+                            }
+                            else if (item.Tipo == "Legumes e Verduras")
+                            {
+                                <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
+                            }
+                            else if (item.Tipo == "Leguminosas")
+                            {
+                                <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
+                            }
+                            else if (item.Tipo == "Óleos e Gorduras")
+                            {
+                                <a asp-controller="Ingredientes" asp-action="Create" asp-route-tipo="@item.Tipo" class="btn btn-success">Adicionar novo ingrediente</a>
+                            }
+
+                            <!-- Botão para visualizar ingrediente -->
+                            @if (item.Tipo == "Carboidratos")
+                            {
+                                <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="1">Visualizar</a>
+                            }
+                            else if (item.Tipo == "Carnes e ovos")
+                            {
+                                <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="2">Visualizar </a>
+                            }
+                            else if (item.Tipo == "Frutas")
+                            {
+                                <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="3">Visualizar </a>
+                            }
+                            else if (item.Tipo == "Laticínios")
+                            {
+                                <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="4">Visualizar </a>
+                            }
+                            else if (item.Tipo == "Legumes e Verduras")
+                            {
+                                <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="5">Visualizar </a>
+                            }
+                            else if (item.Tipo == "Leguminosas")
+                            {
+                                <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="6">Visualizar </a>
+                            }
+                            else if (item.Tipo == "Óleos e Gorduras")
+                            {
+                                <a class="btn btn-primary" asp-controller="Ingredientes" asp-action="ListaCarboidrato" asp-route-tipoIngredienteId="7">Visualizar </a>
+                            }
+
+                            <a asp-controller="TipoIngredientes" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+                        </p>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<br />
 
 <p>
     <a asp-action="Index" class="btn btn-info">Voltar</a>

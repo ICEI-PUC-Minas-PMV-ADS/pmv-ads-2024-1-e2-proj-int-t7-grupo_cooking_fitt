@@ -203,26 +203,6 @@ namespace CookingFit_backend.Controllers
 
 
 
-
-
-        public async Task<IActionResult> ListAA(string tipo)
-        {
-            if (string.IsNullOrEmpty(tipo))
-            {
-                return RedirectToAction(nameof(Index), new { error = "Tipo de ingrediente inválido." });
-            }
-
-            var ingredientes = await _context.Ingrediente
-                .Include(i => i.TipoIngrediente)
-                .Where(i => i.TipoIngrediente.Tipo.ToLower() == tipo.ToLower())
-                .ToListAsync();
-
-            ViewData["Tipo"] = tipo;
-            return View("ListGeneric", ingredientes);
-        }
-
-
-
         private bool IngredienteExists(int id)
         {
             return _context.Ingrediente.Any(e => e.Id == id);
