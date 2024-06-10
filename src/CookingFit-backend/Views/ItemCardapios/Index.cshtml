@@ -15,7 +15,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TipoCardapio)
+                @Html.DisplayNameFor(model => model.TipoCardapioId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.TotalCalorico)
@@ -27,7 +27,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.TipoCardapio)
+                @Html.DisplayFor(modelItem => item.TipoCardapioId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.TotalCalorico)

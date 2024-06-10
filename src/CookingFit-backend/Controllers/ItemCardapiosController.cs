@@ -57,6 +57,18 @@ namespace CookingFit_backend.Controllers
             // Definir ViewBag.TipoIngredienteId com a lista suspensa
             ViewBag.TipoIngredienteId = tiposDeIngredientes;
 
+            var tipoCardapioId = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "1", Text = "Café da manhã" },
+                new SelectListItem { Value = "2", Text = "Lanche da manhã" },
+                new SelectListItem { Value = "3", Text = "Almoço" },
+                new SelectListItem { Value = "4", Text = "Lanche da tarde" },
+                new SelectListItem { Value = "5", Text = "Jantar" }
+            };
+
+            // Definir ViewBag.TipoIngredienteId com a lista suspensa
+            ViewBag.TipoCardapioId = tipoCardapioId;
+
 
             return View();
         }

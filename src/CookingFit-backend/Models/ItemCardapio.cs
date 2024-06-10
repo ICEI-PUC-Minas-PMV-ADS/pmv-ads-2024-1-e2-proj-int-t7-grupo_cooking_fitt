@@ -17,13 +17,13 @@ namespace CookingFit_backend.Models
 
         [ForeignKey("TipoIngrediente")]
         public int TipoIngredienteIdItem { get; set; }
-        public TipoIngrediente TipoIngredienteIdItemCardapio { get; set; }
+        public TipoIngrediente TipoIngrediente { get; set; }
 
         [ForeignKey("TipoCardapio")]
-        public int TipoCardapio { get; set; }
+        public int TipoCardapioId { get; set; }
 
         // Propriedade de navegação para a relação
-        public TipoCardapio TipoCardapios { get; set; }
+        public TipoCardapio TipoCardapio { get; set; }
 
 
 
