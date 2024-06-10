@@ -84,7 +84,7 @@ Apresentamos nos tópicos abaixo os vídeos referentes aos registros de teste de
 
 ### 9.2.4 Vídeo 04 - Caso de Teste 04
 [Botões interativos que filtram os ingredientes pelo tipo]
-(https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EeFkvRTlszZOijGuJoUHp14B7pms1djX2KGdXEMdDrIEvA&e=hlrNgl)
+(https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EeFkvRTlszZOijGuJoUHp14B7pms1djX2KGdXEMdDrIEvA&e=GYyNYr)
 
 ### 9.2.5 Vídeo 05 - Caso de Teste 05
 []
