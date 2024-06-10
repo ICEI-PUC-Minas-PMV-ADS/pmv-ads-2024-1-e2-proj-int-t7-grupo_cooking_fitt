@@ -51,7 +51,7 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Código
 
-<li><a href="src/Cooking Fit Biblioteca/CookingFit.Web/Views/Shared/_Layout.cshtml"> Código Fonte</a></li>
+<li><a href="/src"> Código Fonte</a></li>
 
 
 # Apresentação da Solução
