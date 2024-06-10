@@ -36,17 +36,26 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
 
-### Tabela: Usuario
+### Tabela: InfoUser
 | Campo             | Tipo                  | Restrições                 |
 |-------------      |--------------         |----------------------------|
+| Id_info           | INT                   | NOT NULL                   |
 | nome              | VARCHAR(255)          | NOT NULL                   |
-| e-mail            | VARCHAR(255)          | NOT NULL                   |
-| CPF               | VARCHAR(255)          | NOT NULL                   |
 | dt_nasc           | DATE                  | NOT NULL                   |
-| id_usuario        | INT                   | PRIMARY KEY                |
 | genero            | VARCHAR(10)           |                            |
 | telefone          | INT                   |                            |
 | form_academica    | VARCHAR(255)          |                            |
+| Biografia         | VARCHAR(255)          |                            |
+| link              | VARCHAR(255)          |                            |
+
+
+### Tabela: Usuário
+| Campo             | Tipo                  | Restrições                 |
+|-------------      |--------------         |----------------------------|
+| Id_usuario        | INT                   | NOT NULL                   |
+| name              | VARCHAR(255)          | NOT NULL                   |
+| senha             | VARCHAR(10)           | NOT NULL                   |
+| Email             | VARCHAR(10)           |                            |
 
 
 ### Tabela: Receitas
@@ -58,13 +67,11 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 | ativo             | BOOLEAN               | DEFAULTE FALSE             |
 
 
-### Tabela: Ingredientesreceitas
+### Tabela: TipoCardapio
 | Campo             | Tipo                  | Restrições                 |
 |-------------      |--------------         |----------------------------|
-| id_receita        | INT                   | NOT NULL                   |
-| id_ingrediente    | INT                   | NOT NULL                   |
-| data_criação      | DATE                  | NOT NULL                   |
-| quantidade        | INT                   | NOT NULL                   |
+| id_cardapio       | INT                   | NOT NULL                   |
+| tipo              | VARCHAR(255)          | NOT NULL                   |
 
 
 ### Tabela: Ingrediente
@@ -85,23 +92,20 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 | tipo              | VARCHAR(255)          | NOT NULL                   |
 
 
-### Tabela: cardapio
-| Campo             | Tipo                  | Restrições                 |
-|-------------      |--------------         |----------------------------|
-| Id_cardapio       | INT                   | NOT NULL, PRIMARY KEY      |
-| descriçao         | VARCHAR(255)          |                            |
-| id_usuario        | INT                   | NOT NULL                   |
-| id_receita        | INT                   | NOT NULL                   |
-| id_ingrediente    | INT                   | NOT NULL                   |
-| quantidade        | INT                   |                            |
-| calorias_cardapio | INT                   |                            |
+### Tabela: Cardapio
+| Campo              | Tipo                  | Restrições                 |
+|-------------       |--------------         |----------------------------|
+| Id_cardapio        | INT                   | NOT NULL, PRIMARY KEY      |
+| descriçao          | VARCHAR(255)          | NOT NULL                   |
+| quantidade_cardapio| INT                   | NOT NULL                   |
+| calorias_cardapio  | INT                   | NOT NULL                   |
 
 
-### Tabela: funcionário
+### Tabela: ItemCardapio
 | Campo             | Tipo                  | Restrições                 |
 |-------------      |--------------         |----------------------------|
-| id_departamento   | INT                   | PRIMARY KEY                |
-| departamento      | VARCHAR(255)          | NOT NULL, FOREIGN KEY      |
+| id_itemCardapio   | INT                   | PRIMARY KEY,, FOREIGN KEY  |
+| tipo_cardapio     | VARCHAR(255)          | NOT NULL                   |
 
 
 
@@ -124,5 +128,5 @@ As tecnologias que serão ultilizadas são HTML5, CSS3 e JavaScript para o front
 
 ## Hospedagem
 
-O site utiliza a plataforma do Github e Heroku como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL da GitPages e Heroku, através do endereço: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/edit/main/docs/05-Arquitetura%20da%20Solu%C3%A7%C3%A3o.md
+O site utiliza a plataforma do Github e Azure como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL do GitPages e Azure, através do endereço: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/edit/main/docs/05-Arquitetura%20da%20Solu%C3%A7%C3%A3o.md e https://cookingfit2.azurewebsites.net/Usuarios/Login?ReturnUrl=%2F
 
