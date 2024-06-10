@@ -12,6 +12,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20240512212659_Categoria.cs" />
     <Compile Remove="Migrations\20240512212659_Categoria.Designer.cs" />
+    <Compile Remove="Migrations\20240605143231_AddFkIngredientetoCardapio.cs" />
+    <Compile Remove="Migrations\20240605143231_AddFkIngredientetoCardapio.Designer.cs" />
     <Compile Remove="Migrations\20240606013724_Add.cs" />
     <Compile Remove="Migrations\20240606013724_Add.Designer.cs" />
     <Compile Remove="Migrations\20240609212002_AddTableItemCardapio.cs" />

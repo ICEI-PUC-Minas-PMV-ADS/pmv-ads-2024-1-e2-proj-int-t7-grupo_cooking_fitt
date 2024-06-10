@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CookingFit_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240607144132_AddFKfromUsuarioToCardapio")]
-    partial class AddFKfromUsuarioToCardapio
+    [Migration("20240610004454_AddTableCardapioAzure")]
+    partial class AddTableCardapioAzure
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,21 +23,6 @@ namespace CookingFit_backend.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("CardapioIngrediente", b =>
-                {
-                    b.Property<int>("CardapioId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IngredientesAssociadosId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CardapioId", "IngredientesAssociadosId");
-
-                    b.HasIndex("IngredientesAssociadosId");
-
-                    b.ToTable("CardapioIngrediente");
-                });
 
             modelBuilder.Entity("CookingFit_backend.Models.Cardapio", b =>
                 {
@@ -51,7 +36,7 @@ namespace CookingFit_backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Quantidade")
+                    b.Property<int>("QuantidadeCardapio")
                         .HasColumnType("int");
 
                     b.Property<int>("UsuarioId")
@@ -132,6 +117,35 @@ namespace CookingFit_backend.Migrations
                     b.HasIndex("TipoIngredienteId");
 
                     b.ToTable("Ingrediente");
+                });
+
+            modelBuilder.Entity("CookingFit_backend.Models.ItemCardapio", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CaloriasItem")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantidade")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoCardapioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoIngredienteIdItem")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TipoCardapioId");
+
+                    b.HasIndex("TipoIngredienteIdItem");
+
+                    b.ToTable("ItemCardapio");
                 });
 
             modelBuilder.Entity("CookingFit_backend.Models.Receita", b =>
@@ -217,21 +231,6 @@ namespace CookingFit_backend.Migrations
                     b.ToTable("Usuario");
                 });
 
-            modelBuilder.Entity("CardapioIngrediente", b =>
-                {
-                    b.HasOne("CookingFit_backend.Models.Cardapio", null)
-                        .WithMany()
-                        .HasForeignKey("CardapioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CookingFit_backend.Models.Ingrediente", null)
-                        .WithMany()
-                        .HasForeignKey("IngredientesAssociadosId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("CookingFit_backend.Models.Cardapio", b =>
                 {
                     b.HasOne("CookingFit_backend.Models.Usuario", "Usuario")
@@ -250,6 +249,25 @@ namespace CookingFit_backend.Migrations
                         .HasForeignKey("TipoIngredienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("TipoIngrediente");
+                });
+
+            modelBuilder.Entity("CookingFit_backend.Models.ItemCardapio", b =>
+                {
+                    b.HasOne("CookingFit_backend.Models.TipoCardapio", "TipoCardapio")
+                        .WithMany()
+                        .HasForeignKey("TipoCardapioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CookingFit_backend.Models.TipoIngrediente", "TipoIngrediente")
+                        .WithMany()
+                        .HasForeignKey("TipoIngredienteIdItem")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TipoCardapio");
 
                     b.Navigation("TipoIngrediente");
                 });
