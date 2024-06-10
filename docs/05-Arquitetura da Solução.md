@@ -128,5 +128,5 @@ As tecnologias que serão ultilizadas são HTML5, CSS3 e JavaScript para o front
 
 ## Hospedagem
 
-O site utiliza a plataforma do Github e Azure como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL do GitPages e Azure, através do endereço: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/edit/main/docs/05-Arquitetura%20da%20Solu%C3%A7%C3%A3o.md e https://cookingfit2.azurewebsites.net/Usuarios/Login?ReturnUrl=%2F
+O site utiliza a plataforma do Github e Azure como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL do GitPages e Azure, através do endereço: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/edit/main/docs/05-Arquitetura%20da%20Solu%C3%A7%C3%A3o.md e  [CookingFit](https://cookingfit2.azurewebsites.net/Usuarios/Login) Digite o usuário: ana@gmail.com e a senha:123
 
