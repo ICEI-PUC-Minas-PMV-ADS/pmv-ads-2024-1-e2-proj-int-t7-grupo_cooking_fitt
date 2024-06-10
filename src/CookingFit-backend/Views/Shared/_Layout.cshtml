@@ -38,7 +38,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastre-se</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Receita" asp-action="Index">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Receitas" asp-action="Index">
                                 <div style="display: flex; flex-direction: column;">
                                     <img src="Imagem/salada 1.png" alt="TôFit" style="height: 60px; width: auto; margin-left: 55px; margin-top: -20px; margin-bottom: -10px;">
                                     <span class="mt-1" style="font-size: 12px; margin-left: 55px; text-align: center;margin-bottom: -20px">TôFit</span>
@@ -53,7 +53,7 @@
                                 <span class="nav-link text-dark">Olá, @User.Identity.Name</span>
                             </li>
                             <li class="nav-item">
-                                <form asp-controller="Account" asp-action="Logout" method="post" class="form-inline">
+                                <form asp-controller="Usuarios" asp-action="Logout" method="post" class="form-inline">
                                     <button type="submit" class="btn btn-link nav-link">Sair</button>
                                 </form>
                             </li>

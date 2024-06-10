@@ -1,43 +1,70 @@
 ﻿@model IEnumerable<CookingFit_backend.Models.ItemCardapio>
 
-
 @{
     ViewData["Title"] = "Index";
-
 }
 
-<h1>Index</h1>
+<h1>Refeições</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Adicionar outros</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TipoCardapioId)
+                Tipo de Cardápio
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TotalCalorico)
+                Total de Calorias
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TipoCardapioId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalCalorico)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @{
+                        var tipoCardapio = string.Empty;
+
+                        switch (item.TipoCardapioId)
+                        {
+                            case 1:
+                                tipoCardapio = "Café da manhã";
+                                break;
+                            case 2:
+                                tipoCardapio = "Lanche da manhã";
+                                break;
+                            case 3:
+                                tipoCardapio = "Almoço";
+                                break;
+                            case 4:
+                                tipoCardapio = "Lanche da tarde";
+                                break;
+                            case 5:
+                                tipoCardapio = "Jantar";
+                                break;
+                            default:
+                                tipoCardapio = "Tipo não especificado";
+                                break;
+                        }
+                    }
+                    @tipoCardapio
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalCalorico)
+                </td>
+                <td>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<p>
+    <a asp-action="Index" class="btn btn-info">Voltar</a>
+</p>
