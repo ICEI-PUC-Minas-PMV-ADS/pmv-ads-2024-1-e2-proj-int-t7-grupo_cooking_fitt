@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "heEQwC3CklaTvg8uOKVu1pBeWlZ+MOdLVnLmtaNXcZY=",
+  "Hash": "JEq5Q48ll1wvXHJdldPK2EbhnDfaoET1VFa8TTl3WJw=",
   "Source": "CookingFit-backend",
   "BasePath": "_content/CookingFit-backend",
   "Mode": "Default",
@@ -100,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagem\\alimentos.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\wwwroot\\Imagem\\Bemvindo.jpeg",
+      "SourceId": "CookingFit-backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\wwwroot\\",
+      "BasePath": "_content/CookingFit-backend",
+      "RelativePath": "Imagem/Bemvindo.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagem\\Bemvindo.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\wwwroot\\Imagem\\cadastrando.jpeg",
+      "SourceId": "CookingFit-backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\wwwroot\\",
+      "BasePath": "_content/CookingFit-backend",
+      "RelativePath": "Imagem/cadastrando.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagem\\cadastrando.jpeg"
     },
     {
       "Identity": "C:\\Users\\emili\\Desktop\\Cooking Fit Pessoal 1\\pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt\\src\\CookingFit-backend\\wwwroot\\Imagem\\Cardapio.jpeg",
