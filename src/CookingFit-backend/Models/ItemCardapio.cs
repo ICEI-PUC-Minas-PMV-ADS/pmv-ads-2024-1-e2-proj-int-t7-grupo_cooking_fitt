@@ -25,6 +25,10 @@ namespace CookingFit_backend.Models
         // Propriedade de navegação para a relação
         public TipoCardapio TipoCardapio { get; set; }
 
+        [ForeignKey("Ingrediente")]
+        public int IngredienteId_IC { get; set; }
+        public Ingrediente Ingrediente { get; set; }
+
 
 
     }

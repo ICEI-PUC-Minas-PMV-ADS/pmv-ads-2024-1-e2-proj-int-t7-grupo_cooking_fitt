@@ -223,5 +223,17 @@ namespace CookingFit_backend.Controllers
         {
           return _context.ItemCardapio.Any(e => e.Id == id);
         }
+
+        [HttpGet]
+        public IActionResult GetIngredientesByTipo(int TipoIngrediente)
+        {
+            var ingredientes = _context.Ingrediente
+                .Where(i => i.TipoIngrediente == TipoIngrediente)
+                .Select(i => new { id = i.Id, nome = i.Nome })
+                .ToList();
+
+            return Json(ingredientes);
+        }
+
     }
 }
