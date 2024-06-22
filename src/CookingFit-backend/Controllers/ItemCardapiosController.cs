@@ -69,6 +69,9 @@ namespace CookingFit_backend.Controllers
             // Definir ViewBag.TipoIngredienteId com a lista suspensa
             ViewBag.TipoCardapioId = tipoCardapioId;
 
+            // Inicializar ViewBag.IngredienteId_IC como uma lista vazia
+            ViewBag.IngredienteId_IC = new List<SelectListItem>();
+
 
             return View();
         }
@@ -225,15 +228,16 @@ namespace CookingFit_backend.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetIngredientesByTipo(int TipoIngrediente)
+        public IActionResult GetIngredientesByTipo(int tipoIngredienteId)
         {
             var ingredientes = _context.Ingrediente
-                .Where(i => i.TipoIngrediente == TipoIngrediente)
+                .Where(i => i.TipoIngredienteId == tipoIngredienteId) // Corrigido para usar TipoIngredienteId
                 .Select(i => new { id = i.Id, nome = i.Nome })
                 .ToList();
 
             return Json(ingredientes);
         }
+
 
     }
 }

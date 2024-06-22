@@ -37,6 +37,7 @@
                 <span asp-validation-for="IngredienteId_IC" class="text-danger"></span>
             </div>
 
+
             <div class="form-group">
                 <label asp-for="CaloriasItem" class="control-label">Calorias</label>
                 <input asp-for="CaloriasItem" class="form-control" id="Calorias" readonly="readonly" />
@@ -71,11 +72,34 @@
         document.getElementById('TipoIngredienteId').addEventListener('change', function () {
             var selectedValue = this.value;
             var caloriasField = document.getElementById('Calorias');
+
+
             document.getElementById('TipoCardapioId')
                 var TipoCardapioDropdown = document.getElementById('TipoCardapioId');
+
+
             document.getElementById('IngredienteId_IC')
+                var ingredienteDropdown = document.getElementById('IngredienteId_IC');
+            if (selectedValue) {
+                fetch(`/ItemCardapios/GetIngredientesByTipo?tipoIngredienteId=${selectedValue}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        ingredienteDropdown.innerHTML = "";
+                        var defaultOption = document.createElement('option');
+                        defaultOption.value = "";
+                        defaultOption.text = "-- Selecione um ingrediente --";
+                        ingredienteDropdown.appendChild(defaultOption);
 
 
+                        data.forEach(item => {
+                            var option = document.createElement('option');
+                            option.value = item.id;
+                            option.text = item.nome;
+                            ingredienteDropdown.appendChild(option);
+                        });
+                    })
+                    .catch(error => console.error('Erro ao carregar ingredientes:', error));
+            }
 
 
             // Atualizar calorias com base no tipo de ingrediente selecionado
@@ -106,22 +130,6 @@
                     break;
             }
 
-            // Atualizar lista de ingredientes com base no tipo de ingrediente selecionado
-            ingredienteDropdown.innerHTML = '<option value="">-- Selecione um Ingrediente --</option>';
-
-            if (selectedValue) {
-                fetch(`/Ingredientes/GetIngredientesByTipo?tipoIngredienteId=${selectedValue}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        data.forEach(item => {
-                            var option = document.createElement('option');
-                            option.value = item.value;
-                            option.text = item.text;
-                            ingredienteDropdown.appendChild(option);
-                        });
-                    })
-                    .catch(error => console.error('Erro ao carregar ingredientes:', error));
-            }
         });
     </script>
 }
