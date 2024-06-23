@@ -12,7 +12,7 @@ namespace CookingFit_backend.Models
 
         public int Quantidade { get; set; }
 
-        public int TotalCalorico => Quantidade * CaloriasItem;
+        public decimal TotalCalorico => Quantidade * CaloriasItem;
 
 
         [ForeignKey("TipoIngrediente")]

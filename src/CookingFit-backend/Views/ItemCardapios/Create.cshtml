@@ -4,9 +4,24 @@
     ViewData["Title"] = "Create";
 }
 
+<p>
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="1">Visualizar Café da manhã</a>
+
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="2">Visualizar Lanche da manhã</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="3">Visualizar Almoço</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="4">Visualizar Lanche da tarde</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="5">Visualizar Jantar</a>
+
+    <br />
+</p>
 <h4>Selecione os itens para elaborar o cardápio</h4>
+
 <hr />
 <div class="row">
+
     <div class="col-md-4">
         <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>

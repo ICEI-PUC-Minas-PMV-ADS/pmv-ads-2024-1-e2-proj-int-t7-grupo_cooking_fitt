@@ -24,13 +24,16 @@ namespace CookingFit_backend.Controllers
         // GET: ItemCardapios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.ItemCardapio == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
             var itemCardapio = await _context.ItemCardapio
+                .Include(ic => ic.Ingrediente)
+                    .ThenInclude(i => i.TipoIngrediente)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (itemCardapio == null)
             {
                 return NotFound();
@@ -39,8 +42,9 @@ namespace CookingFit_backend.Controllers
             return View(itemCardapio);
         }
 
+
         // GET: ItemCardapios/Create
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
             // Definir a lista suspensa com os tipos de ingredientes e seus IDs correspondentes
             var tiposDeIngredientes = new List<SelectListItem>
@@ -76,25 +80,25 @@ namespace CookingFit_backend.Controllers
             return View();
         }
 
-        // POST: ItemCardapios/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ItemCardapio itemCardapio, int ingrediente)
+        public async Task<IActionResult> Create(ItemCardapio itemCardapio)
         {
             if (ModelState.IsValid)
             {
-                var TipoIngredienteIdItem = await _context.TipoIngrediente.FirstOrDefaultAsync(t => t.Id == itemCardapio.TipoIngredienteIdItem);
-
-                if (TipoIngredienteIdItem == null)
+                // Configure calories based on the selected TipoIngredienteIdItem
+                var tipoIngrediente = await _context.TipoIngrediente.FirstOrDefaultAsync(t => t.Id == itemCardapio.TipoIngredienteIdItem);
+                if (tipoIngrediente == null)
                 {
-                    ModelState.AddModelError("TipoIngredienteId", "Tipo de ingrediente inválido.");
+                    ModelState.AddModelError("TipoIngredienteIdItem", "Tipo de ingrediente inválido.");
                     ViewBag.TipoIngredienteId = new SelectList(_context.TipoIngrediente, "Id", "Tipo", itemCardapio.TipoIngredienteIdItem);
                     return View(itemCardapio);
                 }
 
-                // Configurar as calorias com base no tipo de ingrediente
-                switch (TipoIngredienteIdItem.Id)
+                // Assign calories based on TipoIngredienteIdItem
+                switch (tipoIngrediente.Id)
                 {
+                    // Assign calories based on TipoIngredienteIdItem
                     case 1: // Carboidratos
                         itemCardapio.CaloriasItem = 150;
                         break;
@@ -117,20 +121,27 @@ namespace CookingFit_backend.Controllers
                         itemCardapio.CaloriasItem = 73;
                         break;
                     default:
-                        itemCardapio.CaloriasItem = 0; // Pode ser um tratamento de erro ou um valor padrão
+                        itemCardapio.CaloriasItem = 0;
                         break;
                 }
 
+                // Add the item to context and save changes
                 _context.Add(itemCardapio);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+
+                // Redirect to ListaItemCardapio with the appropriate tipoCardapioId
+                return RedirectToAction(nameof(ListaItemCardapio), new { tipoCardapioId = itemCardapio.TipoCardapioId });
             }
 
-
-            // Se houver um erro de validação, recarregar o dropdown de Tipo de Ingrediente e Ingrediente
+            // If there's a validation error, reload the dropdown lists and return to view
             ViewBag.TipoIngredienteId = new SelectList(_context.TipoIngrediente, "Id", "Tipo", itemCardapio.TipoIngredienteIdItem);
+            ViewBag.TipoCardapioId = new SelectList(_context.TipoCardapio, "Id", "Tipo", itemCardapio.TipoCardapioId);
+            ViewBag.IngredienteId_IC = new SelectList(_context.Ingrediente, "Id", "Nome", itemCardapio.IngredienteId_IC);
+
             return View(itemCardapio);
         }
+
+
 
 
 
@@ -188,13 +199,14 @@ namespace CookingFit_backend.Controllers
         // GET: ItemCardapios/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.ItemCardapio == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
             var itemCardapio = await _context.ItemCardapio
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (itemCardapio == null)
             {
                 return NotFound();
@@ -208,19 +220,19 @@ namespace CookingFit_backend.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.ItemCardapio == null)
-            {
-                return Problem("Entity set 'AppDbContext.ItemCardapio'  is null.");
-            }
             var itemCardapio = await _context.ItemCardapio.FindAsync(id);
-            if (itemCardapio != null)
+            if (itemCardapio == null)
             {
-                _context.ItemCardapio.Remove(itemCardapio);
+                return NotFound();
             }
-            
+
+            _context.ItemCardapio.Remove(itemCardapio);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+
 
         private bool ItemCardapioExists(int id)
         {
@@ -237,6 +249,20 @@ namespace CookingFit_backend.Controllers
 
             return Json(ingredientes);
         }
+
+        public async Task<IActionResult> ListaItemCardapio(int tipoCardapioId)
+        {
+            // Retrieve items based on TipoCardapioId including related entities
+            var itensCardapio = await _context.ItemCardapio
+                .Include(ic => ic.Ingrediente)         // Carregar Ingrediente relacionado
+                    .ThenInclude(i => i.TipoIngrediente) // Carregar TipoIngrediente relacionado ao Ingrediente
+                .Where(ic => ic.TipoCardapioId == tipoCardapioId)
+                .ToListAsync();
+
+            return View(itensCardapio);
+        }
+
+
 
 
     }

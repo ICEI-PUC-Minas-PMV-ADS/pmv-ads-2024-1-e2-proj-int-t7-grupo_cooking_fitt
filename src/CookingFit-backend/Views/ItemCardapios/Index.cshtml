@@ -5,7 +5,19 @@
 }
 
 <h1>Refeições</h1>
+<p>
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="1">Visualizar Café da manhã</a>
 
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="2">Visualizar Lanche da manhã</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="3">Visualizar Almoço</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="4">Visualizar Lanche da tarde</a> |
+
+    <a class="btn btn-secondary" asp-action="ListaItemCardapio" asp-route-tipoCardapioId="5">Visualizar Jantar</a>
+
+    <br />
+</p>
 <p>
     <a asp-action="Create" class="btn btn-success">Adicionar outros</a>
 </p>
@@ -57,8 +69,8 @@
                     @Html.DisplayFor(modelItem => item.TotalCalorico)
                 </td>
                 <td>
-@*                     <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> | *@
+@*                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> | *@
+                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
                 </td>
             </tr>
@@ -66,5 +78,5 @@
     </tbody>
 </table>
 <p>
-    <a asp-action="Index" class="btn btn-info">Voltar</a>
+    <a asp-action="Create" class="btn btn-info">Voltar</a>
 </p>
