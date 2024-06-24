@@ -25,7 +25,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
-[CookingFit](https://cookingfit2.azurewebsites.net/Account/Login?ReturnUrl=%2F)
+[CookingFit](https://cookingfit2.azurewebsites.net)
 
 Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
 
