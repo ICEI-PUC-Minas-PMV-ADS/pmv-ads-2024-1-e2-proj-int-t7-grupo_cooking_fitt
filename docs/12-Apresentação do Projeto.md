@@ -15,7 +15,7 @@ O grupo escolheu como identidade o assistente virtual da plataforma, TôFit. Ele
 
 ## Conjunto de Slides (Estrutura)
 
-[Apresentação_CookingFit.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/files/14972269/Apresentacao_CookingFit.pdf)
+[Apresentação_CookingFit.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t7-grupo_cooking_fitt/blob/main/CookingFit.pdf)
  
 ## Vídeo de Apresentação do projeto
 
