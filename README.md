@@ -56,4 +56,4 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Apresentação da Solução
 
-<a href="/docs/12-Apresentação do Projeto.md"> Vídeo de Apresentação do projeto</a>
+<a href="https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EZOLRof_UWFNpoKOK8DuJ_IBkGks-dlqD0m1-m8cL8Sd6Q&e=4AcTHV"> Vídeo de Apresentação do projeto</a>
