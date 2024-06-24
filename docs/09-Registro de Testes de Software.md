@@ -76,7 +76,7 @@ Apresentamos nos tópicos abaixo os vídeos referentes aos registros de teste de
 
 ### 9.2.2 Vídeo 02 - Caso de Teste 02
 [Inserção de quantitativo calórico por refeição]
-(https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EeFkvRTlszZOijGuJoUHp14B7pms1djX2KGdXEMdDrIEvA&e=hlrNgl)
+(https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EZOLRof_UWFNpoKOK8DuJ_IBkGks-dlqD0m1-m8cL8Sd6Q&e=yZBP5R)
 
 ### 9.2.3 Vídeo 03 - Caso de Teste 03
 [CRUD Ingrediente](https://sgapucminasbr.sharepoint.com/sites/team_sga_2418_2024_1_4909107/_layouts/15/guestaccess.aspx?share=EcchnVrjzRNOj2ojogqJXxwBt1EdzDh39DyQRt4ajOHD_Q&e=Jwb5s0)
